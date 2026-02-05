@@ -22,6 +22,7 @@ from launch.event_handlers import OnShutdown
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, Command
 from launch_ros.actions import Node
+from launch.conditions import IfCondition, UnlessCondition
 
 
 def generate_launch_description():
@@ -72,6 +73,12 @@ def generate_launch_description():
         "robot_sdf",
         default_value=os.path.join(bringup_dir, "urdf", "gz_waffle.sdf.xacro"),
         description="Full path to robot sdf file to spawn the robot in gazebo",
+    )
+
+    declare_headless_cmd = DeclareLaunchArgument(
+        "headless",
+        default_value="false",
+        description="Run gz in headless rendering mode if true",
     )
 
     turtlebot_model_os_value = os.getenv("TURTLEBOT_MODEL", "3")
@@ -125,8 +132,15 @@ def generate_launch_description():
     # a temporary file and passed to Gazebo.
     world_sdf = tempfile.mktemp(prefix="tb_", suffix=".sdf")
     world_sdf_xacro = ExecuteProcess(cmd=["xacro", "-o", world_sdf, world])
-    gazebo = ExecuteProcess(
+    gazebo_headless = ExecuteProcess(
+        cmd=["gz", "sim", "-r", world_sdf, "--headless-rendering"],
+        condition=IfCondition(LaunchConfiguration("headless")),
+        output="screen",
+    )
+
+    gazebo_gui = ExecuteProcess(
         cmd=["gz", "sim", "-r", world_sdf],
+        condition=UnlessCondition(LaunchConfiguration("headless")),
         output="screen",
     )
 
@@ -163,10 +177,12 @@ def generate_launch_description():
             declare_world_cmd,
             declare_robot_name_cmd,
             declare_robot_sdf_cmd,
+            declare_headless_cmd,
             world_sdf_xacro,
             remove_temp_sdf_file,
             gz_tb_spawner,
-            gazebo,
+            gazebo_headless,
+            gazebo_gui,
             robot_state_publisher_cmd,
         ]
     )

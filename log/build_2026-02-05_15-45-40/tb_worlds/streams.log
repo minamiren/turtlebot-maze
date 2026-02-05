@@ -1,0 +1,28 @@
+[0.016s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds
+[0.032s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.589s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.609s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.610s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.747s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.761s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.780s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.797s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.816s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[1.817s]   By not providing "Findnav2_minimal_tb3_sim.cmake" in CMAKE_MODULE_PATH this
+[1.817s]   project has asked CMake to find a package configuration file provided by
+[1.817s]   "nav2_minimal_tb3_sim", but CMake did not find one.
+[1.817s] 
+[1.817s]   Could not find a package configuration file provided by
+[1.817s]   "nav2_minimal_tb3_sim" with any of the following names:
+[1.817s] 
+[1.817s]     nav2_minimal_tb3_simConfig.cmake
+[1.817s]     nav2_minimal_tb3_sim-config.cmake
+[1.817s] 
+[1.817s]   Add the installation prefix of "nav2_minimal_tb3_sim" to CMAKE_PREFIX_PATH
+[1.817s]   or set "nav2_minimal_tb3_sim_DIR" to a directory containing one of the
+[1.817s]   above files.  If "nav2_minimal_tb3_sim" provides a separate development
+[1.817s]   package or SDK, be sure it has been installed.
+[1.817s] 
+[1.817s] [0m
+[1.817s] -- Configuring incomplete, errors occurred!
+[1.822s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds

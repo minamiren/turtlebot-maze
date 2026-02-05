@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000509] (tb_worlds) JobQueued: {'identifier': 'tb_worlds', 'dependencies': OrderedDict()}
+[0.000577] (tb_autonomy) JobQueued: {'identifier': 'tb_autonomy', 'dependencies': OrderedDict({'tb_worlds': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds'})}
+[0.000982] (tb_worlds) JobStarted: {'identifier': 'tb_worlds'}
+[0.018436] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'cmake'}
+[0.020420] (tb_worlds) Command: {'cmd': ['/usr/bin/cmake', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds', '-DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/18233_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'QT_QPA_PLATFORM': 'offscreen', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.099900] (-) TimerEvent: {}
+[0.200326] (-) TimerEvent: {}
+[0.300724] (-) TimerEvent: {}
+[0.336347] (tb_worlds) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.400978] (-) TimerEvent: {}
+[0.502069] (-) TimerEvent: {}
+[0.602468] (-) TimerEvent: {}
+[0.702845] (-) TimerEvent: {}
+[0.774487] (tb_worlds) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.802993] (-) TimerEvent: {}
+[0.903909] (-) TimerEvent: {}
+[1.004503] (-) TimerEvent: {}
+[1.105315] (-) TimerEvent: {}
+[1.205998] (-) TimerEvent: {}
+[1.219401] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.306246] (-) TimerEvent: {}
+[1.406702] (-) TimerEvent: {}
+[1.507190] (-) TimerEvent: {}
+[1.510741] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.540501] (tb_worlds) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.567734] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.569918] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.607333] (-) TimerEvent: {}
+[1.707756] (-) TimerEvent: {}
+[1.711895] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.807846] (-) TimerEvent: {}
+[1.908135] (-) TimerEvent: {}
+[1.959445] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.966982] (tb_worlds) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.967587] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.968358] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.999720] (tb_worlds) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.008249] (-) TimerEvent: {}
+[2.108568] (-) TimerEvent: {}
+[2.208908] (-) TimerEvent: {}
+[2.222756] (tb_worlds) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.311192] (-) TimerEvent: {}
+[2.411702] (-) TimerEvent: {}
+[2.512262] (-) TimerEvent: {}
+[2.545355] (tb_worlds) StdoutLine: {'line': b'-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[2.547550] (tb_worlds) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.612444] (-) TimerEvent: {}
+[2.712790] (-) TimerEvent: {}
+[2.721258] (tb_worlds) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.741533] (tb_worlds) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.786763] (tb_worlds) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.812904] (-) TimerEvent: {}
+[2.825579] (tb_worlds) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.913010] (-) TimerEvent: {}
+[3.013330] (-) TimerEvent: {}
+[3.113737] (-) TimerEvent: {}
+[3.214110] (-) TimerEvent: {}
+[3.314501] (-) TimerEvent: {}
+[3.416149] (-) TimerEvent: {}
+[3.516476] (-) TimerEvent: {}
+[3.523774] (tb_worlds) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[3.524034] (tb_worlds) StderrLine: {'line': b'  By not providing "Findnav2_minimal_tb3_sim.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.524104] (tb_worlds) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.524154] (tb_worlds) StderrLine: {'line': b'  "nav2_minimal_tb3_sim", but CMake did not find one.\n'}
+[3.524206] (tb_worlds) StderrLine: {'line': b'\n'}
+[3.524249] (tb_worlds) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[3.524290] (tb_worlds) StderrLine: {'line': b'  "nav2_minimal_tb3_sim" with any of the following names:\n'}
+[3.524329] (tb_worlds) StderrLine: {'line': b'\n'}
+[3.524367] (tb_worlds) StderrLine: {'line': b'    nav2_minimal_tb3_simConfig.cmake\n'}
+[3.524404] (tb_worlds) StderrLine: {'line': b'    nav2_minimal_tb3_sim-config.cmake\n'}
+[3.524441] (tb_worlds) StderrLine: {'line': b'\n'}
+[3.524477] (tb_worlds) StderrLine: {'line': b'  Add the installation prefix of "nav2_minimal_tb3_sim" to CMAKE_PREFIX_PATH\n'}
+[3.524514] (tb_worlds) StderrLine: {'line': b'  or set "nav2_minimal_tb3_sim_DIR" to a directory containing one of the\n'}
+[3.524550] (tb_worlds) StderrLine: {'line': b'  above files.  If "nav2_minimal_tb3_sim" provides a separate development\n'}
+[3.524583] (tb_worlds) StderrLine: {'line': b'  package or SDK, be sure it has been installed.\n'}
+[3.524651] (tb_worlds) StderrLine: {'line': b'\n'}
+[3.524690] (tb_worlds) StderrLine: {'line': b'\x1b[0m\n'}
+[3.525903] (tb_worlds) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.531706] (tb_worlds) CommandEnded: {'returncode': 1}
+[3.572440] (tb_worlds) JobEnded: {'identifier': 'tb_worlds', 'rc': 1}
+[3.587190] (tb_autonomy) JobSkipped: {'identifier': 'tb_autonomy'}
+[3.587275] (-) EventReactorShutdown: {}
