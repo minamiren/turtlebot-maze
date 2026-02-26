@@ -1,0 +1,77 @@
+[0.011s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds
+[0.160s] -- The C compiler identification is GNU 13.3.0
+[0.514s] -- The CXX compiler identification is GNU 13.3.0
+[0.786s] -- Detecting C compiler ABI info
+[0.963s] -- Detecting C compiler ABI info - done
+[0.970s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.970s] -- Detecting C compile features
+[0.971s] -- Detecting C compile features - done
+[1.035s] -- Detecting CXX compiler ABI info
+[1.223s] -- Detecting CXX compiler ABI info - done
+[1.230s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.231s] -- Detecting CXX compile features
+[1.231s] -- Detecting CXX compile features - done
+[1.234s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.381s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.504s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.508s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.676s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.690s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.708s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.730s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.780s] -- Found nav2_minimal_tb3_sim: 1.0.1 (/opt/ros/jazzy/share/nav2_minimal_tb3_sim/cmake)
+[1.784s] -- Found nav2_minimal_tb4_sim: 1.0.1 (/opt/ros/jazzy/share/nav2_minimal_tb4_sim/cmake)
+[1.868s] -- Configuring done (1.8s)
+[1.873s] -- Generating done (0.0s)
+[1.874s] -- Build files have been written to: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds
+[1.882s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds
+[1.883s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds -- -j8 -l8
+[1.922s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds -- -j8 -l8
+[1.933s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds
+[1.940s] -- Install configuration: ""
+[1.940s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch
+[1.941s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_world.launch.py
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_demo_world.launch.py
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/turtlebot_spawner.launch.py
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/block_spawner.launch.py
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_locations.yaml
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.yaml
+[1.942s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.pgm
+[1.943s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models
+[1.943s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block
+[1.943s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.sdf
+[1.943s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.config
+[1.943s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.sdf
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.config
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.sdf
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.config
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.sdf
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.config
+[1.944s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/sim_house.sdf.xacro
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf/gz_waffle.sdf.xacro
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot4_bridge.yaml
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot3_bridge.yaml
+[1.945s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/nav2_params.yaml
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/package_run_dependencies/tb_worlds
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/parent_prefix_path/tb_worlds
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.sh
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.dsv
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.sh
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.dsv
+[1.946s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.bash
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.sh
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.zsh
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.dsv
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.dsv
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/packages/tb_worlds
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig.cmake
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig-version.cmake
+[1.947s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.xml
+[1.950s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds

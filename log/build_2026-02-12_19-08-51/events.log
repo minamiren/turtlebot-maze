@@ -1,0 +1,467 @@
+[0.000000] (-) TimerEvent: {}
+[0.000232] (tb_worlds) JobQueued: {'identifier': 'tb_worlds', 'dependencies': OrderedDict()}
+[0.000274] (tb_autonomy) JobQueued: {'identifier': 'tb_autonomy', 'dependencies': OrderedDict({'tb_worlds': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds'})}
+[0.000294] (tb_worlds) JobStarted: {'identifier': 'tb_worlds'}
+[0.009489] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'cmake'}
+[0.010304] (tb_worlds) Command: {'cmd': ['/usr/bin/cmake', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds', '-DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '1182223', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/2256902_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-5YIZUyhjla5K/agent.1182221', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.099626] (-) TimerEvent: {}
+[0.160266] (tb_worlds) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199815] (-) TimerEvent: {}
+[0.300803] (-) TimerEvent: {}
+[0.401648] (-) TimerEvent: {}
+[0.502146] (-) TimerEvent: {}
+[0.514078] (tb_worlds) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.602308] (-) TimerEvent: {}
+[0.702693] (-) TimerEvent: {}
+[0.786300] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.802872] (-) TimerEvent: {}
+[0.903237] (-) TimerEvent: {}
+[0.963074] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.970066] (tb_worlds) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.970432] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.970774] (tb_worlds) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.003443] (-) TimerEvent: {}
+[1.035489] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.103707] (-) TimerEvent: {}
+[1.204596] (-) TimerEvent: {}
+[1.223520] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.230652] (tb_worlds) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.230927] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.231436] (tb_worlds) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.234651] (tb_worlds) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.304709] (-) TimerEvent: {}
+[1.380840] (tb_worlds) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.404832] (-) TimerEvent: {}
+[1.504056] (tb_worlds) StdoutLine: {'line': b'-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[1.504978] (-) TimerEvent: {}
+[1.507940] (tb_worlds) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.605335] (-) TimerEvent: {}
+[1.676129] (tb_worlds) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.690523] (tb_worlds) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.705481] (-) TimerEvent: {}
+[1.708304] (tb_worlds) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.730269] (tb_worlds) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.779933] (tb_worlds) StdoutLine: {'line': b'-- Found nav2_minimal_tb3_sim: 1.0.1 (/opt/ros/jazzy/share/nav2_minimal_tb3_sim/cmake)\n'}
+[1.783871] (tb_worlds) StdoutLine: {'line': b'-- Found nav2_minimal_tb4_sim: 1.0.1 (/opt/ros/jazzy/share/nav2_minimal_tb4_sim/cmake)\n'}
+[1.806011] (-) TimerEvent: {}
+[1.868202] (tb_worlds) StdoutLine: {'line': b'-- Configuring done (1.8s)\n'}
+[1.872707] (tb_worlds) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.874160] (tb_worlds) StdoutLine: {'line': b'-- Build files have been written to: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds\n'}
+[1.882248] (tb_worlds) CommandEnded: {'returncode': 0}
+[1.882753] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'build'}
+[1.883460] (tb_worlds) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', '--', '-j8', '-l8'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '1182223', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/2256902_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-5YIZUyhjla5K/agent.1182221', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[1.906174] (-) TimerEvent: {}
+[1.922570] (tb_worlds) CommandEnded: {'returncode': 0}
+[1.923185] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'install'}
+[1.932678] (tb_worlds) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '1182223', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/2256902_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-5YIZUyhjla5K/agent.1182221', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[1.940478] (tb_worlds) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.940665] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch\n'}
+[1.941620] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_world.launch.py\n'}
+[1.941882] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_demo_world.launch.py\n'}
+[1.942173] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/turtlebot_spawner.launch.py\n'}
+[1.942348] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/block_spawner.launch.py\n'}
+[1.942431] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps\n'}
+[1.942570] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_locations.yaml\n'}
+[1.942676] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.yaml\n'}
+[1.942725] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.pgm\n'}
+[1.942770] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models\n'}
+[1.943199] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block\n'}
+[1.943328] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.sdf\n'}
+[1.943426] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.config\n'}
+[1.943676] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block\n'}
+[1.943783] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.sdf\n'}
+[1.943836] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.config\n'}
+[1.943881] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block\n'}
+[1.943919] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.sdf\n'}
+[1.943960] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.config\n'}
+[1.944079] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house\n'}
+[1.944134] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.sdf\n'}
+[1.944225] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.config\n'}
+[1.944270] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds\n'}
+[1.944732] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/sim_house.sdf.xacro\n'}
+[1.944983] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf\n'}
+[1.945149] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf/gz_waffle.sdf.xacro\n'}
+[1.945202] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs\n'}
+[1.945246] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot4_bridge.yaml\n'}
+[1.945286] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot3_bridge.yaml\n'}
+[1.945633] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/nav2_params.yaml\n'}
+[1.945686] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/package_run_dependencies/tb_worlds\n'}
+[1.945985] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/parent_prefix_path/tb_worlds\n'}
+[1.946039] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.sh\n'}
+[1.946080] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.dsv\n'}
+[1.946118] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.sh\n'}
+[1.946155] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.dsv\n'}
+[1.946584] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.bash\n'}
+[1.946882] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.sh\n'}
+[1.946963] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.zsh\n'}
+[1.947156] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.dsv\n'}
+[1.947230] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.dsv\n'}
+[1.947274] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/packages/tb_worlds\n'}
+[1.947481] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig.cmake\n'}
+[1.947679] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig-version.cmake\n'}
+[1.947731] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.xml\n'}
+[1.950279] (tb_worlds) CommandEnded: {'returncode': 0}
+[1.964908] (tb_worlds) JobEnded: {'identifier': 'tb_worlds', 'rc': 0}
+[1.965254] (tb_autonomy) JobStarted: {'identifier': 'tb_autonomy'}
+[2.004176] (tb_autonomy) JobProgress: {'identifier': 'tb_autonomy', 'progress': 'cmake'}
+[2.005779] (tb_autonomy) Command: {'cmd': ['/usr/bin/cmake', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy', '-DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '1182223', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/2256902_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-5YIZUyhjla5K/agent.1182221', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[2.006910] (-) TimerEvent: {}
+[2.107327] (-) TimerEvent: {}
+[2.126739] (tb_autonomy) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[2.207544] (-) TimerEvent: {}
+[2.308096] (-) TimerEvent: {}
+[2.408776] (-) TimerEvent: {}
+[2.478396] (tb_autonomy) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.508916] (-) TimerEvent: {}
+[2.609335] (-) TimerEvent: {}
+[2.709936] (-) TimerEvent: {}
+[2.768014] (tb_autonomy) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.810130] (-) TimerEvent: {}
+[2.910560] (-) TimerEvent: {}
+[2.954313] (tb_autonomy) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.962953] (tb_autonomy) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.963407] (tb_autonomy) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.963546] (tb_autonomy) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.010738] (-) TimerEvent: {}
+[3.016477] (tb_autonomy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.110923] (-) TimerEvent: {}
+[3.198529] (tb_autonomy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.206117] (tb_autonomy) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.206514] (tb_autonomy) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.206779] (tb_autonomy) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.210810] (tb_autonomy) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.210989] (-) TimerEvent: {}
+[3.311236] (-) TimerEvent: {}
+[3.366820] (tb_autonomy) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.411370] (-) TimerEvent: {}
+[3.487850] (tb_autonomy) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.8.2 (/opt/ros/jazzy/share/ament_index_cpp/cmake)\n'}
+[3.491122] (tb_autonomy) StdoutLine: {'line': b'-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[3.494429] (tb_autonomy) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[3.511576] (-) TimerEvent: {}
+[3.612024] (-) TimerEvent: {}
+[3.635338] (tb_autonomy) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[3.654057] (tb_autonomy) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[3.676380] (tb_autonomy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.698329] (tb_autonomy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.712242] (-) TimerEvent: {}
+[3.789739] (tb_autonomy) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.794890] (tb_autonomy) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.812791] (-) TimerEvent: {}
+[3.884001] (tb_autonomy) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.912963] (-) TimerEvent: {}
+[3.994065] (tb_autonomy) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[4.013119] (-) TimerEvent: {}
+[4.068575] (tb_autonomy) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.113364] (-) TimerEvent: {}
+[4.213803] (-) TimerEvent: {}
+[4.243775] (tb_autonomy) StdoutLine: {'line': b'-- Found rclcpp_action: 28.1.16 (/opt/ros/jazzy/share/rclcpp_action/cmake)\n'}
+[4.298169] (tb_autonomy) StdoutLine: {'line': b'-- Found nav2_msgs: 1.3.10 (/opt/ros/jazzy/share/nav2_msgs/cmake)\n'}
+[4.314160] (-) TimerEvent: {}
+[4.414626] (-) TimerEvent: {}
+[4.482383] (tb_autonomy) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[4.510447] (tb_autonomy) StdoutLine: {'line': b'-- Found behaviortree_cpp: 4.8.3 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)\n'}
+[4.514772] (-) TimerEvent: {}
+[4.515042] (tb_autonomy) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[4.531272] (tb_autonomy) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[4.533724] (tb_autonomy) StdoutLine: {'line': b'-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[4.564869] (tb_autonomy) StdoutLine: {'line': b'-- Found tf2: 0.36.19 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[4.570771] (tb_autonomy) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.19 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[4.614989] (-) TimerEvent: {}
+[4.649512] (tb_autonomy) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.19 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[4.698354] (tb_autonomy) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[4.699483] (tb_autonomy) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.699799] (tb_autonomy) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.715470] (-) TimerEvent: {}
+[4.815956] (-) TimerEvent: {}
+[4.914468] (tb_autonomy) StdoutLine: {'line': b'-- Configuring done (2.9s)\n'}
+[4.916071] (-) TimerEvent: {}
+[4.938077] (tb_autonomy) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.943522] (tb_autonomy) StdoutLine: {'line': b'-- Build files have been written to: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy\n'}
+[4.954039] (tb_autonomy) CommandEnded: {'returncode': 0}
+[4.954778] (tb_autonomy) JobProgress: {'identifier': 'tb_autonomy', 'progress': 'build'}
+[4.955253] (tb_autonomy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', '--', '-j8', '-l8'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '1182223', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/2256902_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-5YIZUyhjla5K/agent.1182221', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[5.016334] (-) TimerEvent: {}
+[5.023243] (tb_autonomy) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_tb_behaviors\n'}
+[5.046439] (tb_autonomy) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_node_cpp.dir/src/autonomy_node.cpp.o\x1b[0m\n'}
+[5.116742] (-) TimerEvent: {}
+[5.217487] (-) TimerEvent: {}
+[5.318297] (-) TimerEvent: {}
+[5.418712] (-) TimerEvent: {}
+[5.519558] (-) TimerEvent: {}
+[5.619903] (-) TimerEvent: {}
+[5.720730] (-) TimerEvent: {}
+[5.821130] (-) TimerEvent: {}
+[5.921806] (-) TimerEvent: {}
+[6.022765] (-) TimerEvent: {}
+[6.123171] (-) TimerEvent: {}
+[6.224084] (-) TimerEvent: {}
+[6.324487] (-) TimerEvent: {}
+[6.425451] (-) TimerEvent: {}
+[6.526445] (-) TimerEvent: {}
+[6.627470] (-) TimerEvent: {}
+[6.728487] (-) TimerEvent: {}
+[6.828986] (-) TimerEvent: {}
+[6.929343] (-) TimerEvent: {}
+[7.029721] (-) TimerEvent: {}
+[7.130150] (-) TimerEvent: {}
+[7.231291] (-) TimerEvent: {}
+[7.331674] (-) TimerEvent: {}
+[7.432247] (-) TimerEvent: {}
+[7.532699] (-) TimerEvent: {}
+[7.633268] (-) TimerEvent: {}
+[7.734276] (-) TimerEvent: {}
+[7.834943] (-) TimerEvent: {}
+[7.935301] (-) TimerEvent: {}
+[8.035768] (-) TimerEvent: {}
+[8.136240] (-) TimerEvent: {}
+[8.236830] (-) TimerEvent: {}
+[8.337283] (-) TimerEvent: {}
+[8.437668] (-) TimerEvent: {}
+[8.538048] (-) TimerEvent: {}
+[8.638455] (-) TimerEvent: {}
+[8.738956] (-) TimerEvent: {}
+[8.839589] (-) TimerEvent: {}
+[8.940059] (-) TimerEvent: {}
+[9.040553] (-) TimerEvent: {}
+[9.140992] (-) TimerEvent: {}
+[9.241614] (-) TimerEvent: {}
+[9.342184] (-) TimerEvent: {}
+[9.442772] (-) TimerEvent: {}
+[9.543172] (-) TimerEvent: {}
+[9.643691] (-) TimerEvent: {}
+[9.744187] (-) TimerEvent: {}
+[9.844620] (-) TimerEvent: {}
+[9.945157] (-) TimerEvent: {}
+[10.045582] (-) TimerEvent: {}
+[10.145977] (-) TimerEvent: {}
+[10.246575] (-) TimerEvent: {}
+[10.347232] (-) TimerEvent: {}
+[10.447741] (-) TimerEvent: {}
+[10.548405] (-) TimerEvent: {}
+[10.648729] (-) TimerEvent: {}
+[10.749190] (-) TimerEvent: {}
+[10.849661] (-) TimerEvent: {}
+[10.950224] (-) TimerEvent: {}
+[11.050884] (-) TimerEvent: {}
+[11.151580] (-) TimerEvent: {}
+[11.254037] (-) TimerEvent: {}
+[11.355592] (-) TimerEvent: {}
+[11.455964] (-) TimerEvent: {}
+[11.556351] (-) TimerEvent: {}
+[11.657391] (-) TimerEvent: {}
+[11.758009] (-) TimerEvent: {}
+[11.858811] (-) TimerEvent: {}
+[11.959605] (-) TimerEvent: {}
+[12.059993] (-) TimerEvent: {}
+[12.160426] (-) TimerEvent: {}
+[12.260758] (-) TimerEvent: {}
+[12.361519] (-) TimerEvent: {}
+[12.461913] (-) TimerEvent: {}
+[12.497267] (tb_autonomy) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_node_cpp.dir/src/vision_behaviors.cpp.o\x1b[0m\n'}
+[12.562069] (-) TimerEvent: {}
+[12.662444] (-) TimerEvent: {}
+[12.762949] (-) TimerEvent: {}
+[12.863727] (-) TimerEvent: {}
+[12.964124] (-) TimerEvent: {}
+[13.064647] (-) TimerEvent: {}
+[13.165511] (-) TimerEvent: {}
+[13.266243] (-) TimerEvent: {}
+[13.366603] (-) TimerEvent: {}
+[13.467331] (-) TimerEvent: {}
+[13.568137] (-) TimerEvent: {}
+[13.668867] (-) TimerEvent: {}
+[13.769326] (-) TimerEvent: {}
+[13.869813] (-) TimerEvent: {}
+[13.970804] (-) TimerEvent: {}
+[14.071440] (-) TimerEvent: {}
+[14.171809] (-) TimerEvent: {}
+[14.272224] (-) TimerEvent: {}
+[14.372588] (-) TimerEvent: {}
+[14.472920] (-) TimerEvent: {}
+[14.573282] (-) TimerEvent: {}
+[14.673675] (-) TimerEvent: {}
+[14.774039] (-) TimerEvent: {}
+[14.874577] (-) TimerEvent: {}
+[14.975362] (-) TimerEvent: {}
+[15.075778] (-) TimerEvent: {}
+[15.176281] (-) TimerEvent: {}
+[15.276809] (-) TimerEvent: {}
+[15.377238] (-) TimerEvent: {}
+[15.477792] (-) TimerEvent: {}
+[15.578397] (-) TimerEvent: {}
+[15.678775] (-) TimerEvent: {}
+[15.779148] (-) TimerEvent: {}
+[15.879703] (-) TimerEvent: {}
+[15.980493] (-) TimerEvent: {}
+[16.081275] (-) TimerEvent: {}
+[16.182068] (-) TimerEvent: {}
+[16.283083] (-) TimerEvent: {}
+[16.383734] (-) TimerEvent: {}
+[16.484146] (-) TimerEvent: {}
+[16.584526] (-) TimerEvent: {}
+[16.685107] (-) TimerEvent: {}
+[16.786277] (-) TimerEvent: {}
+[16.886894] (-) TimerEvent: {}
+[16.987310] (-) TimerEvent: {}
+[17.087904] (-) TimerEvent: {}
+[17.188463] (-) TimerEvent: {}
+[17.289674] (-) TimerEvent: {}
+[17.390122] (-) TimerEvent: {}
+[17.490852] (-) TimerEvent: {}
+[17.591399] (-) TimerEvent: {}
+[17.691714] (-) TimerEvent: {}
+[17.792050] (-) TimerEvent: {}
+[17.892454] (-) TimerEvent: {}
+[17.993198] (-) TimerEvent: {}
+[18.093940] (-) TimerEvent: {}
+[18.194512] (-) TimerEvent: {}
+[18.295357] (-) TimerEvent: {}
+[18.395864] (-) TimerEvent: {}
+[18.496405] (-) TimerEvent: {}
+[18.597400] (-) TimerEvent: {}
+[18.698376] (-) TimerEvent: {}
+[18.799476] (-) TimerEvent: {}
+[18.900005] (-) TimerEvent: {}
+[19.000409] (-) TimerEvent: {}
+[19.100927] (-) TimerEvent: {}
+[19.120235] (tb_autonomy) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/autonomy_node_cpp.dir/src/navigation_behaviors.cpp.o\x1b[0m\n'}
+[19.201351] (-) TimerEvent: {}
+[19.302165] (-) TimerEvent: {}
+[19.402824] (-) TimerEvent: {}
+[19.503444] (-) TimerEvent: {}
+[19.604515] (-) TimerEvent: {}
+[19.705515] (-) TimerEvent: {}
+[19.805906] (-) TimerEvent: {}
+[19.906286] (-) TimerEvent: {}
+[20.007375] (-) TimerEvent: {}
+[20.107850] (-) TimerEvent: {}
+[20.208694] (-) TimerEvent: {}
+[20.309542] (-) TimerEvent: {}
+[20.409972] (-) TimerEvent: {}
+[20.510345] (-) TimerEvent: {}
+[20.610745] (-) TimerEvent: {}
+[20.711720] (-) TimerEvent: {}
+[20.812144] (-) TimerEvent: {}
+[20.912664] (-) TimerEvent: {}
+[21.012996] (-) TimerEvent: {}
+[21.113807] (-) TimerEvent: {}
+[21.214388] (-) TimerEvent: {}
+[21.314773] (-) TimerEvent: {}
+[21.415381] (-) TimerEvent: {}
+[21.516150] (-) TimerEvent: {}
+[21.616670] (-) TimerEvent: {}
+[21.717398] (-) TimerEvent: {}
+[21.818358] (-) TimerEvent: {}
+[21.918972] (-) TimerEvent: {}
+[22.019625] (-) TimerEvent: {}
+[22.120068] (-) TimerEvent: {}
+[22.220702] (-) TimerEvent: {}
+[22.321396] (-) TimerEvent: {}
+[22.421850] (-) TimerEvent: {}
+[22.522179] (-) TimerEvent: {}
+[22.622616] (-) TimerEvent: {}
+[22.722999] (-) TimerEvent: {}
+[22.823372] (-) TimerEvent: {}
+[22.923840] (-) TimerEvent: {}
+[23.024349] (-) TimerEvent: {}
+[23.124697] (-) TimerEvent: {}
+[23.225068] (-) TimerEvent: {}
+[23.325438] (-) TimerEvent: {}
+[23.425794] (-) TimerEvent: {}
+[23.526298] (-) TimerEvent: {}
+[23.626937] (-) TimerEvent: {}
+[23.727689] (-) TimerEvent: {}
+[23.828240] (-) TimerEvent: {}
+[23.928541] (-) TimerEvent: {}
+[24.028927] (-) TimerEvent: {}
+[24.129423] (-) TimerEvent: {}
+[24.230005] (-) TimerEvent: {}
+[24.330412] (-) TimerEvent: {}
+[24.431035] (-) TimerEvent: {}
+[24.531655] (-) TimerEvent: {}
+[24.632024] (-) TimerEvent: {}
+[24.732586] (-) TimerEvent: {}
+[24.833003] (-) TimerEvent: {}
+[24.933556] (-) TimerEvent: {}
+[25.034092] (-) TimerEvent: {}
+[25.134534] (-) TimerEvent: {}
+[25.234933] (-) TimerEvent: {}
+[25.335271] (-) TimerEvent: {}
+[25.435681] (-) TimerEvent: {}
+[25.536299] (-) TimerEvent: {}
+[25.636822] (-) TimerEvent: {}
+[25.737181] (-) TimerEvent: {}
+[25.759315] (tb_autonomy) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable autonomy_node_cpp\x1b[0m\n'}
+[25.837326] (-) TimerEvent: {}
+[25.937664] (-) TimerEvent: {}
+[26.038497] (-) TimerEvent: {}
+[26.138876] (-) TimerEvent: {}
+[26.239228] (-) TimerEvent: {}
+[26.339715] (-) TimerEvent: {}
+[26.440139] (-) TimerEvent: {}
+[26.540729] (-) TimerEvent: {}
+[26.629908] (tb_autonomy) StdoutLine: {'line': b'[100%] Built target autonomy_node_cpp\n'}
+[26.640900] (-) TimerEvent: {}
+[26.741332] (-) TimerEvent: {}
+[26.841699] (-) TimerEvent: {}
+[26.842027] (tb_autonomy) StdoutLine: {'line': b'running egg_info\n'}
+[26.843509] (tb_autonomy) StdoutLine: {'line': b'creating tb_behaviors.egg-info\n'}
+[26.860472] (tb_autonomy) StdoutLine: {'line': b'writing tb_behaviors.egg-info/PKG-INFO\n'}
+[26.860773] (tb_autonomy) StdoutLine: {'line': b'writing dependency_links to tb_behaviors.egg-info/dependency_links.txt\n'}
+[26.860893] (tb_autonomy) StdoutLine: {'line': b'writing top-level names to tb_behaviors.egg-info/top_level.txt\n'}
+[26.861117] (tb_autonomy) StdoutLine: {'line': b"writing manifest file 'tb_behaviors.egg-info/SOURCES.txt'\n"}
+[26.918350] (tb_autonomy) StdoutLine: {'line': b"reading manifest file 'tb_behaviors.egg-info/SOURCES.txt'\n"}
+[26.919192] (tb_autonomy) StdoutLine: {'line': b"writing manifest file 'tb_behaviors.egg-info/SOURCES.txt'\n"}
+[26.942005] (-) TimerEvent: {}
+[26.950547] (tb_autonomy) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_tb_behaviors_egg\n'}
+[26.963381] (tb_autonomy) CommandEnded: {'returncode': 0}
+[26.964650] (tb_autonomy) JobProgress: {'identifier': 'tb_autonomy', 'progress': 'install'}
+[26.964758] (tb_autonomy) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '1182223', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/2256902_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-5YIZUyhjla5K/agent.1182221', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[26.974317] (tb_autonomy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.974524] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml\n'}
+[26.975135] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_queue.xml\n'}
+[26.975432] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_naive.xml\n'}
+[26.975939] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_naive.xml\n'}
+[26.976293] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_queue.xml\n'}
+[26.977657] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch\n'}
+[26.978753] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_py.launch.py\n'}
+[26.978864] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_cpp.launch.py\n'}
+[26.979537] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.sh\n'}
+[26.979693] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.dsv\n'}
+[26.980835] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info\n'}
+[26.981717] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[26.982084] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[26.982148] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[26.982194] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[26.982315] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors\n'}
+[26.982359] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/vision.py\n'}
+[26.982402] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/navigation.py\n'}
+[26.982933] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/__init__.py\n'}
+[27.029096] (tb_autonomy) StdoutLine: {'line': b"Listing '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors'...\n"}
+[27.029410] (tb_autonomy) StdoutLine: {'line': b"Compiling '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/__init__.py'...\n"}
+[27.029482] (tb_autonomy) StdoutLine: {'line': b"Compiling '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/navigation.py'...\n"}
+[27.029543] (tb_autonomy) StdoutLine: {'line': b"Compiling '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/vision.py'...\n"}
+[27.034834] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node.py\n'}
+[27.035049] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_move_base.py\n'}
+[27.035226] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_vision.py\n'}
+[27.035484] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node_cpp\n'}
+[27.037312] (tb_autonomy) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node_cpp" to ""\n'}
+[27.038158] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/package_run_dependencies/tb_autonomy\n'}
+[27.038827] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/parent_prefix_path/tb_autonomy\n'}
+[27.039062] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.sh\n'}
+[27.039216] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.dsv\n'}
+[27.040117] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.sh\n'}
+[27.040403] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.dsv\n'}
+[27.040494] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.bash\n'}
+[27.040691] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.sh\n'}
+[27.040990] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.zsh\n'}
+[27.041110] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.dsv\n'}
+[27.041187] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.dsv\n'}
+[27.041488] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/packages/tb_autonomy\n'}
+[27.041557] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig.cmake\n'}
+[27.041650] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig-version.cmake\n'}
+[27.041878] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.xml\n'}
+[27.042051] (-) TimerEvent: {}
+[27.043694] (tb_autonomy) CommandEnded: {'returncode': 0}
+[27.060699] (tb_autonomy) JobEnded: {'identifier': 'tb_autonomy', 'rc': 0}
+[27.061472] (-) EventReactorShutdown: {}

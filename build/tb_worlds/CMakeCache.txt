@@ -25,7 +25,7 @@ AMENT_CMAKE_ENVIRONMENT_PARENT_PREFIX_PATH_GENERATION:BOOL=ON
 
 //Replace the CMake install command with a custom implementation
 // using symlinks instead of copying resources
-AMENT_CMAKE_SYMLINK_INSTALL:BOOL=1
+AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
 
 //Generate an uninstall target to revert the effects of the install
 // step
@@ -305,7 +305,10 @@ fastrtps_cmake_module_DIR:PATH=/opt/ros/jazzy/share/fastrtps_cmake_module/cmake
 geometry_msgs_DIR:PATH=/opt/ros/jazzy/share/geometry_msgs/cmake
 
 //The directory containing a CMake configuration file for nav2_minimal_tb3_sim.
-nav2_minimal_tb3_sim_DIR:PATH=nav2_minimal_tb3_sim_DIR-NOTFOUND
+nav2_minimal_tb3_sim_DIR:PATH=/opt/ros/jazzy/share/nav2_minimal_tb3_sim/cmake
+
+//The directory containing a CMake configuration file for nav2_minimal_tb4_sim.
+nav2_minimal_tb4_sim_DIR:PATH=/opt/ros/jazzy/share/nav2_minimal_tb4_sim/cmake
 
 //The directory containing a CMake configuration file for rclpy.
 rclpy_DIR:PATH=/opt/ros/jazzy/share/rclpy/cmake
@@ -541,6 +544,4 @@ _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;64;32;;cpython-312-x86_64
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=4c8bfa8951e99fa32e4000a94f8c04a2
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
-//Index for unique symlink install targets
-__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=0
 

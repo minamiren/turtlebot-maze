@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

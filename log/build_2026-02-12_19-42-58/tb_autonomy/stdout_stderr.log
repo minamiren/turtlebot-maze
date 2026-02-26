@@ -1,0 +1,49 @@
+[  0%] Built target ament_cmake_python_copy_tb_behaviors
+[100%] Built target autonomy_node_cpp
+running egg_info
+writing tb_behaviors.egg-info/PKG-INFO
+writing dependency_links to tb_behaviors.egg-info/dependency_links.txt
+writing top-level names to tb_behaviors.egg-info/top_level.txt
+reading manifest file 'tb_behaviors.egg-info/SOURCES.txt'
+writing manifest file 'tb_behaviors.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_tb_behaviors_egg
+-- Install configuration: ""
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_queue.xml
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_naive.xml
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_naive.xml
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_queue.xml
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_py.launch.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_cpp.launch.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.sh
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.dsv
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/PKG-INFO
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/top_level.txt
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/vision.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/navigation.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/__init__.py
+Listing '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors'...
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_move_base.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_vision.py
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node_cpp
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/package_run_dependencies/tb_autonomy
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/parent_prefix_path/tb_autonomy
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.sh
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.dsv
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.bash
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.sh
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.zsh
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.dsv
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.dsv
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/packages/tb_autonomy
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig.cmake
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig-version.cmake
+-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.xml
