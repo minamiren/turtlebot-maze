@@ -1,0 +1,378 @@
+[0.090s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.090s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c8df6d9eae0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c8df6c71ee0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c8df6c71ee0>>, mixin_verb=('build',))
+[0.114s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.115s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'ros'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extensions ['cmake', 'python']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'cmake'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'python'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extensions ['python_setup_py']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(docs/plans) by extension 'python_setup_py'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['cmake', 'python']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'cmake'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'python'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['python_setup_py']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'python_setup_py'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extensions ['cmake', 'python']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'cmake'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(slam) by extension 'python'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'slam' with type 'cmake' and name 'slam_driver'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(stella_vslam) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'stella_vslam' with type 'ros.cmake' and name 'stella_vslam'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_autonomy) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'tb_autonomy' with type 'ros.ament_cmake' and name 'tb_autonomy'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(tb_worlds) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'tb_worlds' with type 'ros.ament_cmake' and name 'tb_worlds'
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.155s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install
+[0.156s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 381 installed packages in /opt/ros/jazzy
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'stella_vslam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'stella_vslam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam', 'merge_install': False, 'path': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'tb_worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds', 'merge_install': False, 'path': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'slam_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'slam_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver', 'merge_install': False, 'path': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'tb_autonomy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'tb_autonomy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy', 'merge_install': False, 'path': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy', 'symlink_install': False, 'test_result_base': None}
+[0.185s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.186s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam' with build type 'cmake'
+[0.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam'
+[0.188s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.188s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.188s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.190s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds' with build type 'ament_cmake'
+[0.190s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_worlds'
+[0.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam -- -j8 -l8
+[0.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds -- -j8 -l8
+[0.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds -- -j8 -l8
+[0.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds
+[0.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tb_worlds)
+[0.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds
+[0.248s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds' for CMake module files
+[0.248s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds' for CMake config files
+[0.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('tb_worlds', 'cmake_prefix_path')
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/hook/cmake_prefix_path.ps1'
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/hook/cmake_prefix_path.dsv'
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/hook/cmake_prefix_path.sh'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/bin'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/lib/pkgconfig/tb_worlds.pc'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/lib/python3.12/site-packages'
+[0.250s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/bin'
+[0.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.ps1'
+[0.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.dsv'
+[0.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.sh'
+[0.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.bash'
+[0.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.zsh'
+[0.252s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/colcon-core/packages/tb_worlds)
+[0.253s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tb_worlds)
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds' for CMake module files
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds' for CMake config files
+[0.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('tb_worlds', 'cmake_prefix_path')
+[0.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/hook/cmake_prefix_path.ps1'
+[0.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/hook/cmake_prefix_path.dsv'
+[0.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/hook/cmake_prefix_path.sh'
+[0.254s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/bin'
+[0.254s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/lib/pkgconfig/tb_worlds.pc'
+[0.254s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/lib/python3.12/site-packages'
+[0.255s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/bin'
+[0.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.ps1'
+[0.255s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.dsv'
+[0.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.sh'
+[0.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.bash'
+[0.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.zsh'
+[0.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/colcon-core/packages/tb_worlds)
+[0.256s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy' with build type 'ament_cmake'
+[0.256s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy'
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy -- -j8 -l8
+[0.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam -- -j8 -l8
+[0.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam
+[0.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam
+[0.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_vslam', 'pkg_config_path')
+[0.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/pkg_config_path.ps1'
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/pkg_config_path.dsv'
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/pkg_config_path.sh'
+[0.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_vslam', 'pkg_config_path_multiarch')
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/pkg_config_path_multiarch.ps1'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/pkg_config_path_multiarch.dsv'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/pkg_config_path_multiarch.sh'
+[0.307s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stella_vslam)
+[0.307s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam' for CMake module files
+[0.307s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam' for CMake config files
+[0.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_vslam', 'cmake_prefix_path')
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/cmake_prefix_path.ps1'
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/cmake_prefix_path.dsv'
+[0.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/cmake_prefix_path.sh'
+[0.308s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib'
+[0.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_vslam', 'ld_library_path_lib')
+[0.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/ld_library_path_lib.ps1'
+[0.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/ld_library_path_lib.dsv'
+[0.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/hook/ld_library_path_lib.sh'
+[0.309s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/bin'
+[0.309s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/pkgconfig/stella_vslam.pc'
+[0.309s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/python3.12/site-packages'
+[0.309s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/bin'
+[0.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/package.ps1'
+[0.310s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/package.dsv'
+[0.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/package.sh'
+[0.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/package.bash'
+[0.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/stella_vslam/package.zsh'
+[0.311s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/share/colcon-core/packages/stella_vslam)
+[0.311s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam'
+[0.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver': /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver -- -j8 -l8
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver' returned '0': /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver -- -j8 -l8
+[0.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver': /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver
+[0.436s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_driver)
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver' for CMake module files
+[0.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver' returned '0': /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver
+[0.437s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver' for CMake config files
+[0.437s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin'
+[0.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_driver', 'path')
+[0.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/hook/path.ps1'
+[0.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/hook/path.dsv'
+[0.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/hook/path.sh'
+[0.438s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/lib/pkgconfig/slam_driver.pc'
+[0.438s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/lib/python3.12/site-packages'
+[0.438s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin'
+[0.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_driver', 'pythonscriptspath')
+[0.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/hook/pythonscriptspath.ps1'
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/hook/pythonscriptspath.dsv'
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/hook/pythonscriptspath.sh'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/package.ps1'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/package.dsv'
+[0.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/package.sh'
+[0.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/package.bash'
+[0.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/slam_driver/package.zsh'
+[0.440s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/share/colcon-core/packages/slam_driver)
+[0.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy' returned '0': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy -- -j8 -l8
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy
+[0.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tb_autonomy)
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy' for CMake module files
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy' returned '0': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy' for CMake config files
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('tb_autonomy', 'cmake_prefix_path')
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/cmake_prefix_path.ps1'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/cmake_prefix_path.dsv'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/cmake_prefix_path.sh'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/bin'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/pkgconfig/tb_autonomy.pc'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages'
+[0.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('tb_autonomy', 'pythonpath')
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/pythonpath.ps1'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/pythonpath.dsv'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/pythonpath.sh'
+[0.604s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/bin'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.ps1'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.dsv'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.sh'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.bash'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.zsh'
+[0.605s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/colcon-core/packages/tb_autonomy)
+[0.605s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tb_autonomy)
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy' for CMake module files
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy' for CMake config files
+[0.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('tb_autonomy', 'cmake_prefix_path')
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/cmake_prefix_path.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/cmake_prefix_path.dsv'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/cmake_prefix_path.sh'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/bin'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/pkgconfig/tb_autonomy.pc'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages'
+[0.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('tb_autonomy', 'pythonpath')
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/pythonpath.ps1'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/pythonpath.dsv'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/hook/pythonpath.sh'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/bin'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.ps1'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.dsv'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.sh'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.bash'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.zsh'
+[0.609s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/colcon-core/packages/tb_autonomy)
+[0.609s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.609s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.610s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.610s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.626s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.626s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.626s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.626s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.627s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[0.627s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.627s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/local_setup.ps1'
+[0.627s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/_local_setup_util_ps1.py'
+[0.628s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/setup.ps1'
+[0.629s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/local_setup.sh'
+[0.629s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/_local_setup_util_sh.py'
+[0.629s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/setup.sh'
+[0.630s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/local_setup.bash'
+[0.630s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/setup.bash'
+[0.630s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/local_setup.zsh'
+[0.631s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/setup.zsh'

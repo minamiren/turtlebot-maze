@@ -1,0 +1,49 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/match/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/match",
+			"paths" : 
+			[
+				"src/stella_vslam/match/area.h",
+				"src/stella_vslam/match/base.h",
+				"src/stella_vslam/match/bow_tree.h",
+				"src/stella_vslam/match/fuse.h",
+				"src/stella_vslam/match/projection.h",
+				"src/stella_vslam/match/robust.h",
+				"src/stella_vslam/match/stereo.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/match",
+		"source" : "src/stella_vslam/match"
+	}
+}

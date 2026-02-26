@@ -1,0 +1,83 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 254,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 262,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 266,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libstella_vslam.so"
+			],
+			"targetId" : "stella_vslam::@7d25a9cc6ce1f4d13a95",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam",
+			"paths" : 
+			[
+				"src/stella_vslam/config.h",
+				"src/stella_vslam/global_optimization_module.h",
+				"src/stella_vslam/mapping_module.h",
+				"src/stella_vslam/system.h",
+				"src/stella_vslam/tracking_module.h",
+				"src/stella_vslam/type.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/3rd/json/include/nlohmann",
+			"paths" : 
+			[
+				"3rd/json/include/nlohmann/json.hpp",
+				"3rd/json/include/nlohmann/json_fwd.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam",
+		"source" : "src/stella_vslam"
+	}
+}

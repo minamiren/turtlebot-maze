@@ -25,7 +25,8 @@ def generate_launch_description():
     offset_from_robot = 0.6
 
     # Spawn blocks in random locations
-    model_names = ["red_block", "green_block", "blue_block"]
+    # model_names = ["red_block", "green_block", "blue_block"]
+    model_names = ["table"]
     sampled_locs = random.sample(list(locations.keys()), len(model_names))
     for mdl_name, loc in zip(model_names, sampled_locs):
         x, y, theta = locations[loc]

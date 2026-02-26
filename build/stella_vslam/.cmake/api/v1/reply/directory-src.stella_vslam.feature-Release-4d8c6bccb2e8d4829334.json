@@ -1,0 +1,46 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/feature/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/feature",
+			"paths" : 
+			[
+				"src/stella_vslam/feature/orb_extractor.h",
+				"src/stella_vslam/feature/orb_impl.h",
+				"src/stella_vslam/feature/orb_params.h",
+				"src/stella_vslam/feature/orb_point_pairs.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/feature",
+		"source" : "src/stella_vslam/feature"
+	}
+}

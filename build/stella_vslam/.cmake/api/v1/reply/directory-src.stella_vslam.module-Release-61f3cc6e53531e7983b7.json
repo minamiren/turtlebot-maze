@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/module/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/module",
+			"paths" : 
+			[
+				"src/stella_vslam/module/frame_tracker.h",
+				"src/stella_vslam/module/initializer.h",
+				"src/stella_vslam/module/keyframe_inserter.h",
+				"src/stella_vslam/module/local_map_cleaner.h",
+				"src/stella_vslam/module/local_map_updater.h",
+				"src/stella_vslam/module/loop_bundle_adjuster.h",
+				"src/stella_vslam/module/loop_detector.h",
+				"src/stella_vslam/module/marker_initializer.h",
+				"src/stella_vslam/module/relocalizer.h",
+				"src/stella_vslam/module/two_view_triangulator.h",
+				"src/stella_vslam/module/type.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/module",
+		"source" : "src/stella_vslam/module"
+	}
+}

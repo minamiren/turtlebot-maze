@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7fa1f88818626dc26bcb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tb_autonomy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_tb_behaviors_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_tb_behaviors_egg-7f52365055208be3591f.json",
+					"name" : "ament_cmake_python_build_tb_behaviors_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_tb_behaviors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_tb_behaviors-dc2af38473bd3bc50d6b.json",
+					"name" : "ament_cmake_python_copy_tb_behaviors",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autonomy_node_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autonomy_node_cpp-66a8cf44f099896cdd2f.json",
+					"name" : "autonomy_node_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tb_autonomy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tb_autonomy_uninstall-752cebce4b132a63d64e.json",
+					"name" : "tb_autonomy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-135a5bf1fb791325c81a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy",
+		"source" : "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

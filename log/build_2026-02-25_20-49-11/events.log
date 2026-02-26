@@ -1,0 +1,1722 @@
+[0.000000] (-) TimerEvent: {}
+[0.000110] (stella_vslam) JobQueued: {'identifier': 'stella_vslam', 'dependencies': OrderedDict()}
+[0.000137] (tb_worlds) JobQueued: {'identifier': 'tb_worlds', 'dependencies': OrderedDict()}
+[0.000179] (slam_driver) JobQueued: {'identifier': 'slam_driver', 'dependencies': OrderedDict({'stella_vslam': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam'})}
+[0.000210] (tb_autonomy) JobQueued: {'identifier': 'tb_autonomy', 'dependencies': OrderedDict({'tb_worlds': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds'})}
+[0.000224] (stella_vslam) JobStarted: {'identifier': 'stella_vslam'}
+[0.003912] (tb_worlds) JobStarted: {'identifier': 'tb_worlds'}
+[0.008470] (stella_vslam) JobProgress: {'identifier': 'stella_vslam', 'progress': 'cmake'}
+[0.009255] (stella_vslam) Command: {'cmd': ['/usr/bin/cmake', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam', '-DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.012505] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'cmake'}
+[0.013351] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'build'}
+[0.013401] (tb_worlds) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', '--', '-j8', '-l8'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.017509] (stella_vslam) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.017657] (stella_vslam) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[0.017699] (stella_vslam) StderrLine: {'line': b'  CMake.\n'}
+[0.017733] (stella_vslam) StderrLine: {'line': b'\n'}
+[0.017763] (stella_vslam) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.017793] (stella_vslam) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.017821] (stella_vslam) StderrLine: {'line': b'\n'}
+[0.017848] (stella_vslam) StderrLine: {'line': b'\x1b[0m\n'}
+[0.045260] (tb_worlds) CommandEnded: {'returncode': 0}
+[0.046016] (tb_worlds) JobProgress: {'identifier': 'tb_worlds', 'progress': 'install'}
+[0.052787] (tb_worlds) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.059153] (tb_worlds) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.059669] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch\n'}
+[0.060002] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_world.launch.py\n'}
+[0.060282] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_demo_world.launch.py\n'}
+[0.060343] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/turtlebot_spawner.launch.py\n'}
+[0.060422] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/block_spawner.launch.py\n'}
+[0.060466] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/aruco_marker_spawner.launch.py\n'}
+[0.060508] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps\n'}
+[0.060545] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_locations.yaml\n'}
+[0.060579] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.yaml\n'}
+[0.060615] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.pgm\n'}
+[0.060688] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models\n'}
+[0.060727] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block\n'}
+[0.060757] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.sdf\n'}
+[0.060854] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.config\n'}
+[0.060921] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block\n'}
+[0.060955] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.sdf\n'}
+[0.061006] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.config\n'}
+[0.061046] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block\n'}
+[0.061074] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.sdf\n'}
+[0.061104] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.config\n'}
+[0.061133] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80\n'}
+[0.061167] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials\n'}
+[0.061199] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials/textures\n'}
+[0.061307] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials/textures/80.jpg\n'}
+[0.061390] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials/textures/80.png\n'}
+[0.061507] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/meshes\n'}
+[0.061569] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/meshes/aruco_cube_80.obj\n'}
+[0.061617] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/meshes/aruco_cube_80.mtl\n'}
+[0.061710] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/model.sdf\n'}
+[0.061829] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/model.config\n'}
+[0.061944] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/thumbnails\n'}
+[0.062059] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/thumbnails/1.png\n'}
+[0.062118] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table\n'}
+[0.062219] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model-1_2.sdf\n'}
+[0.062320] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model.sdf\n'}
+[0.062533] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model.config\n'}
+[0.062683] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model-1_3.sdf\n'}
+[0.062832] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model-1_4.sdf\n'}
+[0.062982] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60\n'}
+[0.063046] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials\n'}
+[0.063154] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials/textures\n'}
+[0.063275] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials/textures/60.png\n'}
+[0.063449] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials/textures/60.jpg\n'}
+[0.064232] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/meshes\n'}
+[0.064297] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/meshes/aruco_cube_60.mtl\n'}
+[0.064343] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/meshes/aruco_cube_60.obj\n'}
+[0.064382] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/model.sdf\n'}
+[0.064530] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/model.config\n'}
+[0.064565] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/thumbnails\n'}
+[0.064661] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/thumbnails/1.png\n'}
+[0.064700] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house\n'}
+[0.064732] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.sdf\n'}
+[0.064765] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.config\n'}
+[0.064801] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds\n'}
+[0.064836] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/sim_house_enhanced.sdf.xacro\n'}
+[0.064865] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/sim_house.sdf.xacro\n'}
+[0.064896] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures\n'}
+[0.064928] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures/concrete.png\n'}
+[0.064958] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures/wood_.png\n'}
+[0.064986] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures/bricks.png\n'}
+[0.065015] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf\n'}
+[0.065066] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf/gz_waffle.sdf.xacro\n'}
+[0.065111] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs\n'}
+[0.065150] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot4_bridge.yaml\n'}
+[0.065188] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot3_bridge.yaml\n'}
+[0.065220] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/nav2_params.yaml\n'}
+[0.065250] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/package_run_dependencies/tb_worlds\n'}
+[0.065280] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/parent_prefix_path/tb_worlds\n'}
+[0.065311] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.sh\n'}
+[0.065343] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.dsv\n'}
+[0.065372] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.sh\n'}
+[0.065401] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.dsv\n'}
+[0.065431] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.bash\n'}
+[0.065460] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.sh\n'}
+[0.065491] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.zsh\n'}
+[0.065521] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.dsv\n'}
+[0.065549] (tb_worlds) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.dsv\n'}
+[0.065576] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/packages/tb_worlds\n'}
+[0.065635] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig.cmake\n'}
+[0.065671] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig-version.cmake\n'}
+[0.065706] (tb_worlds) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.xml\n'}
+[0.065736] (tb_worlds) CommandEnded: {'returncode': 0}
+[0.077565] (tb_worlds) JobEnded: {'identifier': 'tb_worlds', 'rc': 0}
+[0.078832] (tb_autonomy) JobStarted: {'identifier': 'tb_autonomy'}
+[0.085773] (stella_vslam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.099302] (-) TimerEvent: {}
+[0.099619] (tb_autonomy) JobProgress: {'identifier': 'tb_autonomy', 'progress': 'cmake'}
+[0.100399] (tb_autonomy) JobProgress: {'identifier': 'tb_autonomy', 'progress': 'build'}
+[0.100431] (tb_autonomy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', '--', '-j8', '-l8'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.146928] (tb_autonomy) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_tb_behaviors\n'}
+[0.149043] (tb_autonomy) StdoutLine: {'line': b'[100%] Built target autonomy_node_cpp\n'}
+[0.199418] (-) TimerEvent: {}
+[0.288889] (tb_autonomy) StdoutLine: {'line': b'running egg_info\n'}
+[0.290469] (stella_vslam) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.299572] (-) TimerEvent: {}
+[0.305516] (tb_autonomy) StdoutLine: {'line': b'writing tb_behaviors.egg-info/PKG-INFO\n'}
+[0.305952] (tb_autonomy) StdoutLine: {'line': b'writing dependency_links to tb_behaviors.egg-info/dependency_links.txt\n'}
+[0.306061] (tb_autonomy) StdoutLine: {'line': b'writing top-level names to tb_behaviors.egg-info/top_level.txt\n'}
+[0.339823] (tb_autonomy) StdoutLine: {'line': b"reading manifest file 'tb_behaviors.egg-info/SOURCES.txt'\n"}
+[0.340198] (tb_autonomy) StdoutLine: {'line': b"writing manifest file 'tb_behaviors.egg-info/SOURCES.txt'\n"}
+[0.358996] (tb_autonomy) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_tb_behaviors_egg\n'}
+[0.367121] (tb_autonomy) CommandEnded: {'returncode': 0}
+[0.367966] (tb_autonomy) JobProgress: {'identifier': 'tb_autonomy', 'progress': 'install'}
+[0.367997] (tb_autonomy) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.373906] (tb_autonomy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.374079] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml\n'}
+[0.374219] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_queue.xml\n'}
+[0.374335] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_naive.xml\n'}
+[0.374387] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_naive.xml\n'}
+[0.374430] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_queue.xml\n'}
+[0.374461] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch\n'}
+[0.374490] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_py.launch.py\n'}
+[0.374519] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_cpp.launch.py\n'}
+[0.374547] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.sh\n'}
+[0.374582] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.dsv\n'}
+[0.374611] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info\n'}
+[0.374644] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[0.374709] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[0.374786] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[0.375018] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[0.375131] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors\n'}
+[0.375165] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/vision.py\n'}
+[0.375194] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/navigation.py\n'}
+[0.375226] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/__init__.py\n'}
+[0.399327] (tb_autonomy) StdoutLine: {'line': b"Listing '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors'...\n"}
+[0.399633] (-) TimerEvent: {}
+[0.402533] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node.py\n'}
+[0.402656] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_move_base.py\n'}
+[0.402831] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_vision.py\n'}
+[0.402882] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/zenoh_detection_sub.py\n'}
+[0.402940] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node_cpp\n'}
+[0.403011] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/package_run_dependencies/tb_autonomy\n'}
+[0.403084] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/parent_prefix_path/tb_autonomy\n'}
+[0.403128] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.sh\n'}
+[0.403157] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.dsv\n'}
+[0.403187] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.sh\n'}
+[0.403216] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.dsv\n'}
+[0.403281] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.bash\n'}
+[0.403342] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.sh\n'}
+[0.403415] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.zsh\n'}
+[0.403462] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.dsv\n'}
+[0.403717] (tb_autonomy) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.dsv\n'}
+[0.403769] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/packages/tb_autonomy\n'}
+[0.403801] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig.cmake\n'}
+[0.403900] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig-version.cmake\n'}
+[0.403935] (tb_autonomy) StdoutLine: {'line': b'-- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.xml\n'}
+[0.405000] (tb_autonomy) CommandEnded: {'returncode': 0}
+[0.414674] (tb_autonomy) JobEnded: {'identifier': 'tb_autonomy', 'rc': 0}
+[0.479622] (stella_vslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.499712] (-) TimerEvent: {}
+[0.600014] (-) TimerEvent: {}
+[0.609884] (stella_vslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.615071] (stella_vslam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.615462] (stella_vslam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.615702] (stella_vslam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.649399] (stella_vslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.700110] (-) TimerEvent: {}
+[0.762542] (stella_vslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.767628] (stella_vslam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.767981] (stella_vslam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.768130] (stella_vslam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.768522] (stella_vslam) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:14 (cmake_policy):\n'}
+[0.768587] (stella_vslam) StderrLine: {'line': b'  The OLD behavior for policy CMP0074 will be removed from a future version\n'}
+[0.768622] (stella_vslam) StderrLine: {'line': b'  of CMake.\n'}
+[0.768656] (stella_vslam) StderrLine: {'line': b'\n'}
+[0.768687] (stella_vslam) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[0.768814] (stella_vslam) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[0.768852] (stella_vslam) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[0.768882] (stella_vslam) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[0.768911] (stella_vslam) StderrLine: {'line': b'\n'}
+[0.768940] (stella_vslam) StderrLine: {'line': b'\x1b[0m\n'}
+[0.768970] (stella_vslam) StdoutLine: {'line': b'-- Build type: Release\n'}
+[0.800197] (-) TimerEvent: {}
+[0.804585] (stella_vslam) StdoutLine: {'line': b'-- ccache: Disabled\n'}
+[0.804730] (stella_vslam) StdoutLine: {'line': b'-- Address/Memory sanitizer: DISABLED\n'}
+[0.804776] (stella_vslam) StdoutLine: {'line': b'-- Architecture-aware optimization: DISABLED\n'}
+[0.805119] (stella_vslam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.889244] (stella_vslam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.890229] (stella_vslam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900288] (-) TimerEvent: {}
+[1.000593] (-) TimerEvent: {}
+[1.100886] (-) TimerEvent: {}
+[1.157200] (stella_vslam) StdoutLine: {'line': b'-- Found OpenMP_C: -fopenmp (found version "4.5") \n'}
+[1.200978] (-) TimerEvent: {}
+[1.252076] (stella_vslam) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[1.252246] (stella_vslam) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[1.257183] (stella_vslam) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (Required is at least version "3.3") \n'}
+[1.301084] (-) TimerEvent: {}
+[1.401422] (-) TimerEvent: {}
+[1.501882] (-) TimerEvent: {}
+[1.602241] (-) TimerEvent: {}
+[1.691643] (stella_vslam) StdoutLine: {'line': b'-- Use OpenCV 4.6.0\n'}
+[1.702347] (-) TimerEvent: {}
+[1.713102] (stella_vslam) StdoutLine: {'line': b'-- aruco: enabled (Found in /usr/include/opencv4/opencv2)\n'}
+[1.718200] (stella_vslam) StdoutLine: {'line': b'-- Use spdlog on system: 1.12.0\n'}
+[1.802439] (-) TimerEvent: {}
+[1.815179] (stella_vslam) StdoutLine: {'line': b'-- Found SQLite3: /usr/include (found version "3.45.1") \n'}
+[1.902622] (-) TimerEvent: {}
+[2.003007] (-) TimerEvent: {}
+[2.055938] (stella_vslam) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[2.072307] (stella_vslam) StdoutLine: {'line': b'-- gtsam: disabled\n'}
+[2.103121] (-) TimerEvent: {}
+[2.111263] (stella_vslam) StdoutLine: {'line': b'-- Found CXSparse: /usr/include/suitesparse (found version "4.3.1") \n'}
+[2.203203] (-) TimerEvent: {}
+[2.303586] (-) TimerEvent: {}
+[2.403946] (-) TimerEvent: {}
+[2.504286] (-) TimerEvent: {}
+[2.604656] (-) TimerEvent: {}
+[2.704918] (-) TimerEvent: {}
+[2.805210] (-) TimerEvent: {}
+[2.905455] (-) TimerEvent: {}
+[3.005823] (-) TimerEvent: {}
+[3.106273] (-) TimerEvent: {}
+[3.206614] (-) TimerEvent: {}
+[3.306914] (-) TimerEvent: {}
+[3.407241] (-) TimerEvent: {}
+[3.507513] (-) TimerEvent: {}
+[3.607753] (-) TimerEvent: {}
+[3.708021] (-) TimerEvent: {}
+[3.808311] (-) TimerEvent: {}
+[3.908624] (-) TimerEvent: {}
+[4.008984] (-) TimerEvent: {}
+[4.109235] (-) TimerEvent: {}
+[4.209460] (-) TimerEvent: {}
+[4.309773] (-) TimerEvent: {}
+[4.410169] (-) TimerEvent: {}
+[4.510544] (-) TimerEvent: {}
+[4.611006] (-) TimerEvent: {}
+[4.711389] (-) TimerEvent: {}
+[4.811846] (-) TimerEvent: {}
+[4.912173] (-) TimerEvent: {}
+[5.012550] (-) TimerEvent: {}
+[5.112800] (-) TimerEvent: {}
+[5.213089] (-) TimerEvent: {}
+[5.313340] (-) TimerEvent: {}
+[5.413572] (-) TimerEvent: {}
+[5.514027] (-) TimerEvent: {}
+[5.614454] (-) TimerEvent: {}
+[5.697595] (stella_vslam) StdoutLine: {'line': b'-- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so\n'}
+[5.710372] (stella_vslam) StdoutLine: {'line': b'-- Found AMD header in: /usr/include/suitesparse\n'}
+[5.714501] (-) TimerEvent: {}
+[5.723603] (stella_vslam) StdoutLine: {'line': b'-- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so\n'}
+[5.736201] (stella_vslam) StdoutLine: {'line': b'-- Found CAMD header in: /usr/include/suitesparse\n'}
+[5.748770] (stella_vslam) StdoutLine: {'line': b'-- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so\n'}
+[5.761367] (stella_vslam) StdoutLine: {'line': b'-- Found COLAMD header in: /usr/include/suitesparse\n'}
+[5.776242] (stella_vslam) StdoutLine: {'line': b'-- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so\n'}
+[5.809573] (stella_vslam) StdoutLine: {'line': b'-- Found CCOLAMD header in: /usr/include/suitesparse\n'}
+[5.814612] (-) TimerEvent: {}
+[5.824894] (stella_vslam) StdoutLine: {'line': b'-- Found SuiteSparse_config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so\n'}
+[5.836574] (stella_vslam) StdoutLine: {'line': b'-- Found SuiteSparse_config header in: /usr/include/suitesparse\n'}
+[5.850935] (stella_vslam) StdoutLine: {'line': b'-- Adding librt: /usr/lib/x86_64-linux-gnu/librt.a to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).\n'}
+[5.861156] (stella_vslam) StdoutLine: {'line': b'-- Did not find METIS library (optional SuiteSparse dependency)\n'}
+[5.861787] (stella_vslam) StdoutLine: {'line': b'-- Found SuiteSparse: TRUE (found version "..") \n'}
+[5.880543] (stella_vslam) StdoutLine: {'line': b'-- Could NOT find cuda_efficient_features (missing: cuda_efficient_features_LIBRARY cuda_efficient_features_INCLUDE_DIR) \n'}
+[5.880693] (stella_vslam) StdoutLine: {'line': b'-- cuda_efficient_features: disabled\n'}
+[5.880907] (stella_vslam) StdoutLine: {'line': b'-- OpenMP: DISABLED\n'}
+[5.881003] (stella_vslam) StdoutLine: {'line': b'-- SSE3 for ORB extraction: DISABLED\n'}
+[5.881063] (stella_vslam) StdoutLine: {'line': b'-- SSE for floating-point operation: DISABLED\n'}
+[5.881159] (stella_vslam) StdoutLine: {'line': b'-- BoW framework: FBoW (found in /usr/local/include)\n'}
+[5.881204] (stella_vslam) StdoutLine: {'line': b'-- trace level log: DISABLED\n'}
+[5.881238] (stella_vslam) StdoutLine: {'line': b'-- Determinism: DISABLED\n'}
+[5.881270] (stella_vslam) StdoutLine: {'line': b'-- tracy: DISABLED\n'}
+[5.889459] (stella_vslam) StdoutLine: {'line': b'-- Configuring done (5.9s)\n'}
+[5.907387] (stella_vslam) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.910732] (stella_vslam) StdoutLine: {'line': b'-- Build files have been written to: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam\n'}
+[5.914649] (-) TimerEvent: {}
+[5.916799] (stella_vslam) CommandEnded: {'returncode': 0}
+[5.917677] (stella_vslam) JobProgress: {'identifier': 'stella_vslam', 'progress': 'build'}
+[5.917694] (stella_vslam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', '--', '-j8', '-l8'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[5.958627] (stella_vslam) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/global_optimization_module.cc.o\x1b[0m\n'}
+[5.958988] (stella_vslam) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/base.cc.o\x1b[0m\n'}
+[5.959065] (stella_vslam) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/tracking_module.cc.o\x1b[0m\n'}
+[5.959120] (stella_vslam) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/fisheye.cc.o\x1b[0m\n'}
+[5.964041] (stella_vslam) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/config.cc.o\x1b[0m\n'}
+[5.964334] (stella_vslam) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/perspective.cc.o\x1b[0m\n'}
+[5.964398] (stella_vslam) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/system.cc.o\x1b[0m\n'}
+[5.964633] (stella_vslam) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/mapping_module.cc.o\x1b[0m\n'}
+[6.014775] (-) TimerEvent: {}
+[6.115135] (-) TimerEvent: {}
+[6.215576] (-) TimerEvent: {}
+[6.319834] (-) TimerEvent: {}
+[6.420189] (-) TimerEvent: {}
+[6.520570] (-) TimerEvent: {}
+[6.621174] (-) TimerEvent: {}
+[6.723771] (-) TimerEvent: {}
+[6.824109] (-) TimerEvent: {}
+[6.924385] (-) TimerEvent: {}
+[7.024712] (-) TimerEvent: {}
+[7.125091] (-) TimerEvent: {}
+[7.235532] (-) TimerEvent: {}
+[7.335892] (-) TimerEvent: {}
+[7.436267] (-) TimerEvent: {}
+[7.537652] (-) TimerEvent: {}
+[7.637932] (-) TimerEvent: {}
+[7.738588] (-) TimerEvent: {}
+[7.838973] (-) TimerEvent: {}
+[7.941143] (-) TimerEvent: {}
+[8.047785] (-) TimerEvent: {}
+[8.150496] (-) TimerEvent: {}
+[8.251149] (-) TimerEvent: {}
+[8.354641] (-) TimerEvent: {}
+[8.456437] (-) TimerEvent: {}
+[8.557612] (-) TimerEvent: {}
+[8.658682] (-) TimerEvent: {}
+[8.767523] (-) TimerEvent: {}
+[8.867794] (-) TimerEvent: {}
+[8.968242] (-) TimerEvent: {}
+[9.075011] (-) TimerEvent: {}
+[9.178147] (-) TimerEvent: {}
+[9.299553] (-) TimerEvent: {}
+[9.399946] (-) TimerEvent: {}
+[9.500740] (-) TimerEvent: {}
+[9.601270] (-) TimerEvent: {}
+[9.701759] (-) TimerEvent: {}
+[9.803535] (-) TimerEvent: {}
+[9.907913] (-) TimerEvent: {}
+[10.008256] (-) TimerEvent: {}
+[10.108571] (-) TimerEvent: {}
+[10.212178] (-) TimerEvent: {}
+[10.312535] (-) TimerEvent: {}
+[10.412784] (-) TimerEvent: {}
+[10.513030] (-) TimerEvent: {}
+[10.613339] (-) TimerEvent: {}
+[10.713734] (-) TimerEvent: {}
+[10.727489] (stella_vslam) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/equirectangular.cc.o\x1b[0m\n'}
+[10.813857] (-) TimerEvent: {}
+[10.914167] (-) TimerEvent: {}
+[11.014526] (-) TimerEvent: {}
+[11.118288] (-) TimerEvent: {}
+[11.223547] (-) TimerEvent: {}
+[11.323906] (-) TimerEvent: {}
+[11.425744] (-) TimerEvent: {}
+[11.526017] (-) TimerEvent: {}
+[11.626295] (-) TimerEvent: {}
+[11.727660] (-) TimerEvent: {}
+[11.828549] (-) TimerEvent: {}
+[11.931518] (-) TimerEvent: {}
+[12.031965] (-) TimerEvent: {}
+[12.132555] (-) TimerEvent: {}
+[12.233192] (-) TimerEvent: {}
+[12.336523] (-) TimerEvent: {}
+[12.436835] (-) TimerEvent: {}
+[12.537147] (-) TimerEvent: {}
+[12.637636] (-) TimerEvent: {}
+[12.743521] (-) TimerEvent: {}
+[12.843819] (-) TimerEvent: {}
+[12.945061] (-) TimerEvent: {}
+[13.046032] (-) TimerEvent: {}
+[13.152173] (-) TimerEvent: {}
+[13.252938] (-) TimerEvent: {}
+[13.254839] (stella_vslam) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/radial_division.cc.o\x1b[0m\n'}
+[13.357039] (-) TimerEvent: {}
+[13.416339] (stella_vslam) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/bow_vocabulary.cc.o\x1b[0m\n'}
+[13.457766] (-) TimerEvent: {}
+[13.558174] (-) TimerEvent: {}
+[13.658594] (-) TimerEvent: {}
+[13.767727] (-) TimerEvent: {}
+[13.868003] (-) TimerEvent: {}
+[13.968353] (-) TimerEvent: {}
+[14.068742] (-) TimerEvent: {}
+[14.171953] (-) TimerEvent: {}
+[14.245481] (stella_vslam) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/common.cc.o\x1b[0m\n'}
+[14.272110] (-) TimerEvent: {}
+[14.373057] (-) TimerEvent: {}
+[14.473449] (-) TimerEvent: {}
+[14.579520] (-) TimerEvent: {}
+[14.679841] (-) TimerEvent: {}
+[14.780368] (-) TimerEvent: {}
+[14.881096] (-) TimerEvent: {}
+[14.981472] (-) TimerEvent: {}
+[15.083889] (-) TimerEvent: {}
+[15.184395] (-) TimerEvent: {}
+[15.284907] (-) TimerEvent: {}
+[15.388416] (-) TimerEvent: {}
+[15.488833] (-) TimerEvent: {}
+[15.589258] (-) TimerEvent: {}
+[15.689641] (-) TimerEvent: {}
+[15.775995] (stella_vslam) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/frame.cc.o\x1b[0m\n'}
+[15.790341] (-) TimerEvent: {}
+[15.892322] (-) TimerEvent: {}
+[15.992815] (-) TimerEvent: {}
+[16.093413] (-) TimerEvent: {}
+[16.193952] (-) TimerEvent: {}
+[16.297783] (-) TimerEvent: {}
+[16.408876] (-) TimerEvent: {}
+[16.509379] (-) TimerEvent: {}
+[16.609832] (-) TimerEvent: {}
+[16.710448] (-) TimerEvent: {}
+[16.810769] (-) TimerEvent: {}
+[16.911355] (-) TimerEvent: {}
+[17.011734] (-) TimerEvent: {}
+[17.112189] (-) TimerEvent: {}
+[17.212670] (-) TimerEvent: {}
+[17.315529] (-) TimerEvent: {}
+[17.419814] (-) TimerEvent: {}
+[17.520383] (-) TimerEvent: {}
+[17.630072] (-) TimerEvent: {}
+[17.694789] (stella_vslam) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/keyframe.cc.o\x1b[0m\n'}
+[17.730223] (-) TimerEvent: {}
+[17.830584] (-) TimerEvent: {}
+[17.930949] (-) TimerEvent: {}
+[18.031467] (-) TimerEvent: {}
+[18.131922] (-) TimerEvent: {}
+[18.232369] (-) TimerEvent: {}
+[18.332725] (-) TimerEvent: {}
+[18.433808] (-) TimerEvent: {}
+[18.534212] (-) TimerEvent: {}
+[18.637349] (-) TimerEvent: {}
+[18.740192] (-) TimerEvent: {}
+[18.841124] (-) TimerEvent: {}
+[18.941675] (-) TimerEvent: {}
+[19.047780] (-) TimerEvent: {}
+[19.148327] (-) TimerEvent: {}
+[19.248617] (-) TimerEvent: {}
+[19.349140] (-) TimerEvent: {}
+[19.452780] (-) TimerEvent: {}
+[19.553082] (-) TimerEvent: {}
+[19.653517] (-) TimerEvent: {}
+[19.753844] (-) TimerEvent: {}
+[19.859763] (-) TimerEvent: {}
+[19.960165] (-) TimerEvent: {}
+[20.060722] (-) TimerEvent: {}
+[20.071924] (stella_vslam) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/landmark.cc.o\x1b[0m\n'}
+[20.160809] (-) TimerEvent: {}
+[20.261680] (-) TimerEvent: {}
+[20.366084] (-) TimerEvent: {}
+[20.473535] (-) TimerEvent: {}
+[20.573931] (-) TimerEvent: {}
+[20.574595] (stella_vslam) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/marker.cc.o\x1b[0m\n'}
+[20.674796] (-) TimerEvent: {}
+[20.775154] (-) TimerEvent: {}
+[20.875701] (-) TimerEvent: {}
+[20.978127] (-) TimerEvent: {}
+[21.084115] (-) TimerEvent: {}
+[21.184867] (-) TimerEvent: {}
+[21.291565] (-) TimerEvent: {}
+[21.395695] (-) TimerEvent: {}
+[21.496335] (-) TimerEvent: {}
+[21.608524] (-) TimerEvent: {}
+[21.627355] (stella_vslam) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/marker2d.cc.o\x1b[0m\n'}
+[21.708621] (-) TimerEvent: {}
+[21.808935] (-) TimerEvent: {}
+[21.911913] (-) TimerEvent: {}
+[22.031048] (-) TimerEvent: {}
+[22.137759] (-) TimerEvent: {}
+[22.239525] (-) TimerEvent: {}
+[22.339929] (-) TimerEvent: {}
+[22.444579] (-) TimerEvent: {}
+[22.549385] (-) TimerEvent: {}
+[22.649780] (-) TimerEvent: {}
+[22.751926] (-) TimerEvent: {}
+[22.853162] (-) TimerEvent: {}
+[22.955813] (-) TimerEvent: {}
+[23.063757] (-) TimerEvent: {}
+[23.164186] (-) TimerEvent: {}
+[23.264597] (-) TimerEvent: {}
+[23.365080] (-) TimerEvent: {}
+[23.465599] (-) TimerEvent: {}
+[23.566089] (-) TimerEvent: {}
+[23.672009] (-) TimerEvent: {}
+[23.772525] (-) TimerEvent: {}
+[23.873117] (-) TimerEvent: {}
+[23.974019] (-) TimerEvent: {}
+[24.075357] (-) TimerEvent: {}
+[24.176019] (-) TimerEvent: {}
+[24.283851] (-) TimerEvent: {}
+[24.384289] (-) TimerEvent: {}
+[24.484915] (-) TimerEvent: {}
+[24.586506] (-) TimerEvent: {}
+[24.686993] (-) TimerEvent: {}
+[24.782912] (stella_vslam) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/graph_node.cc.o\x1b[0m\n'}
+[24.791526] (-) TimerEvent: {}
+[24.891828] (-) TimerEvent: {}
+[24.992301] (-) TimerEvent: {}
+[25.092675] (-) TimerEvent: {}
+[25.193033] (-) TimerEvent: {}
+[25.293454] (-) TimerEvent: {}
+[25.393985] (-) TimerEvent: {}
+[25.499527] (-) TimerEvent: {}
+[25.600094] (-) TimerEvent: {}
+[25.700692] (-) TimerEvent: {}
+[25.801642] (-) TimerEvent: {}
+[25.903616] (-) TimerEvent: {}
+[26.004073] (-) TimerEvent: {}
+[26.087621] (stella_vslam) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/camera_database.cc.o\x1b[0m\n'}
+[26.104198] (-) TimerEvent: {}
+[26.204650] (-) TimerEvent: {}
+[26.309713] (-) TimerEvent: {}
+[26.412015] (-) TimerEvent: {}
+[26.512554] (-) TimerEvent: {}
+[26.615671] (-) TimerEvent: {}
+[26.716200] (-) TimerEvent: {}
+[26.817724] (-) TimerEvent: {}
+[26.918377] (-) TimerEvent: {}
+[27.018868] (-) TimerEvent: {}
+[27.121747] (-) TimerEvent: {}
+[27.222166] (-) TimerEvent: {}
+[27.322796] (-) TimerEvent: {}
+[27.423166] (-) TimerEvent: {}
+[27.502057] (stella_vslam) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/orb_params_database.cc.o\x1b[0m\n'}
+[27.523305] (-) TimerEvent: {}
+[27.627568] (-) TimerEvent: {}
+[27.727970] (-) TimerEvent: {}
+[27.828376] (-) TimerEvent: {}
+[27.928805] (-) TimerEvent: {}
+[27.938667] (stella_vslam) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/map_database.cc.o\x1b[0m\n'}
+[28.031598] (-) TimerEvent: {}
+[28.132144] (-) TimerEvent: {}
+[28.232479] (-) TimerEvent: {}
+[28.335555] (-) TimerEvent: {}
+[28.435885] (-) TimerEvent: {}
+[28.541681] (-) TimerEvent: {}
+[28.642166] (-) TimerEvent: {}
+[28.742831] (-) TimerEvent: {}
+[28.851650] (-) TimerEvent: {}
+[28.951958] (-) TimerEvent: {}
+[29.052256] (-) TimerEvent: {}
+[29.152888] (-) TimerEvent: {}
+[29.253375] (-) TimerEvent: {}
+[29.354175] (-) TimerEvent: {}
+[29.454915] (-) TimerEvent: {}
+[29.556309] (-) TimerEvent: {}
+[29.656919] (-) TimerEvent: {}
+[29.759900] (-) TimerEvent: {}
+[29.867674] (-) TimerEvent: {}
+[29.969626] (-) TimerEvent: {}
+[30.076131] (-) TimerEvent: {}
+[30.176626] (-) TimerEvent: {}
+[30.277606] (-) TimerEvent: {}
+[30.378000] (-) TimerEvent: {}
+[30.398755] (stella_vslam) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/frame_statistics.cc.o\x1b[0m\n'}
+[30.398975] (stella_vslam) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/bow_database.cc.o\x1b[0m\n'}
+[30.485445] (-) TimerEvent: {}
+[30.585870] (-) TimerEvent: {}
+[30.686272] (-) TimerEvent: {}
+[30.787732] (-) TimerEvent: {}
+[30.889327] (-) TimerEvent: {}
+[30.991756] (-) TimerEvent: {}
+[31.092197] (-) TimerEvent: {}
+[31.195040] (-) TimerEvent: {}
+[31.301717] (-) TimerEvent: {}
+[31.402034] (-) TimerEvent: {}
+[31.449821] (stella_vslam) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/feature/orb_params.cc.o\x1b[0m\n'}
+[31.502182] (-) TimerEvent: {}
+[31.582284] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/data/map_database.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid stella_vslam::data::map_database::\x1b[01;32m\x1b[Kregister_keyframe\x1b[m\x1b[K(stella_vslam::data::camera_database*, stella_vslam::data::orb_params_database*, stella_vslam::data::bow_vocabulary*, unsigned int, const nlohmann::json&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.582783] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/data/map_database.cc:374:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knum_keypts\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[31.582875] (stella_vslam) StderrLine: {'line': b'  374 |     const auto \x1b[01;35m\x1b[Knum_keypts\x1b[m\x1b[K = json_keyfrm.at("n_keypts").get<unsigned int>();\n'}
+[31.582939] (stella_vslam) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.603523] (-) TimerEvent: {}
+[31.703931] (-) TimerEvent: {}
+[31.807524] (-) TimerEvent: {}
+[31.907996] (-) TimerEvent: {}
+[32.008280] (-) TimerEvent: {}
+[32.108671] (-) TimerEvent: {}
+[32.211745] (-) TimerEvent: {}
+[32.312044] (-) TimerEvent: {}
+[32.412728] (-) TimerEvent: {}
+[32.513260] (-) TimerEvent: {}
+[32.615744] (-) TimerEvent: {}
+[32.718446] (-) TimerEvent: {}
+[32.823548] (-) TimerEvent: {}
+[32.924212] (-) TimerEvent: {}
+[33.027523] (-) TimerEvent: {}
+[33.127857] (-) TimerEvent: {}
+[33.184053] (stella_vslam) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/feature/orb_extractor.cc.o\x1b[0m\n'}
+[33.227974] (-) TimerEvent: {}
+[33.336548] (-) TimerEvent: {}
+[33.381293] (stella_vslam) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/feature/orb_impl.cc.o\x1b[0m\n'}
+[33.436760] (-) TimerEvent: {}
+[33.540747] (-) TimerEvent: {}
+[33.641723] (-) TimerEvent: {}
+[33.749528] (-) TimerEvent: {}
+[33.850571] (-) TimerEvent: {}
+[33.953533] (-) TimerEvent: {}
+[34.054156] (-) TimerEvent: {}
+[34.154616] (-) TimerEvent: {}
+[34.260038] (-) TimerEvent: {}
+[34.360961] (-) TimerEvent: {}
+[34.463254] (-) TimerEvent: {}
+[34.565119] (-) TimerEvent: {}
+[34.669633] (-) TimerEvent: {}
+[34.770084] (-) TimerEvent: {}
+[34.870632] (-) TimerEvent: {}
+[34.931785] (stella_vslam) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/initialize/base.cc.o\x1b[0m\n'}
+[34.970806] (-) TimerEvent: {}
+[35.071150] (-) TimerEvent: {}
+[35.171512] (-) TimerEvent: {}
+[35.255803] (stella_vslam) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/initialize/perspective.cc.o\x1b[0m\n'}
+[35.271630] (-) TimerEvent: {}
+[35.371963] (-) TimerEvent: {}
+[35.472322] (-) TimerEvent: {}
+[35.579737] (-) TimerEvent: {}
+[35.680035] (-) TimerEvent: {}
+[35.780519] (-) TimerEvent: {}
+[35.878792] (stella_vslam) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/initialize/bearing_vector.cc.o\x1b[0m\n'}
+[35.880562] (-) TimerEvent: {}
+[35.982375] (-) TimerEvent: {}
+[36.082866] (-) TimerEvent: {}
+[36.185218] (-) TimerEvent: {}
+[36.291848] (-) TimerEvent: {}
+[36.392190] (-) TimerEvent: {}
+[36.492924] (-) TimerEvent: {}
+[36.593343] (-) TimerEvent: {}
+[36.693974] (-) TimerEvent: {}
+[36.795712] (-) TimerEvent: {}
+[36.841552] (stella_vslam) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/io/trajectory_io.cc.o\x1b[0m\n'}
+[36.895823] (-) TimerEvent: {}
+[36.996140] (-) TimerEvent: {}
+[37.099226] (-) TimerEvent: {}
+[37.203690] (-) TimerEvent: {}
+[37.304212] (-) TimerEvent: {}
+[37.323909] (stella_vslam) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/io/map_database_io_msgpack.cc.o\x1b[0m\n'}
+[37.404367] (-) TimerEvent: {}
+[37.507543] (-) TimerEvent: {}
+[37.539539] (stella_vslam) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/io/map_database_io_sqlite3.cc.o\x1b[0m\n'}
+[37.607884] (-) TimerEvent: {}
+[37.708227] (-) TimerEvent: {}
+[37.809868] (-) TimerEvent: {}
+[37.835547] (stella_vslam) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_detector/base.cc.o\x1b[0m\n'}
+[37.909906] (-) TimerEvent: {}
+[38.010223] (-) TimerEvent: {}
+[38.116614] (-) TimerEvent: {}
+[38.216994] (-) TimerEvent: {}
+[38.317337] (-) TimerEvent: {}
+[38.417636] (-) TimerEvent: {}
+[38.518055] (-) TimerEvent: {}
+[38.619944] (-) TimerEvent: {}
+[38.725044] (-) TimerEvent: {}
+[38.825440] (-) TimerEvent: {}
+[38.928485] (-) TimerEvent: {}
+[39.028876] (-) TimerEvent: {}
+[39.129536] (-) TimerEvent: {}
+[39.229973] (-) TimerEvent: {}
+[39.335910] (-) TimerEvent: {}
+[39.436613] (-) TimerEvent: {}
+[39.537012] (-) TimerEvent: {}
+[39.586187] (stella_vslam) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_detector/aruco.cc.o\x1b[0m\n'}
+[39.637144] (-) TimerEvent: {}
+[39.711336] (stella_vslam) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_model/aruco.cc.o\x1b[0m\n'}
+[39.737219] (-) TimerEvent: {}
+[39.837763] (-) TimerEvent: {}
+[39.940847] (-) TimerEvent: {}
+[40.044765] (-) TimerEvent: {}
+[40.147656] (-) TimerEvent: {}
+[40.248966] (-) TimerEvent: {}
+[40.349257] (-) TimerEvent: {}
+[40.451782] (-) TimerEvent: {}
+[40.556344] (-) TimerEvent: {}
+[40.659710] (-) TimerEvent: {}
+[40.760023] (-) TimerEvent: {}
+[40.860397] (-) TimerEvent: {}
+[40.907546] (stella_vslam) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_model/base.cc.o\x1b[0m\n'}
+[40.960492] (-) TimerEvent: {}
+[41.063306] (-) TimerEvent: {}
+[41.085879] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/io/map_database_io_sqlite3.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool stella_vslam::io::map_database_io_sqlite3::\x1b[01;32m\x1b[Ksave\x1b[m\x1b[K(const std::string&, const stella_vslam::data::camera_database*, const stella_vslam::data::orb_params_database*, const stella_vslam::data::map_database*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[41.088995] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/io/map_database_io_sqlite3.cc:20:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Korb_params_db\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[41.089083] (stella_vslam) StderrLine: {'line': b'   20 |                                    \x1b[01;35m\x1b[Kconst data::orb_params_database* const orb_params_db\x1b[m\x1b[K,\n'}
+[41.089147] (stella_vslam) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[41.174150] (-) TimerEvent: {}
+[41.274535] (-) TimerEvent: {}
+[41.298652] (stella_vslam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/area.cc.o\x1b[0m\n'}
+[41.374696] (-) TimerEvent: {}
+[41.479822] (-) TimerEvent: {}
+[41.582780] (-) TimerEvent: {}
+[41.683147] (-) TimerEvent: {}
+[41.799668] (-) TimerEvent: {}
+[41.904185] (-) TimerEvent: {}
+[42.004579] (-) TimerEvent: {}
+[42.104948] (-) TimerEvent: {}
+[42.205326] (-) TimerEvent: {}
+[42.305758] (-) TimerEvent: {}
+[42.407529] (-) TimerEvent: {}
+[42.507916] (-) TimerEvent: {}
+[42.612538] (-) TimerEvent: {}
+[42.712869] (-) TimerEvent: {}
+[42.813255] (-) TimerEvent: {}
+[42.913606] (-) TimerEvent: {}
+[42.934578] (stella_vslam) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/bow_tree.cc.o\x1b[0m\n'}
+[43.015534] (-) TimerEvent: {}
+[43.116694] (-) TimerEvent: {}
+[43.223739] (-) TimerEvent: {}
+[43.324616] (-) TimerEvent: {}
+[43.425108] (-) TimerEvent: {}
+[43.527861] (-) TimerEvent: {}
+[43.628213] (-) TimerEvent: {}
+[43.728745] (-) TimerEvent: {}
+[43.835528] (-) TimerEvent: {}
+[43.939180] (-) TimerEvent: {}
+[44.039567] (-) TimerEvent: {}
+[44.139951] (-) TimerEvent: {}
+[44.246281] (-) TimerEvent: {}
+[44.346660] (-) TimerEvent: {}
+[44.419862] (stella_vslam) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/fuse.cc.o\x1b[0m\n'}
+[44.446813] (-) TimerEvent: {}
+[44.547641] (-) TimerEvent: {}
+[44.649420] (-) TimerEvent: {}
+[44.751077] (-) TimerEvent: {}
+[44.831449] (stella_vslam) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/projection.cc.o\x1b[0m\n'}
+[44.851249] (-) TimerEvent: {}
+[44.951922] (-) TimerEvent: {}
+[45.052566] (-) TimerEvent: {}
+[45.083257] (stella_vslam) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/robust.cc.o\x1b[0m\n'}
+[45.152692] (-) TimerEvent: {}
+[45.255796] (-) TimerEvent: {}
+[45.356775] (-) TimerEvent: {}
+[45.457459] (-) TimerEvent: {}
+[45.563563] (-) TimerEvent: {}
+[45.663926] (-) TimerEvent: {}
+[45.764443] (-) TimerEvent: {}
+[45.865309] (-) TimerEvent: {}
+[45.966685] (-) TimerEvent: {}
+[46.067167] (-) TimerEvent: {}
+[46.170660] (-) TimerEvent: {}
+[46.275605] (-) TimerEvent: {}
+[46.379556] (-) TimerEvent: {}
+[46.406758] (stella_vslam) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/stereo.cc.o\x1b[0m\n'}
+[46.479712] (-) TimerEvent: {}
+[46.580072] (-) TimerEvent: {}
+[46.683612] (-) TimerEvent: {}
+[46.784105] (-) TimerEvent: {}
+[46.884715] (-) TimerEvent: {}
+[46.985132] (-) TimerEvent: {}
+[47.087659] (-) TimerEvent: {}
+[47.188000] (-) TimerEvent: {}
+[47.288363] (-) TimerEvent: {}
+[47.396724] (-) TimerEvent: {}
+[47.497239] (-) TimerEvent: {}
+[47.511615] (stella_vslam) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/initializer.cc.o\x1b[0m\n'}
+[47.599125] (-) TimerEvent: {}
+[47.699557] (-) TimerEvent: {}
+[47.800008] (-) TimerEvent: {}
+[47.869257] (stella_vslam) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/relocalizer.cc.o\x1b[0m\n'}
+[47.900106] (-) TimerEvent: {}
+[48.003550] (-) TimerEvent: {}
+[48.104308] (-) TimerEvent: {}
+[48.204746] (-) TimerEvent: {}
+[48.305141] (-) TimerEvent: {}
+[48.405512] (-) TimerEvent: {}
+[48.508851] (-) TimerEvent: {}
+[48.609187] (-) TimerEvent: {}
+[48.662028] (stella_vslam) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/frame_tracker.cc.o\x1b[0m\n'}
+[48.711526] (-) TimerEvent: {}
+[48.812789] (-) TimerEvent: {}
+[48.913159] (-) TimerEvent: {}
+[49.013482] (-) TimerEvent: {}
+[49.113968] (-) TimerEvent: {}
+[49.215881] (-) TimerEvent: {}
+[49.316186] (-) TimerEvent: {}
+[49.416653] (-) TimerEvent: {}
+[49.519884] (-) TimerEvent: {}
+[49.620236] (-) TimerEvent: {}
+[49.639530] (stella_vslam) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/keyframe_inserter.cc.o\x1b[0m\n'}
+[49.663570] (stella_vslam) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/marker_initializer.cc.o\x1b[0m\n'}
+[49.722889] (-) TimerEvent: {}
+[49.823269] (-) TimerEvent: {}
+[49.923885] (-) TimerEvent: {}
+[49.940341] (stella_vslam) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/two_view_triangulator.cc.o\x1b[0m\n'}
+[50.024034] (-) TimerEvent: {}
+[50.124473] (-) TimerEvent: {}
+[50.227535] (-) TimerEvent: {}
+[50.280205] (stella_vslam) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/local_map_cleaner.cc.o\x1b[0m\n'}
+[50.327718] (-) TimerEvent: {}
+[50.431537] (-) TimerEvent: {}
+[50.531847] (-) TimerEvent: {}
+[50.633208] (-) TimerEvent: {}
+[50.733679] (-) TimerEvent: {}
+[50.834039] (-) TimerEvent: {}
+[50.935859] (-) TimerEvent: {}
+[51.036160] (-) TimerEvent: {}
+[51.139529] (-) TimerEvent: {}
+[51.227885] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool stella_vslam::module::relocalizer::\x1b[01;32m\x1b[Krelocalize_by_pnp_solver\x1b[m\x1b[K(stella_vslam::data::frame&, const std::shared_ptr<stella_vslam::data::keyframe>&, bool, std::vector<unsigned int>&, std::vector<std::shared_ptr<stella_vslam::data::landmark> >&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.228119] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:163:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knum_additional_matches\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[51.228192] (stella_vslam) StderrLine: {'line': b'  163 |             const auto \x1b[01;35m\x1b[Knum_additional_matches\x1b[m\x1b[K = use_robust_matcher ? robust_matcher_.match_frame_and_keyframe(curr_frm, ngh_keyfrm, additional_matched_landmarks)\n'}
+[51.228249] (stella_vslam) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.239677] (-) TimerEvent: {}
+[51.261019] (stella_vslam) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/local_map_updater.cc.o\x1b[0m\n'}
+[51.270839] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool stella_vslam::module::relocalizer::\x1b[01;32m\x1b[Krefine_pose_by_local_map\x1b[m\x1b[K(stella_vslam::data::frame&, const std::shared_ptr<stella_vslam::data::keyframe>&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.271159] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:361:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knum_additional_matches\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[51.271802] (stella_vslam) StderrLine: {'line': b'  361 |         auto \x1b[01;35m\x1b[Knum_additional_matches\x1b[m\x1b[K = projection_matcher.match_frame_and_landmarks(curr_frm, local_landmarks, lm_to_reproj, lm_to_x_right, lm_to_scale, margin);\n'}
+[51.271941] (stella_vslam) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.343526] (-) TimerEvent: {}
+[51.444351] (-) TimerEvent: {}
+[51.549534] (-) TimerEvent: {}
+[51.655560] (-) TimerEvent: {}
+[51.755960] (-) TimerEvent: {}
+[51.856439] (-) TimerEvent: {}
+[51.956891] (-) TimerEvent: {}
+[52.057425] (-) TimerEvent: {}
+[52.159552] (-) TimerEvent: {}
+[52.260084] (-) TimerEvent: {}
+[52.361436] (-) TimerEvent: {}
+[52.467788] (-) TimerEvent: {}
+[52.568083] (-) TimerEvent: {}
+[52.668357] (-) TimerEvent: {}
+[52.768625] (-) TimerEvent: {}
+[52.869092] (-) TimerEvent: {}
+[52.969514] (-) TimerEvent: {}
+[53.071522] (-) TimerEvent: {}
+[53.172942] (-) TimerEvent: {}
+[53.276120] (-) TimerEvent: {}
+[53.379819] (-) TimerEvent: {}
+[53.481283] (-) TimerEvent: {}
+[53.581639] (-) TimerEvent: {}
+[53.700413] (-) TimerEvent: {}
+[53.801158] (-) TimerEvent: {}
+[53.902381] (-) TimerEvent: {}
+[54.002815] (-) TimerEvent: {}
+[54.105163] (-) TimerEvent: {}
+[54.213358] (-) TimerEvent: {}
+[54.313856] (-) TimerEvent: {}
+[54.415794] (-) TimerEvent: {}
+[54.524097] (-) TimerEvent: {}
+[54.624644] (-) TimerEvent: {}
+[54.725004] (-) TimerEvent: {}
+[54.831107] (-) TimerEvent: {}
+[54.931661] (-) TimerEvent: {}
+[55.032475] (-) TimerEvent: {}
+[55.140178] (-) TimerEvent: {}
+[55.245564] (-) TimerEvent: {}
+[55.346929] (-) TimerEvent: {}
+[55.447297] (-) TimerEvent: {}
+[55.547622] (stella_vslam) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/loop_detector.cc.o\x1b[0m\n'}
+[55.548104] (-) TimerEvent: {}
+[55.651560] (-) TimerEvent: {}
+[55.752044] (-) TimerEvent: {}
+[55.852368] (-) TimerEvent: {}
+[55.948044] (stella_vslam) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/loop_bundle_adjuster.cc.o\x1b[0m\n'}
+[55.952488] (-) TimerEvent: {}
+[56.055556] (-) TimerEvent: {}
+[56.155947] (-) TimerEvent: {}
+[56.256716] (-) TimerEvent: {}
+[56.318319] (stella_vslam) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/pose_optimizer_g2o.cc.o\x1b[0m\n'}
+[56.356870] (-) TimerEvent: {}
+[56.459546] (-) TimerEvent: {}
+[56.561925] (-) TimerEvent: {}
+[56.671260] (-) TimerEvent: {}
+[56.779519] (-) TimerEvent: {}
+[56.801989] (stella_vslam) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/local_bundle_adjuster_g2o.cc.o\x1b[0m\n'}
+[56.879661] (-) TimerEvent: {}
+[56.980307] (-) TimerEvent: {}
+[57.080782] (-) TimerEvent: {}
+[57.181104] (-) TimerEvent: {}
+[57.282736] (-) TimerEvent: {}
+[57.383176] (-) TimerEvent: {}
+[57.487659] (-) TimerEvent: {}
+[57.587962] (-) TimerEvent: {}
+[57.600802] (stella_vslam) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/transform_optimizer.cc.o\x1b[0m\n'}
+[57.688219] (-) TimerEvent: {}
+[57.788581] (-) TimerEvent: {}
+[57.888945] (-) TimerEvent: {}
+[57.991560] (-) TimerEvent: {}
+[58.091943] (-) TimerEvent: {}
+[58.192346] (-) TimerEvent: {}
+[58.295704] (-) TimerEvent: {}
+[58.399555] (-) TimerEvent: {}
+[58.499947] (-) TimerEvent: {}
+[58.600512] (-) TimerEvent: {}
+[58.705853] (-) TimerEvent: {}
+[58.736553] (stella_vslam) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/graph_optimizer.cc.o\x1b[0m\n'}
+[58.805974] (-) TimerEvent: {}
+[58.906364] (-) TimerEvent: {}
+[59.008766] (-) TimerEvent: {}
+[59.111524] (-) TimerEvent: {}
+[59.211849] (-) TimerEvent: {}
+[59.312191] (-) TimerEvent: {}
+[59.412652] (-) TimerEvent: {}
+[59.519543] (-) TimerEvent: {}
+[59.619867] (-) TimerEvent: {}
+[59.720243] (-) TimerEvent: {}
+[59.820591] (-) TimerEvent: {}
+[59.920900] (-) TimerEvent: {}
+[60.036221] (-) TimerEvent: {}
+[60.136578] (-) TimerEvent: {}
+[60.236913] (-) TimerEvent: {}
+[60.337252] (-) TimerEvent: {}
+[60.437841] (-) TimerEvent: {}
+[60.538307] (-) TimerEvent: {}
+[60.587166] (stella_vslam) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/global_bundle_adjuster.cc.o\x1b[0m\n'}
+[60.638450] (-) TimerEvent: {}
+[60.738934] (-) TimerEvent: {}
+[60.844173] (-) TimerEvent: {}
+[60.937045] (stella_vslam) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/terminate_action.cc.o\x1b[0m\n'}
+[60.944288] (-) TimerEvent: {}
+[61.044782] (-) TimerEvent: {}
+[61.145915] (-) TimerEvent: {}
+[61.246892] (-) TimerEvent: {}
+[61.347401] (-) TimerEvent: {}
+[61.447799] (-) TimerEvent: {}
+[61.552070] (-) TimerEvent: {}
+[61.656284] (-) TimerEvent: {}
+[61.670587] (stella_vslam) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/publish/frame_publisher.cc.o\x1b[0m\n'}
+[61.756680] (-) TimerEvent: {}
+[61.857092] (-) TimerEvent: {}
+[61.957420] (-) TimerEvent: {}
+[62.057846] (-) TimerEvent: {}
+[62.158208] (-) TimerEvent: {}
+[62.259007] (-) TimerEvent: {}
+[62.360895] (-) TimerEvent: {}
+[62.461191] (-) TimerEvent: {}
+[62.561475] (-) TimerEvent: {}
+[62.663564] (-) TimerEvent: {}
+[62.763946] (-) TimerEvent: {}
+[62.864250] (-) TimerEvent: {}
+[62.970076] (-) TimerEvent: {}
+[63.070415] (-) TimerEvent: {}
+[63.170796] (-) TimerEvent: {}
+[63.271115] (-) TimerEvent: {}
+[63.371816] (-) TimerEvent: {}
+[63.472372] (-) TimerEvent: {}
+[63.572786] (-) TimerEvent: {}
+[63.676344] (-) TimerEvent: {}
+[63.776680] (-) TimerEvent: {}
+[63.820453] (stella_vslam) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/publish/map_publisher.cc.o\x1b[0m\n'}
+[63.876798] (-) TimerEvent: {}
+[63.977212] (-) TimerEvent: {}
+[64.079871] (-) TimerEvent: {}
+[64.180302] (-) TimerEvent: {}
+[64.280657] (-) TimerEvent: {}
+[64.383531] (-) TimerEvent: {}
+[64.483858] (-) TimerEvent: {}
+[64.584208] (-) TimerEvent: {}
+[64.684578] (-) TimerEvent: {}
+[64.787526] (-) TimerEvent: {}
+[64.887859] (-) TimerEvent: {}
+[64.988329] (-) TimerEvent: {}
+[65.090581] (-) TimerEvent: {}
+[65.195867] (-) TimerEvent: {}
+[65.296254] (-) TimerEvent: {}
+[65.396638] (-) TimerEvent: {}
+[65.497734] (-) TimerEvent: {}
+[65.600875] (-) TimerEvent: {}
+[65.707680] (-) TimerEvent: {}
+[65.808028] (-) TimerEvent: {}
+[65.909759] (-) TimerEvent: {}
+[66.010115] (-) TimerEvent: {}
+[66.110454] (-) TimerEvent: {}
+[66.211468] (-) TimerEvent: {}
+[66.312379] (-) TimerEvent: {}
+[66.415526] (-) TimerEvent: {}
+[66.515891] (-) TimerEvent: {}
+[66.616211] (-) TimerEvent: {}
+[66.719569] (-) TimerEvent: {}
+[66.819896] (-) TimerEvent: {}
+[66.920234] (-) TimerEvent: {}
+[67.021072] (-) TimerEvent: {}
+[67.123550] (-) TimerEvent: {}
+[67.224875] (-) TimerEvent: {}
+[67.331996] (-) TimerEvent: {}
+[67.439551] (-) TimerEvent: {}
+[67.539942] (-) TimerEvent: {}
+[67.640463] (-) TimerEvent: {}
+[67.740740] (-) TimerEvent: {}
+[67.841025] (-) TimerEvent: {}
+[67.941642] (-) TimerEvent: {}
+[68.043908] (-) TimerEvent: {}
+[68.144206] (-) TimerEvent: {}
+[68.244639] (-) TimerEvent: {}
+[68.347796] (-) TimerEvent: {}
+[68.448144] (-) TimerEvent: {}
+[68.548464] (-) TimerEvent: {}
+[68.648772] (-) TimerEvent: {}
+[68.719575] (stella_vslam) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/common.cc.o\x1b[0m\n'}
+[68.748901] (-) TimerEvent: {}
+[68.849245] (-) TimerEvent: {}
+[68.951638] (-) TimerEvent: {}
+[69.052010] (-) TimerEvent: {}
+[69.152363] (-) TimerEvent: {}
+[69.255532] (-) TimerEvent: {}
+[69.355886] (-) TimerEvent: {}
+[69.463529] (-) TimerEvent: {}
+[69.563907] (-) TimerEvent: {}
+[69.664348] (-) TimerEvent: {}
+[69.764633] (-) TimerEvent: {}
+[69.865531] (-) TimerEvent: {}
+[69.968010] (-) TimerEvent: {}
+[70.068378] (-) TimerEvent: {}
+[70.168782] (-) TimerEvent: {}
+[70.271841] (-) TimerEvent: {}
+[70.372391] (-) TimerEvent: {}
+[70.474069] (-) TimerEvent: {}
+[70.575009] (-) TimerEvent: {}
+[70.676944] (-) TimerEvent: {}
+[70.780257] (-) TimerEvent: {}
+[70.798647] (stella_vslam) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/homography_solver.cc.o\x1b[0m\n'}
+[70.881243] (-) TimerEvent: {}
+[70.983833] (-) TimerEvent: {}
+[71.084967] (-) TimerEvent: {}
+[71.185254] (-) TimerEvent: {}
+[71.299930] (-) TimerEvent: {}
+[71.401430] (-) TimerEvent: {}
+[71.504658] (-) TimerEvent: {}
+[71.605134] (-) TimerEvent: {}
+[71.707929] (-) TimerEvent: {}
+[71.811566] (-) TimerEvent: {}
+[71.911940] (-) TimerEvent: {}
+[72.012494] (-) TimerEvent: {}
+[72.115875] (-) TimerEvent: {}
+[72.223717] (-) TimerEvent: {}
+[72.324477] (-) TimerEvent: {}
+[72.432464] (-) TimerEvent: {}
+[72.533616] (-) TimerEvent: {}
+[72.635799] (-) TimerEvent: {}
+[72.736272] (-) TimerEvent: {}
+[72.836747] (-) TimerEvent: {}
+[72.940310] (-) TimerEvent: {}
+[73.047739] (-) TimerEvent: {}
+[73.151619] (-) TimerEvent: {}
+[73.252414] (stella_vslam) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/fundamental_solver.cc.o\x1b[0m\n'}
+[73.254360] (-) TimerEvent: {}
+[73.355185] (-) TimerEvent: {}
+[73.455707] (-) TimerEvent: {}
+[73.557214] (-) TimerEvent: {}
+[73.663202] (-) TimerEvent: {}
+[73.774119] (-) TimerEvent: {}
+[73.881975] (-) TimerEvent: {}
+[73.982329] (-) TimerEvent: {}
+[74.082681] (-) TimerEvent: {}
+[74.183021] (-) TimerEvent: {}
+[74.289076] (-) TimerEvent: {}
+[74.389698] (-) TimerEvent: {}
+[74.490105] (-) TimerEvent: {}
+[74.592122] (-) TimerEvent: {}
+[74.692776] (-) TimerEvent: {}
+[74.797031] (-) TimerEvent: {}
+[74.897401] (-) TimerEvent: {}
+[74.997808] (-) TimerEvent: {}
+[75.098243] (-) TimerEvent: {}
+[75.198816] (-) TimerEvent: {}
+[75.299781] (-) TimerEvent: {}
+[75.401037] (-) TimerEvent: {}
+[75.501404] (-) TimerEvent: {}
+[75.611187] (-) TimerEvent: {}
+[75.711586] (-) TimerEvent: {}
+[75.811906] (-) TimerEvent: {}
+[75.912221] (-) TimerEvent: {}
+[76.012548] (-) TimerEvent: {}
+[76.112909] (-) TimerEvent: {}
+[76.219321] (-) TimerEvent: {}
+[76.320438] (-) TimerEvent: {}
+[76.428240] (-) TimerEvent: {}
+[76.528640] (-) TimerEvent: {}
+[76.629138] (-) TimerEvent: {}
+[76.729608] (-) TimerEvent: {}
+[76.830006] (-) TimerEvent: {}
+[76.932976] (-) TimerEvent: {}
+[77.033408] (-) TimerEvent: {}
+[77.134197] (-) TimerEvent: {}
+[77.234555] (-) TimerEvent: {}
+[77.334954] (-) TimerEvent: {}
+[77.435753] (-) TimerEvent: {}
+[77.536364] (-) TimerEvent: {}
+[77.637262] (-) TimerEvent: {}
+[77.737670] (-) TimerEvent: {}
+[77.838415] (-) TimerEvent: {}
+[77.945390] (-) TimerEvent: {}
+[78.045894] (-) TimerEvent: {}
+[78.146486] (-) TimerEvent: {}
+[78.248058] (-) TimerEvent: {}
+[78.348610] (-) TimerEvent: {}
+[78.450675] (-) TimerEvent: {}
+[78.552571] (-) TimerEvent: {}
+[78.655720] (-) TimerEvent: {}
+[78.760786] (-) TimerEvent: {}
+[78.861273] (-) TimerEvent: {}
+[78.964494] (-) TimerEvent: {}
+[79.065130] (-) TimerEvent: {}
+[79.165550] (-) TimerEvent: {}
+[79.267799] (-) TimerEvent: {}
+[79.369572] (-) TimerEvent: {}
+[79.472284] (-) TimerEvent: {}
+[79.577505] (-) TimerEvent: {}
+[79.678575] (-) TimerEvent: {}
+[79.783535] (-) TimerEvent: {}
+[79.883902] (-) TimerEvent: {}
+[79.984550] (-) TimerEvent: {}
+[80.085164] (-) TimerEvent: {}
+[80.191648] (-) TimerEvent: {}
+[80.293298] (-) TimerEvent: {}
+[80.393721] (-) TimerEvent: {}
+[80.494632] (-) TimerEvent: {}
+[80.595137] (-) TimerEvent: {}
+[80.695728] (-) TimerEvent: {}
+[80.796144] (-) TimerEvent: {}
+[80.899546] (-) TimerEvent: {}
+[80.999905] (-) TimerEvent: {}
+[81.103532] (-) TimerEvent: {}
+[81.107627] (stella_vslam) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/essential_solver.cc.o\x1b[0m\n'}
+[81.203648] (-) TimerEvent: {}
+[81.304178] (-) TimerEvent: {}
+[81.404628] (-) TimerEvent: {}
+[81.508754] (-) TimerEvent: {}
+[81.609103] (-) TimerEvent: {}
+[81.709475] (-) TimerEvent: {}
+[81.809910] (-) TimerEvent: {}
+[81.914469] (-) TimerEvent: {}
+[82.014804] (-) TimerEvent: {}
+[82.119537] (-) TimerEvent: {}
+[82.219876] (-) TimerEvent: {}
+[82.320557] (-) TimerEvent: {}
+[82.422067] (-) TimerEvent: {}
+[82.531554] (-) TimerEvent: {}
+[82.632233] (-) TimerEvent: {}
+[82.733222] (-) TimerEvent: {}
+[82.833720] (-) TimerEvent: {}
+[82.934633] (-) TimerEvent: {}
+[83.040968] (-) TimerEvent: {}
+[83.141315] (-) TimerEvent: {}
+[83.242158] (-) TimerEvent: {}
+[83.347359] (-) TimerEvent: {}
+[83.447851] (-) TimerEvent: {}
+[83.548527] (-) TimerEvent: {}
+[83.650836] (-) TimerEvent: {}
+[83.753942] (-) TimerEvent: {}
+[83.856265] (-) TimerEvent: {}
+[83.963724] (-) TimerEvent: {}
+[84.064091] (-) TimerEvent: {}
+[84.165688] (-) TimerEvent: {}
+[84.266225] (-) TimerEvent: {}
+[84.366682] (-) TimerEvent: {}
+[84.467277] (-) TimerEvent: {}
+[84.569394] (-) TimerEvent: {}
+[84.670540] (-) TimerEvent: {}
+[84.771106] (-) TimerEvent: {}
+[84.872292] (-) TimerEvent: {}
+[84.977064] (-) TimerEvent: {}
+[85.079346] (-) TimerEvent: {}
+[85.182130] (-) TimerEvent: {}
+[85.284353] (-) TimerEvent: {}
+[85.384732] (-) TimerEvent: {}
+[85.485737] (-) TimerEvent: {}
+[85.587534] (-) TimerEvent: {}
+[85.687880] (-) TimerEvent: {}
+[85.797487] (-) TimerEvent: {}
+[85.897821] (-) TimerEvent: {}
+[85.998120] (-) TimerEvent: {}
+[86.099268] (-) TimerEvent: {}
+[86.200149] (-) TimerEvent: {}
+[86.301446] (-) TimerEvent: {}
+[86.403548] (-) TimerEvent: {}
+[86.507546] (-) TimerEvent: {}
+[86.607841] (-) TimerEvent: {}
+[86.708242] (-) TimerEvent: {}
+[86.809875] (-) TimerEvent: {}
+[86.910328] (-) TimerEvent: {}
+[87.013145] (-) TimerEvent: {}
+[87.121273] (-) TimerEvent: {}
+[87.221917] (-) TimerEvent: {}
+[87.322509] (-) TimerEvent: {}
+[87.423045] (-) TimerEvent: {}
+[87.523579] (-) TimerEvent: {}
+[87.624588] (-) TimerEvent: {}
+[87.725162] (-) TimerEvent: {}
+[87.825624] (-) TimerEvent: {}
+[87.926191] (-) TimerEvent: {}
+[88.030117] (-) TimerEvent: {}
+[88.135562] (-) TimerEvent: {}
+[88.236213] (-) TimerEvent: {}
+[88.337069] (-) TimerEvent: {}
+[88.437764] (-) TimerEvent: {}
+[88.538441] (-) TimerEvent: {}
+[88.641346] (-) TimerEvent: {}
+[88.742038] (-) TimerEvent: {}
+[88.842754] (-) TimerEvent: {}
+[88.943463] (-) TimerEvent: {}
+[89.043960] (-) TimerEvent: {}
+[89.144546] (-) TimerEvent: {}
+[89.245253] (-) TimerEvent: {}
+[89.347385] (-) TimerEvent: {}
+[89.451922] (-) TimerEvent: {}
+[89.554349] (-) TimerEvent: {}
+[89.654817] (-) TimerEvent: {}
+[89.755258] (-) TimerEvent: {}
+[89.856860] (-) TimerEvent: {}
+[89.958460] (-) TimerEvent: {}
+[90.058955] (-) TimerEvent: {}
+[90.164940] (-) TimerEvent: {}
+[90.265613] (-) TimerEvent: {}
+[90.366011] (-) TimerEvent: {}
+[90.466516] (-) TimerEvent: {}
+[90.567530] (-) TimerEvent: {}
+[90.675143] (-) TimerEvent: {}
+[90.777234] (-) TimerEvent: {}
+[90.883755] (-) TimerEvent: {}
+[90.985216] (-) TimerEvent: {}
+[91.085752] (-) TimerEvent: {}
+[91.186235] (-) TimerEvent: {}
+[91.291487] (-) TimerEvent: {}
+[91.391867] (-) TimerEvent: {}
+[91.492231] (-) TimerEvent: {}
+[91.574049] (stella_vslam) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/pnp_solver.cc.o\x1b[0m\n'}
+[91.592326] (-) TimerEvent: {}
+[91.693021] (-) TimerEvent: {}
+[91.796415] (-) TimerEvent: {}
+[91.905211] (-) TimerEvent: {}
+[92.005801] (-) TimerEvent: {}
+[92.106350] (-) TimerEvent: {}
+[92.206832] (-) TimerEvent: {}
+[92.307366] (-) TimerEvent: {}
+[92.411724] (-) TimerEvent: {}
+[92.512025] (-) TimerEvent: {}
+[92.612316] (-) TimerEvent: {}
+[92.712747] (-) TimerEvent: {}
+[92.813481] (-) TimerEvent: {}
+[92.915708] (-) TimerEvent: {}
+[93.016155] (-) TimerEvent: {}
+[93.116881] (-) TimerEvent: {}
+[93.217325] (-) TimerEvent: {}
+[93.317855] (-) TimerEvent: {}
+[93.419921] (-) TimerEvent: {}
+[93.521516] (-) TimerEvent: {}
+[93.622097] (-) TimerEvent: {}
+[93.723909] (-) TimerEvent: {}
+[93.826789] (-) TimerEvent: {}
+[93.927390] (-) TimerEvent: {}
+[94.031677] (-) TimerEvent: {}
+[94.132167] (-) TimerEvent: {}
+[94.232509] (-) TimerEvent: {}
+[94.333301] (-) TimerEvent: {}
+[94.435584] (-) TimerEvent: {}
+[94.536134] (-) TimerEvent: {}
+[94.577613] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/solve/homography_solver.cc:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool stella_vslam::solve::homography_solver::\x1b[01;32m\x1b[Kdecompose\x1b[m\x1b[K(const stella_vslam::Mat33_t&, const stella_vslam::Mat33_t&, const stella_vslam::Mat33_t&, stella_vslam::eigen_alloc_vector<Eigen::Matrix<double, 3, 3> >&, stella_vslam::eigen_alloc_vector<Eigen::Matrix<double, 3, 1> >&, stella_vslam::eigen_alloc_vector<Eigen::Matrix<double, 3, 1> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[94.577956] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/solve/homography_solver.cc:162:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksvd.Eigen::JacobiSVD<Eigen::Matrix<double, 3, 3, 0, 3, 3>, 2>::<unnamed>.Eigen::SVDBase<Eigen::JacobiSVD<Eigen::Matrix<double, 3, 3, 0, 3, 3>, 2> >::m_singularValues.Eigen::Matrix<double, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<double, 3, 1, 0, 3, 1> >::m_storage.Eigen::DenseStorage<double, 3, 3, 1, 0>::m_data.Eigen::internal::plain_array<double, 3, 0, 0>::array[2]\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[94.578049] (stella_vslam) StderrLine: {'line': b'  162 |     const float d3 = \x1b[01;35m\x1b[Klambda(2)\x1b[m\x1b[K;\n'}
+[94.578120] (stella_vslam) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[94.578186] (stella_vslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/solve/homography_solver.cc:154:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksvd\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[94.578254] (stella_vslam) StderrLine: {'line': b'  154 |     const Eigen::JacobiSVD<Mat33_t> \x1b[01;36m\x1b[Ksvd\x1b[m\x1b[K(A, Eigen::ComputeFullU | Eigen::ComputeFullV);\n'}
+[94.578315] (stella_vslam) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[94.636228] (-) TimerEvent: {}
+[94.736533] (-) TimerEvent: {}
+[94.836937] (-) TimerEvent: {}
+[94.940131] (-) TimerEvent: {}
+[95.040474] (-) TimerEvent: {}
+[95.140974] (-) TimerEvent: {}
+[95.247778] (-) TimerEvent: {}
+[95.331997] (stella_vslam) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/angle.cc.o\x1b[0m\n'}
+[95.349280] (-) TimerEvent: {}
+[95.371127] (stella_vslam) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/converter.cc.o\x1b[0m\n'}
+[95.449394] (-) TimerEvent: {}
+[95.549818] (-) TimerEvent: {}
+[95.651484] (-) TimerEvent: {}
+[95.756209] (-) TimerEvent: {}
+[95.871504] (-) TimerEvent: {}
+[95.971864] (-) TimerEvent: {}
+[96.072254] (-) TimerEvent: {}
+[96.172707] (-) TimerEvent: {}
+[96.273086] (-) TimerEvent: {}
+[96.373488] (-) TimerEvent: {}
+[96.473906] (-) TimerEvent: {}
+[96.574358] (-) TimerEvent: {}
+[96.674826] (-) TimerEvent: {}
+[96.775418] (-) TimerEvent: {}
+[96.876058] (-) TimerEvent: {}
+[96.976541] (-) TimerEvent: {}
+[97.077892] (-) TimerEvent: {}
+[97.187553] (-) TimerEvent: {}
+[97.288135] (-) TimerEvent: {}
+[97.388888] (-) TimerEvent: {}
+[97.489375] (-) TimerEvent: {}
+[97.590809] (-) TimerEvent: {}
+[97.685790] (stella_vslam) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/image_converter.cc.o\x1b[0m\n'}
+[97.690958] (-) TimerEvent: {}
+[97.791484] (-) TimerEvent: {}
+[97.895524] (-) TimerEvent: {}
+[97.995831] (-) TimerEvent: {}
+[98.096163] (-) TimerEvent: {}
+[98.196531] (-) TimerEvent: {}
+[98.303533] (-) TimerEvent: {}
+[98.403857] (-) TimerEvent: {}
+[98.459979] (stella_vslam) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/random_array.cc.o\x1b[0m\n'}
+[98.508959] (-) TimerEvent: {}
+[98.615093] (-) TimerEvent: {}
+[98.715434] (-) TimerEvent: {}
+[98.815843] (-) TimerEvent: {}
+[98.916344] (-) TimerEvent: {}
+[99.016753] (-) TimerEvent: {}
+[99.117225] (-) TimerEvent: {}
+[99.217627] (-) TimerEvent: {}
+[99.319013] (-) TimerEvent: {}
+[99.423795] (-) TimerEvent: {}
+[99.524576] (-) TimerEvent: {}
+[99.625059] (-) TimerEvent: {}
+[99.725555] (-) TimerEvent: {}
+[99.825935] (-) TimerEvent: {}
+[99.885907] (stella_vslam) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/sqlite3.cc.o\x1b[0m\n'}
+[99.926058] (-) TimerEvent: {}
+[100.027554] (-) TimerEvent: {}
+[100.128105] (-) TimerEvent: {}
+[100.231950] (-) TimerEvent: {}
+[100.314639] (stella_vslam) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/stereo_rectifier.cc.o\x1b[0m\n'}
+[100.332405] (-) TimerEvent: {}
+[100.397295] (stella_vslam) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/yaml.cc.o\x1b[0m\n'}
+[100.432688] (-) TimerEvent: {}
+[100.533028] (-) TimerEvent: {}
+[100.633401] (-) TimerEvent: {}
+[100.739541] (-) TimerEvent: {}
+[100.839881] (-) TimerEvent: {}
+[100.940252] (-) TimerEvent: {}
+[101.041630] (-) TimerEvent: {}
+[101.142114] (-) TimerEvent: {}
+[101.242493] (-) TimerEvent: {}
+[101.342868] (-) TimerEvent: {}
+[101.443501] (-) TimerEvent: {}
+[101.544195] (-) TimerEvent: {}
+[101.644550] (-) TimerEvent: {}
+[101.745060] (-) TimerEvent: {}
+[101.845385] (-) TimerEvent: {}
+[101.947556] (-) TimerEvent: {}
+[102.047907] (-) TimerEvent: {}
+[102.148232] (-) TimerEvent: {}
+[102.248887] (-) TimerEvent: {}
+[102.349228] (-) TimerEvent: {}
+[102.450200] (-) TimerEvent: {}
+[102.550817] (-) TimerEvent: {}
+[102.651224] (-) TimerEvent: {}
+[102.751766] (-) TimerEvent: {}
+[102.852210] (-) TimerEvent: {}
+[102.952685] (-) TimerEvent: {}
+[103.053134] (-) TimerEvent: {}
+[103.153591] (-) TimerEvent: {}
+[103.254193] (-) TimerEvent: {}
+[103.354719] (-) TimerEvent: {}
+[103.455261] (-) TimerEvent: {}
+[103.555845] (-) TimerEvent: {}
+[103.656271] (-) TimerEvent: {}
+[103.756745] (-) TimerEvent: {}
+[103.857194] (-) TimerEvent: {}
+[103.957672] (-) TimerEvent: {}
+[104.058105] (-) TimerEvent: {}
+[104.158474] (-) TimerEvent: {}
+[104.258915] (-) TimerEvent: {}
+[104.359283] (-) TimerEvent: {}
+[104.459731] (-) TimerEvent: {}
+[104.560581] (-) TimerEvent: {}
+[104.661017] (-) TimerEvent: {}
+[104.761481] (-) TimerEvent: {}
+[104.861832] (-) TimerEvent: {}
+[104.962156] (-) TimerEvent: {}
+[105.062491] (-) TimerEvent: {}
+[105.162831] (-) TimerEvent: {}
+[105.263222] (-) TimerEvent: {}
+[105.363613] (-) TimerEvent: {}
+[105.463960] (-) TimerEvent: {}
+[105.564277] (-) TimerEvent: {}
+[105.664620] (-) TimerEvent: {}
+[105.764946] (-) TimerEvent: {}
+[105.865317] (-) TimerEvent: {}
+[105.965658] (-) TimerEvent: {}
+[106.065987] (-) TimerEvent: {}
+[106.166309] (-) TimerEvent: {}
+[106.266662] (-) TimerEvent: {}
+[106.366990] (-) TimerEvent: {}
+[106.467311] (-) TimerEvent: {}
+[106.567626] (-) TimerEvent: {}
+[106.667930] (-) TimerEvent: {}
+[106.768274] (-) TimerEvent: {}
+[106.868647] (-) TimerEvent: {}
+[106.969012] (-) TimerEvent: {}
+[107.069345] (-) TimerEvent: {}
+[107.169681] (-) TimerEvent: {}
+[107.270001] (-) TimerEvent: {}
+[107.370313] (-) TimerEvent: {}
+[107.470640] (-) TimerEvent: {}
+[107.571001] (-) TimerEvent: {}
+[107.671371] (-) TimerEvent: {}
+[107.771748] (-) TimerEvent: {}
+[107.872140] (-) TimerEvent: {}
+[107.972494] (-) TimerEvent: {}
+[108.072803] (-) TimerEvent: {}
+[108.173240] (-) TimerEvent: {}
+[108.273635] (-) TimerEvent: {}
+[108.374088] (-) TimerEvent: {}
+[108.474625] (-) TimerEvent: {}
+[108.575167] (-) TimerEvent: {}
+[108.675538] (-) TimerEvent: {}
+[108.776109] (-) TimerEvent: {}
+[108.876611] (-) TimerEvent: {}
+[108.977104] (-) TimerEvent: {}
+[109.077540] (-) TimerEvent: {}
+[109.178106] (-) TimerEvent: {}
+[109.278548] (-) TimerEvent: {}
+[109.378937] (-) TimerEvent: {}
+[109.479326] (-) TimerEvent: {}
+[109.579842] (-) TimerEvent: {}
+[109.680251] (-) TimerEvent: {}
+[109.780712] (-) TimerEvent: {}
+[109.881207] (-) TimerEvent: {}
+[109.981671] (-) TimerEvent: {}
+[110.082159] (-) TimerEvent: {}
+[110.182639] (-) TimerEvent: {}
+[110.283103] (-) TimerEvent: {}
+[110.383534] (-) TimerEvent: {}
+[110.484077] (-) TimerEvent: {}
+[110.584552] (-) TimerEvent: {}
+[110.684875] (-) TimerEvent: {}
+[110.785474] (-) TimerEvent: {}
+[110.885913] (-) TimerEvent: {}
+[110.986400] (-) TimerEvent: {}
+[111.086751] (-) TimerEvent: {}
+[111.187177] (-) TimerEvent: {}
+[111.287725] (-) TimerEvent: {}
+[111.388270] (-) TimerEvent: {}
+[111.488757] (-) TimerEvent: {}
+[111.589378] (-) TimerEvent: {}
+[111.690305] (-) TimerEvent: {}
+[111.791418] (-) TimerEvent: {}
+[111.891732] (-) TimerEvent: {}
+[111.992268] (-) TimerEvent: {}
+[112.092573] (-) TimerEvent: {}
+[112.192899] (-) TimerEvent: {}
+[112.293231] (-) TimerEvent: {}
+[112.393529] (-) TimerEvent: {}
+[112.493846] (-) TimerEvent: {}
+[112.594148] (-) TimerEvent: {}
+[112.694482] (-) TimerEvent: {}
+[112.794783] (-) TimerEvent: {}
+[112.895114] (-) TimerEvent: {}
+[112.995465] (-) TimerEvent: {}
+[113.095784] (-) TimerEvent: {}
+[113.196104] (-) TimerEvent: {}
+[113.296410] (-) TimerEvent: {}
+[113.396767] (-) TimerEvent: {}
+[113.497077] (-) TimerEvent: {}
+[113.597395] (-) TimerEvent: {}
+[113.697876] (-) TimerEvent: {}
+[113.798557] (-) TimerEvent: {}
+[113.898918] (-) TimerEvent: {}
+[113.999307] (-) TimerEvent: {}
+[114.099891] (-) TimerEvent: {}
+[114.200209] (-) TimerEvent: {}
+[114.300493] (-) TimerEvent: {}
+[114.400793] (-) TimerEvent: {}
+[114.501163] (-) TimerEvent: {}
+[114.601571] (-) TimerEvent: {}
+[114.701859] (-) TimerEvent: {}
+[114.802162] (-) TimerEvent: {}
+[114.902443] (-) TimerEvent: {}
+[115.002743] (-) TimerEvent: {}
+[115.103192] (-) TimerEvent: {}
+[115.203548] (-) TimerEvent: {}
+[115.303881] (-) TimerEvent: {}
+[115.404195] (-) TimerEvent: {}
+[115.504551] (-) TimerEvent: {}
+[115.604867] (-) TimerEvent: {}
+[115.705273] (-) TimerEvent: {}
+[115.805723] (-) TimerEvent: {}
+[115.906131] (-) TimerEvent: {}
+[116.006518] (-) TimerEvent: {}
+[116.106898] (-) TimerEvent: {}
+[116.207249] (-) TimerEvent: {}
+[116.307653] (-) TimerEvent: {}
+[116.408115] (-) TimerEvent: {}
+[116.508408] (-) TimerEvent: {}
+[116.608785] (-) TimerEvent: {}
+[116.709124] (-) TimerEvent: {}
+[116.809439] (-) TimerEvent: {}
+[116.909771] (-) TimerEvent: {}
+[117.010054] (-) TimerEvent: {}
+[117.110377] (-) TimerEvent: {}
+[117.210673] (-) TimerEvent: {}
+[117.310952] (-) TimerEvent: {}
+[117.411298] (-) TimerEvent: {}
+[117.511668] (-) TimerEvent: {}
+[117.611956] (-) TimerEvent: {}
+[117.712401] (-) TimerEvent: {}
+[117.813100] (-) TimerEvent: {}
+[117.913770] (-) TimerEvent: {}
+[118.014062] (-) TimerEvent: {}
+[118.114354] (-) TimerEvent: {}
+[118.214743] (-) TimerEvent: {}
+[118.315122] (-) TimerEvent: {}
+[118.415519] (-) TimerEvent: {}
+[118.515869] (-) TimerEvent: {}
+[118.616153] (-) TimerEvent: {}
+[118.716464] (-) TimerEvent: {}
+[118.816801] (-) TimerEvent: {}
+[118.917117] (-) TimerEvent: {}
+[119.017446] (-) TimerEvent: {}
+[119.117798] (-) TimerEvent: {}
+[119.218152] (-) TimerEvent: {}
+[119.318495] (-) TimerEvent: {}
+[119.418840] (-) TimerEvent: {}
+[119.519156] (-) TimerEvent: {}
+[119.619515] (-) TimerEvent: {}
+[119.719847] (-) TimerEvent: {}
+[119.820119] (-) TimerEvent: {}
+[119.920435] (-) TimerEvent: {}
+[120.020806] (-) TimerEvent: {}
+[120.121174] (-) TimerEvent: {}
+[120.221516] (-) TimerEvent: {}
+[120.321831] (-) TimerEvent: {}
+[120.422196] (-) TimerEvent: {}
+[120.522553] (-) TimerEvent: {}
+[120.623158] (-) TimerEvent: {}
+[120.723531] (-) TimerEvent: {}
+[120.823883] (-) TimerEvent: {}
+[120.924295] (-) TimerEvent: {}
+[121.024666] (-) TimerEvent: {}
+[121.124956] (-) TimerEvent: {}
+[121.225340] (-) TimerEvent: {}
+[121.325666] (-) TimerEvent: {}
+[121.426039] (-) TimerEvent: {}
+[121.526419] (-) TimerEvent: {}
+[121.626718] (-) TimerEvent: {}
+[121.727054] (-) TimerEvent: {}
+[121.827382] (-) TimerEvent: {}
+[121.927759] (-) TimerEvent: {}
+[122.014044] (stella_vslam) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library ../../lib/libstella_vslam.so\x1b[0m\n'}
+[122.027886] (-) TimerEvent: {}
+[122.128214] (-) TimerEvent: {}
+[122.228552] (-) TimerEvent: {}
+[122.284638] (stella_vslam) StdoutLine: {'line': b'[100%] Built target stella_vslam\n'}
+[122.299747] (stella_vslam) CommandEnded: {'returncode': 0}
+[122.300633] (stella_vslam) JobProgress: {'identifier': 'stella_vslam', 'progress': 'install'}
+[122.301255] (stella_vslam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[122.310282] (stella_vslam) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[122.310817] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamConfigVersion.cmake\n'}
+[122.311127] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamConfig.cmake\n'}
+[122.311197] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamTargets.cmake\n'}
+[122.311394] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamTargets-release.cmake\n'}
+[122.311742] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/libstella_vslam.so\n'}
+[122.318232] (stella_vslam) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/libstella_vslam.so" to ""\n'}
+[122.318775] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/config.h\n'}
+[122.319167] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/global_optimization_module.h\n'}
+[122.319249] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/mapping_module.h\n'}
+[122.319550] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/system.h\n'}
+[122.319648] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/tracking_module.h\n'}
+[122.319705] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/type.h\n'}
+[122.320011] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/3rd/json/include/nlohmann/json.hpp\n'}
+[122.321306] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/3rd/json/include/nlohmann/json_fwd.hpp\n'}
+[122.321797] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/base.h\n'}
+[122.322074] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/camera_factory.h\n'}
+[122.322220] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/equirectangular.h\n'}
+[122.322281] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/fisheye.h\n'}
+[122.322320] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/perspective.h\n'}
+[122.322355] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/radial_division.h\n'}
+[122.322599] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/bow_database.h\n'}
+[122.323036] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/bow_vocabulary.h\n'}
+[122.323253] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/bow_vocabulary_fwd.h\n'}
+[122.323732] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/camera_database.h\n'}
+[122.323915] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/common.h\n'}
+[122.324062] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/frame.h\n'}
+[122.324194] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/frame_observation.h\n'}
+[122.324288] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/frame_statistics.h\n'}
+[122.324388] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/graph_node.h\n'}
+[122.324498] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/keyframe.h\n'}
+[122.324602] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/landmark.h\n'}
+[122.324719] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/map_database.h\n'}
+[122.324960] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/marker.h\n'}
+[122.325215] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/marker2d.h\n'}
+[122.325305] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/orb_params_database.h\n'}
+[122.325443] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_extractor.h\n'}
+[122.325519] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_impl.h\n'}
+[122.325705] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_params.h\n'}
+[122.325761] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_point_pairs.h\n'}
+[122.325826] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/initialize/base.h\n'}
+[122.325879] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/initialize/bearing_vector.h\n'}
+[122.325929] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/initialize/perspective.h\n'}
+[122.325974] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_base.h\n'}
+[122.326037] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_factory.h\n'}
+[122.326080] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_msgpack.h\n'}
+[122.326458] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_sqlite3.h\n'}
+[122.326851] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/trajectory_io.h\n'}
+[122.326953] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_detector/aruco.h\n'}
+[122.327018] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_detector/aruconano.h\n'}
+[122.327148] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_detector/base.h\n'}
+[122.327647] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_model/aruco.h\n'}
+[122.327740] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_model/aruconano.h\n'}
+[122.327811] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_model/base.h\n'}
+[122.327887] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/area.h\n'}
+[122.327940] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/base.h\n'}
+[122.327982] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/bow_tree.h\n'}
+[122.328020] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/fuse.h\n'}
+[122.328106] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/projection.h\n'}
+[122.328249] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/robust.h\n'}
+[122.328487] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/stereo.h\n'}
+[122.328794] (-) TimerEvent: {}
+[122.329217] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/frame_tracker.h\n'}
+[122.329600] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/initializer.h\n'}
+[122.329860] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/keyframe_inserter.h\n'}
+[122.329913] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/local_map_cleaner.h\n'}
+[122.329981] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/local_map_updater.h\n'}
+[122.330103] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/loop_bundle_adjuster.h\n'}
+[122.330207] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/loop_detector.h\n'}
+[122.330326] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/marker_initializer.h\n'}
+[122.330436] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/relocalizer.h\n'}
+[122.330537] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/two_view_triangulator.h\n'}
+[122.330657] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/type.h\n'}
+[122.330776] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/global_bundle_adjuster.h\n'}
+[122.330946] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/graph_optimizer.h\n'}
+[122.331063] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster.h\n'}
+[122.331142] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster_factory.h\n'}
+[122.331191] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster_g2o.h\n'}
+[122.331231] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster_gtsam.h\n'}
+[122.331306] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer.h\n'}
+[122.331362] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer_factory.h\n'}
+[122.331400] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer_g2o.h\n'}
+[122.331486] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer_gtsam.h\n'}
+[122.331635] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/terminate_action.h\n'}
+[122.331728] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/transform_optimizer.h\n'}
+[122.332404] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/landmark_vertex.h\n'}
+[122.332646] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/landmark_vertex_container.h\n'}
+[122.332721] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/marker_vertex_container.h\n'}
+[122.333652] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/equirectangular_pose_opt_edge.h\n'}
+[122.333950] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/equirectangular_reproj_edge.h\n'}
+[122.334124] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/perspective_pose_opt_edge.h\n'}
+[122.334219] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/perspective_reproj_edge.h\n'}
+[122.334287] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/pose_opt_edge_wrapper.h\n'}
+[122.334344] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/reproj_edge_wrapper.h\n'}
+[122.334527] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/shot_vertex.h\n'}
+[122.334848] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/shot_vertex_container.h\n'}
+[122.335040] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/backward_reproj_edge.h\n'}
+[122.335111] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/forward_reproj_edge.h\n'}
+[122.335227] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/graph_opt_edge.h\n'}
+[122.335280] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/mutual_reproj_edge_wrapper.h\n'}
+[122.335346] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/shot_vertex.h\n'}
+[122.335407] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/transform_vertex.h\n'}
+[122.336039] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal_gtsam/projection_factor.h\n'}
+[122.336889] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/publish/frame_publisher.h\n'}
+[122.337580] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/publish/map_publisher.h\n'}
+[122.338579] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/common.h\n'}
+[122.338957] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/essential_5pt.h\n'}
+[122.339349] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/essential_solver.h\n'}
+[122.339516] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/fundamental_solver.h\n'}
+[122.339791] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/homography_solver.h\n'}
+[122.340143] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/pnp_solver.h\n'}
+[122.340249] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/triangulator.h\n'}
+[122.340434] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/angle.h\n'}
+[122.340714] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/converter.h\n'}
+[122.340898] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/fancy_index.h\n'}
+[122.341252] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/image_converter.h\n'}
+[122.341449] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/random_array.h\n'}
+[122.341525] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/sqlite3.h\n'}
+[122.341578] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/stereo_rectifier.h\n'}
+[122.341656] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/string.h\n'}
+[122.341716] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/trigonometric.h\n'}
+[122.341775] (stella_vslam) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/yaml.h\n'}
+[122.343297] (stella_vslam) CommandEnded: {'returncode': 0}
+[122.357509] (stella_vslam) JobEnded: {'identifier': 'stella_vslam', 'rc': 0}
+[122.358182] (slam_driver) JobStarted: {'identifier': 'slam_driver'}
+[122.428909] (-) TimerEvent: {}
+[122.442749] (slam_driver) JobProgress: {'identifier': 'slam_driver', 'progress': 'cmake'}
+[122.443827] (slam_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam', '-DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/x86_64-linux-gnu/pkgconfig:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/pkgconfig', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[122.459268] (slam_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[122.528982] (-) TimerEvent: {}
+[122.593529] (slam_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[122.594106] (slam_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[122.629060] (-) TimerEvent: {}
+[122.729361] (-) TimerEvent: {}
+[122.829840] (-) TimerEvent: {}
+[122.860783] (slam_driver) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[122.861099] (slam_driver) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[122.869001] (slam_driver) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[122.929910] (-) TimerEvent: {}
+[123.030221] (-) TimerEvent: {}
+[123.130550] (-) TimerEvent: {}
+[123.230844] (-) TimerEvent: {}
+[123.268773] (slam_driver) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[123.283067] (slam_driver) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") found components: core imgcodecs \n'}
+[123.283261] (slam_driver) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[123.289228] (slam_driver) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[123.290592] (slam_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver\n'}
+[123.293674] (slam_driver) CommandEnded: {'returncode': 0}
+[123.294133] (slam_driver) JobProgress: {'identifier': 'slam_driver', 'progress': 'build'}
+[123.294503] (slam_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', '--', '-j8', '-l8'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/x86_64-linux-gnu/pkgconfig:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/pkgconfig', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[123.330977] (-) TimerEvent: {}
+[123.341490] (slam_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/run_slam.dir/run_slam.cc.o\x1b[0m\n'}
+[123.431067] (-) TimerEvent: {}
+[123.531478] (-) TimerEvent: {}
+[123.631802] (-) TimerEvent: {}
+[123.732119] (-) TimerEvent: {}
+[123.832412] (-) TimerEvent: {}
+[123.932755] (-) TimerEvent: {}
+[124.033112] (-) TimerEvent: {}
+[124.133385] (-) TimerEvent: {}
+[124.233733] (-) TimerEvent: {}
+[124.334085] (-) TimerEvent: {}
+[124.434413] (-) TimerEvent: {}
+[124.534766] (-) TimerEvent: {}
+[124.635143] (-) TimerEvent: {}
+[124.735499] (-) TimerEvent: {}
+[124.835809] (-) TimerEvent: {}
+[124.936156] (-) TimerEvent: {}
+[124.950522] (slam_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable run_slam\x1b[0m\n'}
+[125.036324] (-) TimerEvent: {}
+[125.136584] (-) TimerEvent: {}
+[125.236868] (-) TimerEvent: {}
+[125.337200] (-) TimerEvent: {}
+[125.437476] (-) TimerEvent: {}
+[125.446060] (slam_driver) StdoutLine: {'line': b'[100%] Built target run_slam\n'}
+[125.456697] (slam_driver) CommandEnded: {'returncode': 0}
+[125.457223] (slam_driver) JobProgress: {'identifier': 'slam_driver', 'progress': 'install'}
+[125.457599] (slam_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver'], 'cwd': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SSH_AGENT_PID': '376', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ren', 'OLDPWD': '/home/ren/workspaces/turtlebot3_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ren', 'NAME': 'LAPTOP-JV8R42RJ', 'WSL_INTEROP': '/run/WSL/46171_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/x86_64-linux-gnu/pkgconfig:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/pkgconfig', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/minam/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/minam/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/tmp/ssh-sz3FsKg1457L/agent.374', 'AMENT_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}), 'shell': False}
+[125.464618] (slam_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[125.464942] (slam_driver) StdoutLine: {'line': b'-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin/run_slam\n'}
+[125.465368] (slam_driver) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin/run_slam" to ""\n'}
+[125.467394] (slam_driver) CommandEnded: {'returncode': 0}
+[125.474616] (slam_driver) JobEnded: {'identifier': 'slam_driver', 'rc': 0}
+[125.476195] (-) EventReactorShutdown: {}

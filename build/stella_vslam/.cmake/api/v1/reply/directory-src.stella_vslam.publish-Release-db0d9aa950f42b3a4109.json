@@ -1,0 +1,44 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/publish/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/publish",
+			"paths" : 
+			[
+				"src/stella_vslam/publish/frame_publisher.h",
+				"src/stella_vslam/publish/map_publisher.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/publish",
+		"source" : "src/stella_vslam/publish"
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/optimize/internal_gtsam/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/optimize/internal_gtsam",
+			"paths" : 
+			[
+				"src/stella_vslam/optimize/internal_gtsam/projection_factor.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/optimize/internal_gtsam",
+		"source" : "src/stella_vslam/optimize/internal_gtsam"
+	}
+}

@@ -1,0 +1,26 @@
+[0.011s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver': /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver
+[0.221s] -- The CXX compiler identification is GNU 13.3.0
+[0.444s] -- Detecting CXX compiler ABI info
+[0.590s] -- Detecting CXX compiler ABI info - done
+[0.595s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.596s] -- Detecting CXX compile features
+[0.596s] -- Detecting CXX compile features - done
+[1.066s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[1.066s]   By not providing "Findstella_vslam.cmake" in CMAKE_MODULE_PATH this project
+[1.066s]   has asked CMake to find a package configuration file provided by
+[1.067s]   "stella_vslam", but CMake did not find one.
+[1.067s] 
+[1.067s]   Could not find a package configuration file provided by "stella_vslam" with
+[1.067s]   any of the following names:
+[1.067s] 
+[1.067s]     stella_vslamConfig.cmake
+[1.067s]     stella_vslam-config.cmake
+[1.067s] 
+[1.067s]   Add the installation prefix of "stella_vslam" to CMAKE_PREFIX_PATH or set
+[1.067s]   "stella_vslam_DIR" to a directory containing one of the above files.  If
+[1.067s]   "stella_vslam" provides a separate development package or SDK, be sure it
+[1.067s]   has been installed.
+[1.067s] 
+[1.067s] [0m
+[1.067s] -- Configuring incomplete, errors occurred!
+[1.068s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver' returned '1': /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver

@@ -1,0 +1,47 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/io/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/io",
+			"paths" : 
+			[
+				"src/stella_vslam/io/map_database_io_base.h",
+				"src/stella_vslam/io/map_database_io_factory.h",
+				"src/stella_vslam/io/map_database_io_msgpack.h",
+				"src/stella_vslam/io/map_database_io_sqlite3.h",
+				"src/stella_vslam/io/trajectory_io.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/io",
+		"source" : "src/stella_vslam/io"
+	}
+}

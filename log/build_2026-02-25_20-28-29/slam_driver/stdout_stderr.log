@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:6 (find_package):
+  By not providing "Findstella_vslam.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "stella_vslam", but CMake did not find one.
+
+  Could not find a package configuration file provided by "stella_vslam" with
+  any of the following names:
+
+    stella_vslamConfig.cmake
+    stella_vslam-config.cmake
+
+  Add the installation prefix of "stella_vslam" to CMAKE_PREFIX_PATH or set
+  "stella_vslam_DIR" to a directory containing one of the above files.  If
+  "stella_vslam" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+-- Configuring incomplete, errors occurred!

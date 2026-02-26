@@ -76,6 +76,12 @@ def generate_launch_description():
         description="Full path to robot sdf file to spawn the robot in gazebo",
     )
 
+    # declare_headless_cmd = DeclareLaunchArgument(
+    #     "headless",
+    #     default_value="false",
+    #     description="Run gz in headless rendering mode if true",
+    # )
+    
     declare_texture_base_cmd = DeclareLaunchArgument(
         "texture_base",
         default_value=os.path.join(bringup_dir, "worlds", "textures"),
@@ -143,7 +149,6 @@ def generate_launch_description():
     )
     gazebo = ExecuteProcess(
         cmd=["gz", "sim", "-r", world_sdf],
-        condition=UnlessCondition(LaunchConfiguration("headless")),
         output="screen",
     )
 
@@ -184,8 +189,7 @@ def generate_launch_description():
             world_sdf_xacro,
             remove_temp_sdf_file,
             gz_tb_spawner,
-            gazebo_headless,
-            gazebo_gui,
+            gazebo,
             robot_state_publisher_cmd,
         ]
     )

@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/optimize/internal/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/optimize/internal",
+			"paths" : 
+			[
+				"src/stella_vslam/optimize/internal/landmark_vertex.h",
+				"src/stella_vslam/optimize/internal/landmark_vertex_container.h",
+				"src/stella_vslam/optimize/internal/marker_vertex_container.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/optimize/internal",
+		"source" : "src/stella_vslam/optimize/internal"
+	}
+}

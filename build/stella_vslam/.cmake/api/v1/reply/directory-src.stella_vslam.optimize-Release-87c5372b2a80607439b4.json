@@ -1,0 +1,54 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/optimize/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/optimize",
+			"paths" : 
+			[
+				"src/stella_vslam/optimize/global_bundle_adjuster.h",
+				"src/stella_vslam/optimize/graph_optimizer.h",
+				"src/stella_vslam/optimize/local_bundle_adjuster.h",
+				"src/stella_vslam/optimize/local_bundle_adjuster_factory.h",
+				"src/stella_vslam/optimize/local_bundle_adjuster_g2o.h",
+				"src/stella_vslam/optimize/local_bundle_adjuster_gtsam.h",
+				"src/stella_vslam/optimize/pose_optimizer.h",
+				"src/stella_vslam/optimize/pose_optimizer_factory.h",
+				"src/stella_vslam/optimize/pose_optimizer_g2o.h",
+				"src/stella_vslam/optimize/pose_optimizer_gtsam.h",
+				"src/stella_vslam/optimize/terminate_action.h",
+				"src/stella_vslam/optimize/transform_optimizer.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/optimize",
+		"source" : "src/stella_vslam/optimize"
+	}
+}

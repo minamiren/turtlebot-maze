@@ -1,0 +1,54 @@
+[0.020s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy -- -j8 -l8
+[0.065s] [  0%] Built target ament_cmake_python_copy_tb_behaviors
+[0.069s] [100%] Built target autonomy_node_cpp
+[0.220s] running egg_info
+[0.253s] writing tb_behaviors.egg-info/PKG-INFO
+[0.253s] writing dependency_links to tb_behaviors.egg-info/dependency_links.txt
+[0.253s] writing top-level names to tb_behaviors.egg-info/top_level.txt
+[0.283s] reading manifest file 'tb_behaviors.egg-info/SOURCES.txt'
+[0.284s] writing manifest file 'tb_behaviors.egg-info/SOURCES.txt'
+[0.301s] [100%] Built target ament_cmake_python_build_tb_behaviors_egg
+[0.308s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy' returned '0': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy -- -j8 -l8
+[0.309s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy
+[0.315s] -- Install configuration: ""
+[0.315s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml
+[0.315s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_queue.xml
+[0.315s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_naive.xml
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/tree_naive.xml
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/bt_xml/nav_tree_queue.xml
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_py.launch.py
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/launch/tb_demo_behavior_cpp.launch.py
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.sh
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/pythonpath.dsv
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info
+[0.316s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/PKG-INFO
+[0.316s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/dependency_links.txt
+[0.316s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/top_level.txt
+[0.316s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors-0.0.0-py3.12.egg-info/SOURCES.txt
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/vision.py
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/navigation.py
+[0.316s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors/__init__.py
+[0.339s] Listing '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/python3.12/site-packages/tb_behaviors'...
+[0.342s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node.py
+[0.342s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_move_base.py
+[0.342s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/test_vision.py
+[0.342s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/zenoh_detection_sub.py
+[0.342s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/lib/tb_autonomy/autonomy_node_cpp
+[0.342s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/package_run_dependencies/tb_autonomy
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/parent_prefix_path/tb_autonomy
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.sh
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/ament_prefix_path.dsv
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.sh
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/environment/path.dsv
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.bash
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.sh
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.zsh
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/local_setup.dsv
+[0.343s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.dsv
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/ament_index/resource_index/packages/tb_autonomy
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig.cmake
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/cmake/tb_autonomyConfig-version.cmake
+[0.343s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy/share/tb_autonomy/package.xml
+[0.344s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy' returned '0': CMAKE_PREFIX_PATH=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam:/usr/local:/usr/local:/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_autonomy:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_autonomy

@@ -1,0 +1,250 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- The C compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Build type: Release
+-- ccache: Disabled
+-- Address/Memory sanitizer: DISABLED
+-- Architecture-aware optimization: DISABLED
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Found Eigen3: /usr/include/eigen3 (Required is at least version "3.3") 
+-- Use OpenCV 4.6.0
+-- aruco: enabled (Found in /usr/include/opencv4/opencv2)
+-- Use spdlog on system: 1.12.0
+-- Found SQLite3: /usr/include (found version "3.45.1") 
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- gtsam: disabled
+-- Found CXSparse: /usr/include/suitesparse (found version "4.3.1") 
+-- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+-- Found AMD header in: /usr/include/suitesparse
+-- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+-- Found CAMD header in: /usr/include/suitesparse
+-- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+-- Found COLAMD header in: /usr/include/suitesparse
+-- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+-- Found CCOLAMD header in: /usr/include/suitesparse
+-- Found SuiteSparse_config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+-- Found SuiteSparse_config header in: /usr/include/suitesparse
+-- Adding librt: /usr/lib/x86_64-linux-gnu/librt.a to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+-- Did not find METIS library (optional SuiteSparse dependency)
+-- Found SuiteSparse: TRUE (found version "..") 
+-- Could NOT find cuda_efficient_features (missing: cuda_efficient_features_LIBRARY cuda_efficient_features_INCLUDE_DIR) 
+-- cuda_efficient_features: disabled
+-- OpenMP: DISABLED
+-- SSE3 for ORB extraction: DISABLED
+-- SSE for floating-point operation: DISABLED
+-- BoW framework: FBoW (found in /usr/local/include)
+-- trace level log: DISABLED
+-- Determinism: DISABLED
+-- tracy: DISABLED
+-- Configuring done (5.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam
+[  2%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/global_optimization_module.cc.o[0m
+[  2%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/base.cc.o[0m
+[  4%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/tracking_module.cc.o[0m
+[  5%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/fisheye.cc.o[0m
+[  6%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/config.cc.o[0m
+[  8%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/perspective.cc.o[0m
+[  9%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/system.cc.o[0m
+[ 10%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/mapping_module.cc.o[0m
+[ 12%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/equirectangular.cc.o[0m
+[ 13%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/camera/radial_division.cc.o[0m
+[ 15%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/bow_vocabulary.cc.o[0m
+[ 16%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/common.cc.o[0m
+[ 17%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/frame.cc.o[0m
+[ 19%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/keyframe.cc.o[0m
+[ 20%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/landmark.cc.o[0m
+[ 21%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/marker.cc.o[0m
+[ 23%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/marker2d.cc.o[0m
+[ 24%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/graph_node.cc.o[0m
+[ 26%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/camera_database.cc.o[0m
+[ 27%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/orb_params_database.cc.o[0m
+[ 28%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/map_database.cc.o[0m
+[ 30%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/frame_statistics.cc.o[0m
+[ 31%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/data/bow_database.cc.o[0m
+[ 32%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/feature/orb_params.cc.o[0m
+[ 34%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/feature/orb_extractor.cc.o[0m
+[ 35%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/feature/orb_impl.cc.o[0m
+[ 36%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/initialize/base.cc.o[0m
+[ 38%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/initialize/perspective.cc.o[0m
+[ 39%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/initialize/bearing_vector.cc.o[0m
+[ 41%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/io/trajectory_io.cc.o[0m
+[ 42%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/io/map_database_io_msgpack.cc.o[0m
+[ 43%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/io/map_database_io_sqlite3.cc.o[0m
+[ 45%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_detector/base.cc.o[0m
+[ 46%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_detector/aruco.cc.o[0m
+[ 47%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_model/aruco.cc.o[0m
+[ 49%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/marker_model/base.cc.o[0m
+[ 50%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/area.cc.o[0m
+[ 52%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/bow_tree.cc.o[0m
+[ 53%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/fuse.cc.o[0m
+[ 54%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/projection.cc.o[0m
+[ 56%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/robust.cc.o[0m
+[ 57%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/match/stereo.cc.o[0m
+[ 58%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/initializer.cc.o[0m
+[ 60%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/relocalizer.cc.o[0m
+[ 61%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/frame_tracker.cc.o[0m
+[ 63%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/keyframe_inserter.cc.o[0m
+[ 64%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/marker_initializer.cc.o[0m
+[ 65%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/two_view_triangulator.cc.o[0m
+[ 67%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/local_map_cleaner.cc.o[0m
+[ 68%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/local_map_updater.cc.o[0m
+[ 69%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/loop_detector.cc.o[0m
+[ 71%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/module/loop_bundle_adjuster.cc.o[0m
+[ 72%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/pose_optimizer_g2o.cc.o[0m
+[ 73%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/local_bundle_adjuster_g2o.cc.o[0m
+[ 75%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/transform_optimizer.cc.o[0m
+[ 76%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/graph_optimizer.cc.o[0m
+[ 78%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/global_bundle_adjuster.cc.o[0m
+[ 79%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/optimize/terminate_action.cc.o[0m
+[ 80%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/publish/frame_publisher.cc.o[0m
+[ 82%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/publish/map_publisher.cc.o[0m
+[ 83%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/common.cc.o[0m
+[ 84%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/homography_solver.cc.o[0m
+[ 86%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/fundamental_solver.cc.o[0m
+[ 87%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/essential_solver.cc.o[0m
+[ 89%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/solve/pnp_solver.cc.o[0m
+[ 90%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/angle.cc.o[0m
+[ 91%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/converter.cc.o[0m
+[ 93%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/image_converter.cc.o[0m
+[ 94%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/random_array.cc.o[0m
+[ 95%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/sqlite3.cc.o[0m
+[ 97%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/stereo_rectifier.cc.o[0m
+[ 98%] [32mBuilding CXX object src/stella_vslam/CMakeFiles/stella_vslam.dir/util/yaml.cc.o[0m
+[100%] [32m[1mLinking CXX shared library ../../lib/libstella_vslam.so[0m
+[100%] Built target stella_vslam
+-- Install configuration: "Release"
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamConfigVersion.cmake
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamConfig.cmake
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamTargets.cmake
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/cmake/stella_vslam/stella_vslamTargets-release.cmake
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/libstella_vslam.so
+-- Set non-toolchain portion of runtime path of "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/lib/libstella_vslam.so" to ""
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/config.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/global_optimization_module.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/mapping_module.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/system.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/tracking_module.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/type.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/3rd/json/include/nlohmann/json.hpp
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/3rd/json/include/nlohmann/json_fwd.hpp
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/base.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/camera_factory.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/equirectangular.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/fisheye.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/perspective.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/camera/radial_division.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/bow_database.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/bow_vocabulary.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/bow_vocabulary_fwd.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/camera_database.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/common.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/frame.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/frame_observation.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/frame_statistics.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/graph_node.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/keyframe.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/landmark.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/map_database.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/marker.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/marker2d.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/data/orb_params_database.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_extractor.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_impl.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_params.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/feature/orb_point_pairs.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/initialize/base.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/initialize/bearing_vector.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/initialize/perspective.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_base.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_factory.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_msgpack.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/map_database_io_sqlite3.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/io/trajectory_io.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_detector/aruco.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_detector/aruconano.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_detector/base.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_model/aruco.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_model/aruconano.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/marker_model/base.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/area.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/base.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/bow_tree.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/fuse.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/projection.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/robust.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/match/stereo.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/frame_tracker.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/initializer.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/keyframe_inserter.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/local_map_cleaner.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/local_map_updater.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/loop_bundle_adjuster.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/loop_detector.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/marker_initializer.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/relocalizer.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/two_view_triangulator.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/module/type.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/global_bundle_adjuster.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/graph_optimizer.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster_factory.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster_g2o.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/local_bundle_adjuster_gtsam.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer_factory.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer_g2o.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/pose_optimizer_gtsam.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/terminate_action.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/transform_optimizer.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/landmark_vertex.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/landmark_vertex_container.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/marker_vertex_container.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/equirectangular_pose_opt_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/equirectangular_reproj_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/perspective_pose_opt_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/perspective_reproj_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/pose_opt_edge_wrapper.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/reproj_edge_wrapper.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/shot_vertex.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/se3/shot_vertex_container.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/backward_reproj_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/forward_reproj_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/graph_opt_edge.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/mutual_reproj_edge_wrapper.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/shot_vertex.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal/sim3/transform_vertex.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/optimize/internal_gtsam/projection_factor.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/publish/frame_publisher.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/publish/map_publisher.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/common.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/essential_5pt.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/essential_solver.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/fundamental_solver.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/homography_solver.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/pnp_solver.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/solve/triangulator.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/angle.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/converter.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/fancy_index.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/image_converter.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/random_array.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/sqlite3.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/stereo_rectifier.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/string.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/trigonometric.h
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/stella_vslam/include/stella_vslam/util/yaml.h

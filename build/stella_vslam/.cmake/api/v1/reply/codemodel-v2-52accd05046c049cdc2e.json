@@ -1,0 +1,342 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-2bed797c3c382d6565b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Release-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/stella_vslam",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						17,
+						18,
+						19
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam-Release-c5711acbe3cf0bfccc3a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/stella_vslam/camera",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.camera-Release-fa9136ea60b0b04e97d8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/camera"
+				},
+				{
+					"build" : "src/stella_vslam/data",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.data-Release-c99735fd4ce090cd603a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/data"
+				},
+				{
+					"build" : "src/stella_vslam/feature",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.feature-Release-4d8c6bccb2e8d4829334.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/feature"
+				},
+				{
+					"build" : "src/stella_vslam/initialize",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.initialize-Release-7e91d381481a7b747d28.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/initialize"
+				},
+				{
+					"build" : "src/stella_vslam/io",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.io-Release-d7cdd1f3b1e5da698d25.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/io"
+				},
+				{
+					"build" : "src/stella_vslam/marker_detector",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.marker_detector-Release-587927c357653d93a1e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/marker_detector"
+				},
+				{
+					"build" : "src/stella_vslam/marker_model",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.marker_model-Release-7bd10376c9a783e436b7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/marker_model"
+				},
+				{
+					"build" : "src/stella_vslam/match",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.match-Release-f745ae38e093da643948.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/match"
+				},
+				{
+					"build" : "src/stella_vslam/module",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.module-Release-61f3cc6e53531e7983b7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/module"
+				},
+				{
+					"build" : "src/stella_vslam/optimize",
+					"childIndexes" : 
+					[
+						13,
+						16
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.optimize-Release-87c5372b2a80607439b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/optimize"
+				},
+				{
+					"build" : "src/stella_vslam/optimize/internal",
+					"childIndexes" : 
+					[
+						14,
+						15
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.optimize.internal-Release-be7b6aa27ea4e3bab994.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/optimize/internal"
+				},
+				{
+					"build" : "src/stella_vslam/optimize/internal/se3",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.optimize.internal.se3-Release-229b25a5c2efd4384fa4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 13,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/optimize/internal/se3"
+				},
+				{
+					"build" : "src/stella_vslam/optimize/internal/sim3",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.optimize.internal.sim3-Release-f05076e6596695387ed2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 13,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/optimize/internal/sim3"
+				},
+				{
+					"build" : "src/stella_vslam/optimize/internal_gtsam",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.optimize.internal_gtsam-Release-71afa47c168afb066673.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/optimize/internal_gtsam"
+				},
+				{
+					"build" : "src/stella_vslam/publish",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.publish-Release-db0d9aa950f42b3a4109.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/publish"
+				},
+				{
+					"build" : "src/stella_vslam/solve",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.solve-Release-5b4835b275979f7463f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/solve"
+				},
+				{
+					"build" : "src/stella_vslam/util",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.stella_vslam.util-Release-aa62a8687be6780b94a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/stella_vslam/util"
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					],
+					"name" : "stella_vslam",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "stella_vslam::@7d25a9cc6ce1f4d13a95",
+					"jsonFile" : "target-stella_vslam-Release-9950a838fcd467e4bd26.json",
+					"name" : "stella_vslam",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam",
+		"source" : "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

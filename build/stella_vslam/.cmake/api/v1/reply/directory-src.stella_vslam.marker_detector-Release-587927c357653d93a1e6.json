@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/marker_detector/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/marker_detector",
+			"paths" : 
+			[
+				"src/stella_vslam/marker_detector/aruco.h",
+				"src/stella_vslam/marker_detector/aruconano.h",
+				"src/stella_vslam/marker_detector/base.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/marker_detector",
+		"source" : "src/stella_vslam/marker_detector"
+	}
+}

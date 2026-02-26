@@ -1,0 +1,41 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at CMakeLists.txt:14 (cmake_policy):
+  The OLD behavior for policy CMP0074 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+[0m
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/data/map_database.cc:[m[K In member function ‘[01m[Kvoid stella_vslam::data::map_database::[01;32m[Kregister_keyframe[m[K(stella_vslam::data::camera_database*, stella_vslam::data::orb_params_database*, stella_vslam::data::bow_vocabulary*, unsigned int, const nlohmann::json&)[m[K’:
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/data/map_database.cc:374:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_keypts[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  374 |     const auto [01;35m[Knum_keypts[m[K = json_keyfrm.at("n_keypts").get<unsigned int>();
+      |                [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/io/map_database_io_sqlite3.cc:[m[K In member function ‘[01m[Kvirtual bool stella_vslam::io::map_database_io_sqlite3::[01;32m[Ksave[m[K(const std::string&, const stella_vslam::data::camera_database*, const stella_vslam::data::orb_params_database*, const stella_vslam::data::map_database*)[m[K’:
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/io/map_database_io_sqlite3.cc:20:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Korb_params_db[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   20 |                                    [01;35m[Kconst data::orb_params_database* const orb_params_db[m[K,
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:[m[K In member function ‘[01m[Kbool stella_vslam::module::relocalizer::[01;32m[Krelocalize_by_pnp_solver[m[K(stella_vslam::data::frame&, const std::shared_ptr<stella_vslam::data::keyframe>&, bool, std::vector<unsigned int>&, std::vector<std::shared_ptr<stella_vslam::data::landmark> >&) const[m[K’:
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:163:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_additional_matches[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  163 |             const auto [01;35m[Knum_additional_matches[m[K = use_robust_matcher ? robust_matcher_.match_frame_and_keyframe(curr_frm, ngh_keyfrm, additional_matched_landmarks)
+      |                        [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:[m[K In member function ‘[01m[Kbool stella_vslam::module::relocalizer::[01;32m[Krefine_pose_by_local_map[m[K(stella_vslam::data::frame&, const std::shared_ptr<stella_vslam::data::keyframe>&) const[m[K’:
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/module/relocalizer.cc:361:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_additional_matches[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  361 |         auto [01;35m[Knum_additional_matches[m[K = projection_matcher.match_frame_and_landmarks(curr_frm, local_landmarks, lm_to_reproj, lm_to_x_right, lm_to_scale, margin);
+      |              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/solve/homography_solver.cc:[m[K In static member function ‘[01m[Kstatic bool stella_vslam::solve::homography_solver::[01;32m[Kdecompose[m[K(const stella_vslam::Mat33_t&, const stella_vslam::Mat33_t&, const stella_vslam::Mat33_t&, stella_vslam::eigen_alloc_vector<Eigen::Matrix<double, 3, 3> >&, stella_vslam::eigen_alloc_vector<Eigen::Matrix<double, 3, 1> >&, stella_vslam::eigen_alloc_vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/solve/homography_solver.cc:162:28:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksvd.Eigen::JacobiSVD<Eigen::Matrix<double, 3, 3, 0, 3, 3>, 2>::<unnamed>.Eigen::SVDBase<Eigen::JacobiSVD<Eigen::Matrix<double, 3, 3, 0, 3, 3>, 2> >::m_singularValues.Eigen::Matrix<double, 3, 1, 0, 3, 1>::<unnamed>.Eigen::PlainObjectBase<Eigen::Matrix<double, 3, 1, 0, 3, 1> >::m_storage.Eigen::DenseStorage<double, 3, 3, 1, 0>::m_data.Eigen::internal::plain_array<double, 3, 0, 0>::array[2][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  162 |     const float d3 = [01;35m[Klambda(2)[m[K;
+      |                      [01;35m[K~~~~~~^~~[m[K
+[01m[K/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/stella_vslam/src/stella_vslam/solve/homography_solver.cc:154:37:[m[K [01;36m[Knote: [m[K‘[01m[Ksvd[m[K’ declared here
+  154 |     const Eigen::JacobiSVD<Mat33_t> [01;36m[Ksvd[m[K(A, Eigen::ComputeFullU | Eigen::ComputeFullV);
+      |                                     [01;36m[K^~~[m[K

@@ -78,6 +78,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy/scripts/autonomy_node.py"
     "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy/scripts/test_move_base.py"
     "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy/scripts/test_vision.py"
+    "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/tb_autonomy/scripts/zenoh_detection_sub.py"
     )
 endif()
 

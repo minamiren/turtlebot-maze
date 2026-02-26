@@ -1,0 +1,68 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 181,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/stella_vslam",
+			"paths" : 
+			[
+				"/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam/generated/stella_vslamConfigVersion.cmake",
+				"/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/stella_vslam/generated/stella_vslamConfig.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/stella_vslam",
+			"exportName" : "stella_vslamTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "stella_vslam::@7d25a9cc6ce1f4d13a95",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/775e2e113fd2867a2f6d933a7c597f7c/stella_vslamTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

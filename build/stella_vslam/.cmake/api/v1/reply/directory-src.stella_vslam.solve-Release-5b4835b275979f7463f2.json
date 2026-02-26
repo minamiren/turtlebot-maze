@@ -1,0 +1,49 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/solve/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/solve",
+			"paths" : 
+			[
+				"src/stella_vslam/solve/common.h",
+				"src/stella_vslam/solve/essential_5pt.h",
+				"src/stella_vslam/solve/essential_solver.h",
+				"src/stella_vslam/solve/fundamental_solver.h",
+				"src/stella_vslam/solve/homography_solver.h",
+				"src/stella_vslam/solve/pnp_solver.h",
+				"src/stella_vslam/solve/triangulator.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/solve",
+		"source" : "src/stella_vslam/solve"
+	}
+}

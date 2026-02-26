@@ -1,0 +1,20 @@
+[0.011s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver': /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver
+[0.587s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[0.587s]   By not providing "Findstella_vslam.cmake" in CMAKE_MODULE_PATH this project
+[0.587s]   has asked CMake to find a package configuration file provided by
+[0.587s]   "stella_vslam", but CMake did not find one.
+[0.587s] 
+[0.587s]   Could not find a package configuration file provided by "stella_vslam" with
+[0.587s]   any of the following names:
+[0.587s] 
+[0.587s]     stella_vslamConfig.cmake
+[0.587s]     stella_vslam-config.cmake
+[0.587s] 
+[0.588s]   Add the installation prefix of "stella_vslam" to CMAKE_PREFIX_PATH or set
+[0.588s]   "stella_vslam_DIR" to a directory containing one of the above files.  If
+[0.588s]   "stella_vslam" provides a separate development package or SDK, be sure it
+[0.588s]   has been installed.
+[0.588s] 
+[0.588s] [0m
+[0.588s] -- Configuring incomplete, errors occurred!
+[0.589s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver' returned '1': /usr/bin/cmake /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/slam -DCMAKE_INSTALL_PREFIX=/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver

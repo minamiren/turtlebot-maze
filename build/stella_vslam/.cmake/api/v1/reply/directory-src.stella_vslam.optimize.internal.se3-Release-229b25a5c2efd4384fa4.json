@@ -1,0 +1,50 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/optimize/internal/se3/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/optimize/internal/se3",
+			"paths" : 
+			[
+				"src/stella_vslam/optimize/internal/se3/equirectangular_pose_opt_edge.h",
+				"src/stella_vslam/optimize/internal/se3/equirectangular_reproj_edge.h",
+				"src/stella_vslam/optimize/internal/se3/perspective_pose_opt_edge.h",
+				"src/stella_vslam/optimize/internal/se3/perspective_reproj_edge.h",
+				"src/stella_vslam/optimize/internal/se3/pose_opt_edge_wrapper.h",
+				"src/stella_vslam/optimize/internal/se3/reproj_edge_wrapper.h",
+				"src/stella_vslam/optimize/internal/se3/shot_vertex.h",
+				"src/stella_vslam/optimize/internal/se3/shot_vertex_container.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/optimize/internal/se3",
+		"source" : "src/stella_vslam/optimize/internal/se3"
+	}
+}

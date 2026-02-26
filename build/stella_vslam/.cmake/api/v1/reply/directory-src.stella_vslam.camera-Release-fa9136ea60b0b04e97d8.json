@@ -1,0 +1,48 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/camera/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/camera",
+			"paths" : 
+			[
+				"src/stella_vslam/camera/base.h",
+				"src/stella_vslam/camera/camera_factory.h",
+				"src/stella_vslam/camera/equirectangular.h",
+				"src/stella_vslam/camera/fisheye.h",
+				"src/stella_vslam/camera/perspective.h",
+				"src/stella_vslam/camera/radial_division.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/camera",
+		"source" : "src/stella_vslam/camera"
+	}
+}

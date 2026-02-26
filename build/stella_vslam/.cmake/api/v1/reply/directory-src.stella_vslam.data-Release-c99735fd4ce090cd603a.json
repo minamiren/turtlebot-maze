@@ -1,0 +1,57 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/data/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/data",
+			"paths" : 
+			[
+				"src/stella_vslam/data/bow_database.h",
+				"src/stella_vslam/data/bow_vocabulary.h",
+				"src/stella_vslam/data/bow_vocabulary_fwd.h",
+				"src/stella_vslam/data/camera_database.h",
+				"src/stella_vslam/data/common.h",
+				"src/stella_vslam/data/frame.h",
+				"src/stella_vslam/data/frame_observation.h",
+				"src/stella_vslam/data/frame_statistics.h",
+				"src/stella_vslam/data/graph_node.h",
+				"src/stella_vslam/data/keyframe.h",
+				"src/stella_vslam/data/landmark.h",
+				"src/stella_vslam/data/map_database.h",
+				"src/stella_vslam/data/marker.h",
+				"src/stella_vslam/data/marker2d.h",
+				"src/stella_vslam/data/orb_params_database.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/data",
+		"source" : "src/stella_vslam/data"
+	}
+}

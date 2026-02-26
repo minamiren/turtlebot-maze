@@ -1,0 +1,7 @@
+[0.074s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver': /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver -- -j8 -l8
+[0.112s] [100%] Built target run_slam
+[0.123s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver' returned '0': /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver -- -j8 -l8
+[0.123s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver': /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver
+[0.129s] -- Install configuration: ""
+[0.129s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin/run_slam
+[0.130s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver' returned '0': /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/slam_driver

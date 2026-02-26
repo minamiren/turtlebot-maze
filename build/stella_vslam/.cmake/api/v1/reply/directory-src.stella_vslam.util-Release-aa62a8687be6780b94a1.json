@@ -1,0 +1,52 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/stella_vslam/util/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/stella_vslam/util",
+			"paths" : 
+			[
+				"src/stella_vslam/util/angle.h",
+				"src/stella_vslam/util/converter.h",
+				"src/stella_vslam/util/fancy_index.h",
+				"src/stella_vslam/util/image_converter.h",
+				"src/stella_vslam/util/random_array.h",
+				"src/stella_vslam/util/sqlite3.h",
+				"src/stella_vslam/util/stereo_rectifier.h",
+				"src/stella_vslam/util/string.h",
+				"src/stella_vslam/util/trigonometric.h",
+				"src/stella_vslam/util/yaml.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/stella_vslam/util",
+		"source" : "src/stella_vslam/util"
+	}
+}
