@@ -25,8 +25,8 @@ def generate_launch_description():
     offset_from_robot = 0.6
 
     # Spawn blocks in random locations
-    # model_names = ["red_block", "green_block", "blue_block"]
-    model_names = ["table"]
+    model_names = ["red_block", "green_block", "blue_block"]
+    # model_names = ["bench_with_fruits"]
     sampled_locs = random.sample(list(locations.keys()), len(model_names))
     for mdl_name, loc in zip(model_names, sampled_locs):
         x, y, theta = locations[loc]
@@ -55,4 +55,41 @@ def generate_launch_description():
             )
         )
 
+    # Add benches at fixed wall locations
+    benches = [
+        {
+            'name': 'bench_with_animals',
+            'pose': [0.0, -2.6, 0.06, 0, 0, 1.57],  # South wall, centered
+        },
+        {
+            'name': 'bench_with_fruits',
+            'pose': [-2.6, 0.0, 0.06, 0, 0, 0],      # West wall, centered
+        },
+        {
+            'name': 'bench_with_misc',
+            'pose': [2.6, 0.0, 0.06, 0, 0, 3.14],    # East wall, centered
+        },
+    ]
+    for bench in benches:
+        mdl_sdf = os.path.join(pkg_dir, "models", bench['name'], "model.sdf")
+        lds.append(
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    os.path.join(
+                        get_package_share_directory("ros_gz_sim"),
+                        "launch",
+                        "gz_spawn_model.launch.py",
+                    )
+                ),
+                launch_arguments={
+                    "world": "",
+                    "file": mdl_sdf,
+                    "name": bench['name'],
+                    "x": str(bench['pose'][0]),
+                    "y": str(bench['pose'][1]),
+                    "z": str(bench['pose'][2]),
+                    "Y": str(bench['pose'][5]),
+                }.items(),
+            )
+        )
     return LaunchDescription(lds)

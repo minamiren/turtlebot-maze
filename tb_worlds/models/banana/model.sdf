@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="banana">
+    <static>true</static>
+    <link name="banana_link">
+      <!-- Banana body: yellow curved cylinders -->
+      <visual name="banana_body_1">
+        <pose>0 0 0.07 0 0 0.3</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>0.12</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>1 0.9 0.2 1</ambient>
+          <diffuse>1 0.9 0.2 1</diffuse>
+        </material>
+      </visual>
+      <visual name="banana_body_2">
+        <pose>0.03 0 0.07 0 0 0.6</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.022</radius>
+            <length>0.09</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>1 0.9 0.2 1</ambient>
+          <diffuse>1 0.9 0.2 1</diffuse>
+        </material>
+      </visual>
+      <!-- Banana tip: brown sphere -->
+      <visual name="banana_tip">
+        <pose>0.09 0 0.07 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.012</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

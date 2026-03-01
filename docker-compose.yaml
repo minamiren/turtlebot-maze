@@ -155,18 +155,22 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.torch.gpu
+    # run as root so the container can write the downloaded weights into
+    # the bind‑mounted directory; otherwise the non‑root user (1001) may
+    # lack permission if the host folder is owned by someone else.
+    user: root
     network_mode: host
     ipc: host
-    environment:
-      - NVIDIA_VISIBLE_DEVICES=all
-      - NVIDIA_DRIVER_CAPABILITIES=all
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
+    # environment:
+    #   - NVIDIA_VISIBLE_DEVICES=all
+    #   - NVIDIA_DRIVER_CAPABILITIES=all
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+          #   - driver: nvidia
+          #     count: all
+          #     capabilities: [gpu]
     volumes:
       - ./detector:/app
     working_dir: /app

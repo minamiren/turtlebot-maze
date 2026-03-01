@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="bench_with_animals">
+    <static>true</static>
+    <link name="bench_link">
+      <!-- Bench seat -->
+      <visual name="bench_seat">
+        <geometry>
+          <box>
+            <size>0.6 0.15 0.04</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.22 0 0 0</pose>
+        <material>
+          <ambient>0.6 0.4 0.2 1</ambient>
+          <diffuse>0.6 0.4 0.2 1</diffuse>
+        </material>
+      </visual>
+      <!-- Bench legs -->
+      <visual name="bench_leg_left">
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.22</size>
+          </box>
+        </geometry>
+        <pose>-0.28 0 0.11 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="bench_leg_right">
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.22</size>
+          </box>
+        </geometry>
+        <pose>0.28 0 0.11 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <!-- Dog -->
+      <visual name="dog_body">
+        <geometry>
+          <box>
+            <size>0.13 0.06 0.06</size>
+          </box>
+        </geometry>
+        <pose>-0.14 0 0.26 0 0 0</pose>
+        <material>
+          <ambient>0.7 0.5 0.3 1</ambient>
+          <diffuse>0.7 0.5 0.3 1</diffuse>
+        </material>
+      </visual>
+      <visual name="dog_head">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+        <pose>-0.19 0 0.29 0 0 0</pose>
+        <material>
+          <ambient>0.7 0.5 0.3 1</ambient>
+          <diffuse>0.7 0.5 0.3 1</diffuse>
+        </material>
+      </visual>
+      <visual name="dog_tail">
+        <geometry>
+          <cylinder>
+            <radius>0.008</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <pose>-0.08 0 0.28 0 0 1.2</pose>
+        <material>
+          <ambient>0.7 0.5 0.3 1</ambient>
+          <diffuse>0.7 0.5 0.3 1</diffuse>
+        </material>
+      </visual>
+      <!-- Cat -->
+      <visual name="cat_body">
+        <geometry>
+          <box>
+            <size>0.09 0.05 0.05</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.26 0 0 0</pose>
+        <material>
+          <ambient>0.8 0.8 0.7 1</ambient>
+          <diffuse>0.8 0.8 0.7 1</diffuse>
+        </material>
+      </visual>
+      <visual name="cat_head">
+        <geometry>
+          <sphere>
+            <radius>0.025</radius>
+          </sphere>
+        </geometry>
+        <pose>-0.04 0 0.29 0 0 0</pose>
+        <material>
+          <ambient>0.8 0.8 0.7 1</ambient>
+          <diffuse>0.8 0.8 0.7 1</diffuse>
+        </material>
+      </visual>
+      <visual name="cat_tail">
+        <geometry>
+          <cylinder>
+            <radius>0.006</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <pose>0.06 0 0.28 0 0 1.2</pose>
+        <material>
+          <ambient>0.8 0.8 0.7 1</ambient>
+          <diffuse>0.8 0.8 0.7 1</diffuse>
+        </material>
+      </visual>
+      <!-- Bird -->
+      <visual name="bird_body">
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0.14 0 0.28 0 0 0</pose>
+        <material>
+          <ambient>0.2 0.6 1 1</ambient>
+          <diffuse>0.2 0.6 1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="bird_head">
+        <geometry>
+          <sphere>
+            <radius>0.012</radius>
+          </sphere>
+        </geometry>
+        <pose>0.16 0 0.3 0 0 0</pose>
+        <material>
+          <ambient>0.2 0.6 1 1</ambient>
+          <diffuse>0.2 0.6 1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="bird_beak">
+        <geometry>
+          <cylinder>
+            <radius>0.004</radius>
+            <length>0.01</length>
+          </cylinder>
+        </geometry>
+        <pose>0.172 0 0.3 0 1.57 0</pose>
+        <material>
+          <ambient>1 0.8 0.2 1</ambient>
+          <diffuse>1 0.8 0.2 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

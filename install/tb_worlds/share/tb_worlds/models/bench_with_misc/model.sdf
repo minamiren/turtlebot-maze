@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="bench_with_misc">
+    <static>true</static>
+    <link name="bench_link">
+      <!-- Bench seat -->
+      <visual name="bench_seat">
+        <geometry>
+          <box>
+            <size>0.6 0.15 0.04</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.22 0 0 0</pose>
+        <material>
+          <ambient>0.6 0.4 0.2 1</ambient>
+          <diffuse>0.6 0.4 0.2 1</diffuse>
+        </material>
+      </visual>
+      <!-- Bench legs -->
+      <visual name="bench_leg_left">
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.22</size>
+          </box>
+        </geometry>
+        <pose>-0.28 0 0.11 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="bench_leg_right">
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.22</size>
+          </box>
+        </geometry>
+        <pose>0.28 0 0.11 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <!-- Bowl -->
+      <visual name="bowl_base">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.03</length>
+          </cylinder>
+        </geometry>
+        <pose>-0.12 0 0.24 0 0 0</pose>
+        <material>
+          <ambient>0.8 0.8 1 1</ambient>
+          <diffuse>0.8 0.8 1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="bowl_rim">
+        <geometry>
+          <cylinder>
+            <radius>0.055</radius>
+            <length>0.01</length>
+          </cylinder>
+        </geometry>
+        <pose>-0.12 0 0.265 0 0 0</pose>
+        <material>
+          <ambient>0.7 0.7 0.9 1</ambient>
+          <diffuse>0.7 0.7 0.9 1</diffuse>
+        </material>
+      </visual>
+      <!-- Book -->
+      <visual name="book_cover">
+        <geometry>
+          <box>
+            <size>0.12 0.09 0.01</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.24 0 0 0</pose>
+        <material>
+          <ambient>0.2 0.5 0.8 1</ambient>
+          <diffuse>0.2 0.5 0.8 1</diffuse>
+        </material>
+      </visual>
+      <visual name="book_pages">
+        <geometry>
+          <box>
+            <size>0.11 0.08 0.008</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.245 0 0 0</pose>
+        <material>
+          <ambient>1 1 0.9 1</ambient>
+          <diffuse>1 1 0.9 1</diffuse>
+        </material>
+      </visual>
+      <!-- Hot dog -->
+      <visual name="hotdog_bun">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>0.11</length>
+          </cylinder>
+        </geometry>
+        <pose>0.12 0 0.24 0 0 0</pose>
+        <material>
+          <ambient>0.9 0.7 0.4 1</ambient>
+          <diffuse>0.9 0.7 0.4 1</diffuse>
+        </material>
+      </visual>
+      <visual name="hotdog_sausage">
+        <geometry>
+          <cylinder>
+            <radius>0.015</radius>
+            <length>0.09</length>
+          </cylinder>
+        </geometry>
+        <pose>0.12 0 0.255 0 0 0</pose>
+        <material>
+          <ambient>0.8 0.3 0.2 1</ambient>
+          <diffuse>0.8 0.3 0.2 1</diffuse>
+        </material>
+      </visual>
+      <visual name="hotdog_mustard">
+        <geometry>
+          <cylinder>
+            <radius>0.005</radius>
+            <length>0.09</length>
+          </cylinder>
+        </geometry>
+        <pose>0.12 0 0.265 0 0 0</pose>
+        <material>
+          <ambient>1 1 0.2 1</ambient>
+          <diffuse>1 1 0.2 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

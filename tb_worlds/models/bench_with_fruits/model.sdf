@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="bench_with_fruits">
+    <static>true</static>
+    <link name="bench_link">
+      <!-- Bench seat -->
+      <visual name="bench_seat">
+        <geometry>
+          <box>
+            <size>0.6 0.15 0.04</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.22 0 0 0</pose>
+        <material>
+          <ambient>0.6 0.4 0.2 1</ambient>
+          <diffuse>0.6 0.4 0.2 1</diffuse>
+        </material>
+      </visual>
+      <!-- Bench legs -->
+      <visual name="bench_leg_left">
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.22</size>
+          </box>
+        </geometry>
+        <pose>-0.28 0 0.11 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="bench_leg_right">
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.22</size>
+          </box>
+        </geometry>
+        <pose>0.28 0 0.11 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <!-- Apple -->
+      <visual name="apple_body">
+        <geometry>
+          <sphere>
+            <radius>0.07</radius>
+          </sphere>
+        </geometry>
+        <pose>-0.12 0 0.26 0 0 0</pose>
+        <material>
+          <ambient>1 0.1 0.1 1</ambient>
+          <diffuse>1 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem">
+        <geometry>
+          <cylinder>
+            <radius>0.01</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <pose>-0.12 0 0.33 0 0 0</pose>
+        <material>
+          <ambient>0.2 0.8 0.2 1</ambient>
+          <diffuse>0.2 0.8 0.2 1</diffuse>
+        </material>
+      </visual>
+      <!-- Banana -->
+      <visual name="banana_body_1">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>0.12</length>
+          </cylinder>
+        </geometry>
+        <pose>0 0 0.26 0 0 0.3</pose>
+        <material>
+          <ambient>1 0.9 0.2 1</ambient>
+          <diffuse>1 0.9 0.2 1</diffuse>
+        </material>
+      </visual>
+      <visual name="banana_body_2">
+        <geometry>
+          <cylinder>
+            <radius>0.022</radius>
+            <length>0.09</length>
+          </cylinder>
+        </geometry>
+        <pose>0.03 0 0.26 0 0 0.6</pose>
+        <material>
+          <ambient>1 0.9 0.2 1</ambient>
+          <diffuse>1 0.9 0.2 1</diffuse>
+        </material>
+      </visual>
+      <visual name="banana_tip">
+        <geometry>
+          <sphere>
+            <radius>0.012</radius>
+          </sphere>
+        </geometry>
+        <pose>0.09 0 0.26 0 0 0</pose>
+        <material>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
+        </material>
+      </visual>
+      <!-- Orange -->
+      <visual name="orange_body">
+        <geometry>
+          <sphere>
+            <radius>0.07</radius>
+          </sphere>
+        </geometry>
+        <pose>0.12 0 0.26 0 0 0</pose>
+        <material>
+          <ambient>1 0.5 0.1 1</ambient>
+          <diffuse>1 0.5 0.1 1</diffuse>
+        </material>
+      </visual>
+      <visual name="orange_stem">
+        <geometry>
+          <cylinder>
+            <radius>0.01</radius>
+            <length>0.03</length>
+          </cylinder>
+        </geometry>
+        <pose>0.12 0 0.33 0 0 0</pose>
+        <material>
+          <ambient>0.2 0.8 0.2 1</ambient>
+          <diffuse>0.2 0.8 0.2 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
