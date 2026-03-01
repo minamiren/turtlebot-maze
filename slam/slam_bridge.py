@@ -3,8 +3,13 @@
 Zenoh-based stella_vslam SLAM bridge.
 
 Subscribes to ROS 2 camera images bridged via zenoh-bridge-ros2dds,
-writes frames to a temp directory, runs the stella_vslam run_slam
-driver in a subprocess, and publishes tracking status back over Zenoh.
+streams raw BGR frames to the stella_vslam run_slam driver via stdin
+(no files — eliminates the PNG race condition), and publishes tracking
+status and pose estimates back over Zenoh.
+
+Frame wire format sent on run_slam's stdin (all uint32, little-endian):
+  [4 bytes width][4 bytes height][4 bytes channels]
+  [width * height * channels bytes of BGR pixel data]
 
 Pattern matches detector/object_detector.py.
 """
@@ -13,9 +18,9 @@ import argparse
 import json
 import os
 import signal
+import struct
 import subprocess
 import sys
-import tempfile
 import threading
 import time
 
@@ -60,9 +65,8 @@ class SlamBridge:
         self.min_interval = 1.0 / args.max_fps
         self.running = True
 
-        # Temp directory for frame exchange with run_slam
-        self.frame_dir = tempfile.mkdtemp(prefix="slam_frames_")
-        print(f"Frame exchange dir: {self.frame_dir}")
+        # Lock to serialise writes to run_slam's stdin from the Zenoh callback thread
+        self._stdin_lock = threading.Lock()
 
         # Open Zenoh session
         conf = zenoh.Config()
@@ -73,12 +77,16 @@ class SlamBridge:
         self.pose_pub = self.session.declare_publisher(args.pose_key)
         self.status_pub = self.session.declare_publisher(args.status_key)
 
-        # Start stella_vslam subprocess
+        # Start stella_vslam subprocess (frames delivered via stdin pipe)
         self.slam_proc = self._start_slam()
 
         # Read pose output from run_slam stdout in background thread
         self._pose_thread = threading.Thread(target=self._read_poses, daemon=True)
         self._pose_thread.start()
+
+        # Forward run_slam stderr to our stderr (so it appears in docker logs)
+        self._stderr_thread = threading.Thread(target=self._forward_stderr, daemon=True)
+        self._stderr_thread.start()
 
         # Subscribe to camera images
         self.image_sub = self.session.declare_subscriber(
@@ -92,15 +100,13 @@ class SlamBridge:
         print(f"  Config:     {args.config}")
 
     def _start_slam(self):
-        """Start run_slam C++ driver."""
+        """Start run_slam C++ driver with stdin=PIPE (no -d frame-dir flag)."""
         cmd = [
             "run_slam",
             "-v",
             self.args.vocab,
             "-c",
             self.args.config,
-            "-d",
-            self.frame_dir,
             "--map-db-out",
             "/tmp/slam_map.msg",
         ]
@@ -109,19 +115,39 @@ class SlamBridge:
 
         proc = subprocess.Popen(
             cmd,
+            stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
         return proc
 
+    def _forward_stderr(self):
+        """Forward run_slam stderr to our stderr so it appears in docker logs."""
+        for line in self.slam_proc.stderr:
+            sys.stderr.write(line.decode())
+            sys.stderr.flush()
+
     def _read_poses(self):
-        """Read JSON pose lines from run_slam stdout and publish via Zenoh."""
+        """Read JSON pose lines from run_slam stdout and publish via Zenoh.
+
+        run_slam writes both structured JSON pose records and plain-text log
+        messages to stdout.  Only valid JSON is published; log lines are
+        forwarded to stderr so they appear in docker logs without polluting
+        the Zenoh pose topic.
+        """
         for line in self.slam_proc.stdout:
             if not self.running:
                 break
             line = line.decode().strip()
-            if line:
-                self.pose_pub.put(line.encode())
+            if not line:
+                continue
+            try:
+                json.loads(line)
+            except json.JSONDecodeError:
+                sys.stderr.write(f"[run_slam stdout] {line}\n")
+                sys.stderr.flush()
+                continue
+            self.pose_pub.put(line.encode())
 
     def _image_callback(self, sample):
         """Handle incoming camera image from Zenoh."""
@@ -141,7 +167,7 @@ class SlamBridge:
             print(f"CDR deserialize error: {e}")
             return
 
-        # Convert to numpy array
+        # Convert to BGR numpy array
         if img_msg.encoding in ("rgb8", "bgr8"):
             frame = np.frombuffer(bytes(img_msg.data), dtype=np.uint8).reshape(
                 img_msg.height, img_msg.width, 3
@@ -152,9 +178,18 @@ class SlamBridge:
             print(f"Unsupported encoding: {img_msg.encoding}")
             return
 
-        # Save frame for run_slam to consume
-        frame_path = os.path.join(self.frame_dir, f"frame_{self.frame_count:06d}.png")
-        cv2.imwrite(frame_path, frame)
+        # Send frame to run_slam via stdin pipe — no file I/O, no race condition.
+        # Wire format: [uint32 width][uint32 height][uint32 channels][raw BGR bytes]
+        h, w, c = frame.shape
+        header = struct.pack("<III", w, h, c)
+        with self._stdin_lock:
+            try:
+                self.slam_proc.stdin.write(header + frame.tobytes())
+                self.slam_proc.stdin.flush()
+            except BrokenPipeError:
+                self.running = False
+                return
+
         self.frame_count += 1
 
         # Publish status
@@ -190,10 +225,12 @@ class SlamBridge:
         self.running = False
         print("Shutting down SLAM bridge...")
 
-        # Signal run_slam to stop
-        done_path = os.path.join(self.frame_dir, ".done")
-        with open(done_path, "w") as f:
-            f.write("")
+        # Close stdin to signal run_slam's read loop to exit
+        if self.slam_proc and self.slam_proc.stdin:
+            try:
+                self.slam_proc.stdin.close()
+            except OSError:
+                pass
 
         if self.slam_proc and self.slam_proc.poll() is None:
             self.slam_proc.terminate()
