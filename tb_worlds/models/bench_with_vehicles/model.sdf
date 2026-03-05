@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+  <model name="bench_with_vehicles">
+    <static>true</static>
+
+    <!-- AirportBench as the base -->
+    <link name="bench_body">
+      <pose>0 0 -.15 0 0 0</pose>
+      <visual name="bench_visual">
+        <geometry>
+          <mesh>
+            <uri>../AirportBench/meshes/AirportBench.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="bench_collision">
+        <geometry>
+          <mesh>
+            <uri>../AirportBench/meshes/AirportBench_Col.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Hatchback on the left side of the bench -->
+    <link name="hatchback">
+      <pose>0 0.2 0.25 0 0 0</pose>
+      <visual name="hatchback_visual">
+        <pose>0 0 0 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <uri>../Hatchback/meshes/hatchback.obj</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- Bicycle in the center of the bench -->
+    <link name="bicycle">
+      <pose>0 0 0.25 1.57 0 0</pose>
+      <visual name="bicycle_body">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../bicycle/meshes/bicycle.obj</uri>
+            <scale>0.1 0.1 0.1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- SCHOOL_BUS on the right side of the bench -->
+    <link name="school_bus">
+      <pose>0 -.2 0.25 0 0 0</pose>
+      <visual name="bus_visual">
+        <geometry>
+          <mesh>
+            <uri>../SCHOOL_BUS/meshes/model.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,6 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[100%] [32m[1mLinking CXX executable run_slam[0m
+[100%] Built target run_slam
+-- Install configuration: ""
+-- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin/run_slam
+-- Set non-toolchain portion of runtime path of "/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/slam_driver/bin/run_slam" to ""

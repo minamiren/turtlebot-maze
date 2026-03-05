@@ -26,7 +26,6 @@ def generate_launch_description():
 
     # Spawn blocks in random locations
     model_names = ["red_block", "green_block", "blue_block"]
-    # model_names = ["bench_with_fruits"]
     sampled_locs = random.sample(list(locations.keys()), len(model_names))
     for mdl_name, loc in zip(model_names, sampled_locs):
         x, y, theta = locations[loc]
@@ -58,17 +57,21 @@ def generate_launch_description():
     # Add benches at fixed wall locations
     benches = [
         {
-            'name': 'bench_with_animals',
-            'pose': [0.0, -2.6, 0.06, 0, 0, 1.57],  # South wall, centered
+            'name': 'bench_with_vehicles',
+            'pose': [-0.15, -1.3, -0.12, 0, 0, 1.57],  # South wall, centered
         },
         {
-            'name': 'bench_with_fruits',
-            'pose': [-2.6, 0.0, 0.06, 0, 0, 0],      # West wall, centered
+            'name': 'bench_with_furniture',
+            'pose': [2.6, 0.0, -0.12, 0, 0, -0.7853],    # East wall, centered
         },
         {
-            'name': 'bench_with_misc',
-            'pose': [2.6, 0.0, 0.06, 0, 0, 3.14],    # East wall, centered
-        },
+            'name': 'bench_with_food',
+            'pose': [0.1, 1.5, -0.12, 0, 0, -1.57],   # North wall, centered
+        }
+        # {
+        #     'name': 'bench_with_vehicles',
+        #     'pose': [0.0, 2.6, 0.00, 0, 0, -1.57],   # North wall, centered
+        # },
     ]
     for bench in benches:
         mdl_sdf = os.path.join(pkg_dir, "models", bench['name'], "model.sdf")

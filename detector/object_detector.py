@@ -148,6 +148,7 @@ def main():
                 cls_id = int(box.cls[0])
                 detections.append(
                     {
+                        "class_id" : cls_id,
                         "class": model.names[cls_id],
                         "confidence": round(float(box.conf[0]), 3),
                         "bbox": [round(float(x), 1) for x in box.xyxy[0].tolist()],

@@ -356,6 +356,75 @@ class TestQueryDetections:
 
 
 # ---------------------------------------------------------------------------
+# TestEventSubscriber — validate the new multi-key subscription script
+# ---------------------------------------------------------------------------
+
+class TestEventSubscriber:
+    def test_schema_and_fields(self, tmp_path):
+        """Run the event_subscriber and make sure the basic schema appears."""
+        event_script = DETECTOR_DIR / "event_subscriber.py"
+        proc = subprocess.Popen(
+            [
+                sys.executable,
+                str(event_script),
+                "--run-id",
+                "test-run",
+                "--detect-key",
+                DETECTION_KEY,
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        try:
+            time.sleep(0.5)
+            publish(DETECTION_KEY, [DETECTION_PAYLOADS[0]])
+            time.sleep(0.5)
+            # send an empty detection list; should produce no additional event
+            publish(DETECTION_KEY, [[]])
+            time.sleep(0.5)
+        finally:
+            proc.terminate()
+            proc.wait(timeout=5)
+
+        out_lines = [l for l in proc.stdout.read().splitlines() if l]
+        assert out_lines, "event_subscriber produced no output"
+        ev = json.loads(out_lines[0])
+        assert ev["schema"] == "maze.detection.v1"
+        assert ev["run_id"] == "test-run"
+        assert isinstance(ev["event_id"], str)
+        assert isinstance(ev["sequence"], int)
+        assert "image" in ev and isinstance(ev["image"], dict)
+        assert "detections" in ev and isinstance(ev["detections"], list)
+        # after the empty list there should still be only one event
+        assert len(out_lines) == 1
+
+    def test_key_sanitization(self, tmp_path):
+        """Leading/trailing slashes in keys are stripped so Zenoh doesn't error."""
+        event_script = DETECTOR_DIR / "event_subscriber.py"
+        proc = subprocess.Popen(
+            [
+                sys.executable,
+                str(event_script),
+                "--detect-key",
+                "/" + DETECTION_KEY + "/",
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        try:
+            time.sleep(0.5)
+            publish(DETECTION_KEY, [DETECTION_PAYLOADS[0]])
+            time.sleep(0.5)
+        finally:
+            proc.terminate()
+            proc.wait(timeout=5)
+        out = proc.stderr.read() + proc.stdout.read()
+        assert "Invalid Key Expr" not in out, "key sanitization failed"
+
+
+# ---------------------------------------------------------------------------
 # TestZenohStorageConfig — validate the JSON5 config file
 # ---------------------------------------------------------------------------
 

@@ -110,6 +110,7 @@ turtlebot-maze/
 ├── detector/                 # Standalone PyTorch detector (no ROS)
 │   ├── object_detector.py         #   Zenoh sub → YOLOv8 → Zenoh pub
 │   ├── zenoh_logger.py            #   Generic Zenoh → JSONL logger (any key)
+│   ├── event_subscriber.py        #   Multi‑key listener that emits ``maze.detection.v1`` JSON
 │   ├── query_detections.py        #   Query/export JSONL or live Zenoh storage
 │   ├── test_detection_logging.py  #   pytest suite (26 tests, detection + SLAM)
 │   └── requirements.txt           #   ultralytics, eclipse-zenoh, pycdr2, pytest

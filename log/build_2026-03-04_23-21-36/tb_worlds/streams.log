@@ -1,0 +1,304 @@
+[0.011s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds -- -j8 -l8
+[0.043s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds -- -j8 -l8
+[0.051s] Invoking command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds
+[0.058s] -- Install configuration: ""
+[0.058s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch
+[0.058s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_world.launch.py
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/tb_demo_world.launch.py
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/turtlebot_spawner.launch.py
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/block_spawner.launch.py
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/launch/aruco_marker_spawner.launch.py
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_locations.yaml
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.yaml
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/maps/sim_house_map.pgm
+[0.060s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models
+[0.061s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle
+[0.061s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/materials
+[0.061s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/materials/textures
+[0.061s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/materials/textures/bike.png
+[0.061s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/meshes
+[0.062s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/meshes/bicycle.mtl
+[0.062s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/meshes/bicycle.obj
+[0.062s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/model.sdf
+[0.062s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/model.config
+[0.062s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/thumbnails
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/thumbnails/5.png
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/thumbnails/3.png
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/thumbnails/1.png
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/thumbnails/2.png
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bicycle/thumbnails/4.png
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/model-1_2.sdf
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/meshes
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/meshes/bowl.dae
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/model.sdf
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/model.config
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/model-1_3.sdf
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bowl/model-1_4.sdf
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.sdf
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/blue_block/model.config
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.sdf
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/red_block/model.config
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block
+[0.063s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.sdf
+[0.064s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/green_block/model.config
+[0.064s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake
+[0.064s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/materials
+[0.064s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/materials/textures
+[0.065s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/materials/textures/fog.png
+[0.065s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/materials/textures/fire_colors.png
+[0.065s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/meshes
+[0.065s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/meshes/cake.dae
+[0.065s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/meshes/openrobotics.dae
+[0.065s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/model.sdf
+[0.066s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/model.config
+[0.066s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/thumbnails
+[0.066s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/thumbnails/3.png
+[0.066s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/thumbnails/1.png
+[0.066s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/thumbnails/0.png
+[0.066s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Birthday cake/thumbnails/2.png
+[0.067s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench.obj
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench_Rough.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench_Col.obj
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench.mtl
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench_Metal.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench_Normal.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench_Diffuse.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/meshes/AirportBench_Col.mtl
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/model.sdf
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/model.config
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/thumbnails
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/thumbnails/5.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/thumbnails/3.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/thumbnails/1.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/thumbnails/2.png
+[0.068s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/AirportBench/thumbnails/4.png
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/materials
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/materials/textures
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/materials/textures/texture.png
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/metadata.pbtxt
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/meshes
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/meshes/model.mtl
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/meshes/model.obj
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/model.sdf
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/model.config
+[0.069s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/thumbnails
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/thumbnails/0.jpg
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/thumbnails/2.jpg
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/thumbnails/3.jpg
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/thumbnails/4.jpg
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SCHOOL_BUS/thumbnails/1.jpg
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80
+[0.070s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials/textures
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials/textures/80.jpg
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/materials/textures/80.png
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/meshes
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/meshes/aruco_cube_80.obj
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/meshes/aruco_cube_80.mtl
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/model.sdf
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/model.config
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/thumbnails
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_80/thumbnails/1.png
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_misc
+[0.071s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_misc/model.sdf
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/apple
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/apple/model.sdf
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/materials
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/materials/scripts
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/materials/scripts/stop_light.material
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/materials/textures
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/materials/textures/greyscale_light.png
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/materials/textures/stop_light.png
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/meshes
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/meshes/stop_light.obj
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/meshes/stop_light.mtl
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/model.sdf
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/stop_light/model.config
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_animals
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_animals/model.sdf
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/materials
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/materials/textures
+[0.072s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/materials/textures/fire_hydrant_diffuse.png
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/materials/textures/fire_hydrant_spec.png
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/meshes
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/meshes/fire_hydrant.dae
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/model.sdf
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/model.config
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/fire_hydrant/model-1_4.sdf
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model-1_2.sdf
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model.sdf
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model.config
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model-1_3.sdf
+[0.073s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/table/model-1_4.sdf
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/materials
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/materials/textures
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/materials/textures/bus.png
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/meshes
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/meshes/bus.obj
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/meshes/bus.mtl
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/model.sdf
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bus/model.config
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60
+[0.074s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials
+[0.075s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials/textures
+[0.075s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials/textures/60.png
+[0.075s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/materials/textures/60.jpg
+[0.075s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/meshes
+[0.075s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/meshes/aruco_cube_60.mtl
+[0.075s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/meshes/aruco_cube_60.obj
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/model.sdf
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/model.config
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/thumbnails
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/aruco_id_60/thumbnails/1.png
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/orange
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/orange/model.sdf
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/banana
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/banana/model.sdf
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/plastic_cup
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/plastic_cup/meshes
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/plastic_cup/meshes/plastic_cup.dae
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/plastic_cup/model.rsdf
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/plastic_cup/model.sdf
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/plastic_cup/model.config
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials/textures
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials/textures/Oven_Albedo.png
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials/textures/Oven_Metalness.png
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials/textures/Glass.png
+[0.076s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials/textures/Oven_Roughness.png
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/materials/textures/Oven_Normal.png
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/meshes
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/meshes/oven.dae
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/model.sdf
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/model.config
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/thumbnails
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Oven/thumbnails/Oven.png
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.sdf
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/sim_house/model.config
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/materials
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/materials/textures
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/materials/textures/texture.png
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/metadata.pbtxt
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/meshes
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/meshes/model.mtl
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/meshes/model.obj
+[0.077s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/model.sdf
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/model.config
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/thumbnails
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/thumbnails/0.jpg
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/thumbnails/2.jpg
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/thumbnails/3.jpg
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/thumbnails/4.jpg
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/SANDWICH_MEAL/thumbnails/1.jpg
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/materials
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/materials/textures
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/materials/textures/hatchback.png
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/materials/textures/wheels3.png
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/meshes
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/meshes/hatchback.mtl
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/meshes/hatchback.obj
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/model.sdf
+[0.078s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/model.config
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/thumbnails
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/thumbnails/5.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/thumbnails/3.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/thumbnails/1.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/thumbnails/2.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Hatchback/thumbnails/4.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/textured.obj
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/model.sdf
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/textured.mtl
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/texture_map.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/model.config
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/textured.dae
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/thumbnails
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/thumbnails/5.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/thumbnails/3.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/thumbnails/1.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/thumbnails/2.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Orange/thumbnails/4.png
+[0.079s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_vehicles
+[0.079s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_vehicles/model.sdf
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_vehicles/model.config
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_fruits
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/bench_with_fruits/model.sdf
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes/WoodenChair_Col.mtl
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes/WoodenChair.obj
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes/WoodenChair_Rough.png
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes/WoodenChair_Diffuse.png
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes/WoodenChair.mtl
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/meshes/WoodenChair_Col.obj
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/model.sdf
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/model.config
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/thumbnails
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/thumbnails/5.png
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/thumbnails/3.png
+[0.080s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/thumbnails/1.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/thumbnails/2.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/WoodenChair/thumbnails/4.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials/scripts
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials/scripts/model.material
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials/textures
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials/textures/Pot01_Roughness.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials/textures/Pot01_Normal.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/materials/textures/Pot01_Albedo.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/meshes
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/meshes/Pot01.dae
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/meshes/Pot01.obj
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/model.sdf
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/model.config
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/thumbnails
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/thumbnails/5.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/thumbnails/3.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/thumbnails/1.png
+[0.081s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/thumbnails/2.png
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/models/Sunken Vase/thumbnails/4.png
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/sim_house_enhanced.sdf.xacro
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/sim_house.sdf.xacro
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures/concrete.png
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures/wood_.png
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/worlds/textures/bricks.png
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/urdf/gz_waffle.sdf.xacro
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot4_bridge.yaml
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/turtlebot3_bridge.yaml
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/configs/nav2_params.yaml
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/package_run_dependencies/tb_worlds
+[0.082s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/parent_prefix_path/tb_worlds
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.sh
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/ament_prefix_path.dsv
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.sh
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/environment/path.dsv
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.bash
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.sh
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.zsh
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/local_setup.dsv
+[0.083s] -- Installing: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.dsv
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/ament_index/resource_index/packages/tb_worlds
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig.cmake
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/cmake/tb_worldsConfig-version.cmake
+[0.083s] -- Up-to-date: /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/install/tb_worlds/share/tb_worlds/package.xml
+[0.083s] Invoked command in '/home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ren/workspaces/turtlebot3_ws/src/turtlebot-maze/build/tb_worlds

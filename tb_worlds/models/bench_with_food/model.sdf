@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+  <model name="bench_with_food">
+    <static>true</static>
+
+    <!-- AirportBench as the base -->
+    <link name="bench_body">
+      <pose>0 0 -.15 0 0 0</pose>
+      <visual name="bench_visual">
+        <geometry>
+          <mesh>
+            <uri>../AirportBench/meshes/AirportBench.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="bench_collision">
+        <geometry>
+          <mesh>
+            <uri>../AirportBench/meshes/AirportBench_Col.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- orange on the left side of the bench -->
+    <link name="orange">
+      <pose>0 0.2 0.25 0 0 0</pose>
+      <visual name="orange_visual">
+        <pose>0 0 0 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <uri>../Orange/textured.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- sandwich in the center of the bench -->
+    <link name="sandwich">
+      <pose>0 0 0.25 0 0 0</pose>
+      <visual name="sandwich_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../SANDWICH_MEAL/meshes/model.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- cup on the right side of the bench -->
+    <link name="cup">
+      <pose>0 -.2 0.28 0 0 0</pose>
+      <visual name="cup_visual">
+        <geometry>
+          <mesh>
+            <uri>../plastic_cup/meshes/plastic_cup.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
