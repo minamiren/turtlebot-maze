@@ -10,10 +10,15 @@ import uuid
 import rclpy
 from rclpy.serialization import deserialize_message
 from rclpy.node import Node
+import cv2
 from sensor_msgs.msg import Image
+from cv_bridge import CvBridge, CvBridgeError
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped
 from database.postgresql import insert_detection_event
+import torch
+import clip
+from PIL import Image as PILImage
 import json
 
 import zenoh
@@ -47,14 +52,23 @@ class EventComposer(Node):
 
     def __init__(self, args):
         super().__init__("event_subscriber")
+        self.timer = self.create_timer(0.1, self.timer_callback) # 1/10Hz = 0.1s
         self.args = args
         self.state = {
             "image": None,
             "odometry": None,
             "tf": None,
+            "imgdata": None,  # to store raw image data if needed for hashing
+            "last_emit_pose": (0.0,0.0)  # to track last pose at which we emitted an event
         }
+        self.detections = None  # to store latest detections from Zenoh
         self.sequence = args.sequence_start
         self.verbose = args.verbose
+
+        # Setup CLIP
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model, self.preprocess = clip.load("ViT-B/32", device=self.device)
+        self.bridge = CvBridge()
 
         # ROS 2 subscriptions
         self.image_sub = self.create_subscription(
@@ -81,6 +95,7 @@ class EventComposer(Node):
             "height": msg.height,
             "encoding": msg.encoding,
         }
+        self.state["imgdata"] = msg  # store raw image data for potential hashing
         # if self.verbose:
             # print(f"[DEBUG] {self.args.image_topic}: updated", file=sys.stderr)
 
@@ -128,6 +143,28 @@ class EventComposer(Node):
         # if self.verbose:
             # print(f"[DEBUG] {self.args.odom_topic}: updated", file=sys.stderr)
 
+    def crop_image(self, imgdata: bytes, bbox: list):
+        """Crop the latest image to a region of interest (e.g., center 200x200)."""
+        # This is a placeholder; actual cropping would require the full image data
+        # and a library like OpenCV. Here we just simulate by adjusting width/height.
+        if self.state["image"] is None:
+            return
+
+        cv_image = self.bridge.imgmsg_to_cv2(imgdata, desired_encoding="bgr8")
+        bbox = [int(item) for item in bbox]
+        cropped_image = cv_image[bbox[1]:bbox[3], bbox[0]:bbox[2]]
+        print(f"Cropped image to bbox {bbox}, resulting shape: {cropped_image.shape}")
+        # 4. Convert to PIL for CLIP
+        pil_img = PILImage.fromarray(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
+
+        # 5. Preprocess and Compute Embedding
+        image_input = self.preprocess(pil_img).unsqueeze(0).to(self.device)
+        with torch.no_grad():
+            image_features = self.model.encode_image(image_input)
+        
+        print("Embedding Shape:", image_features.shape) # [1, 512]
+        return torch.squeeze(image_features).tolist() # this will eventually go to something else
+
     def make_event(self, detections: list) -> dict:
         """Build a maze.detection.v1 event."""
         self.sequence += 1
@@ -140,9 +177,10 @@ class EventComposer(Node):
             "image": self.state["image"],
             "odometry": self.state["odometry"],
             "tf": self.state["tf"],
-            "detections": [],
+            "detections": []
         }
 
+        embedding_list = []
         for det in detections:
             event_det = {
                 "det_id": str(uuid.uuid4()),
@@ -150,10 +188,39 @@ class EventComposer(Node):
                 "class_name": det.get("class") or det.get("class_name", ""),
                 "confidence": det.get("confidence"),
                 "bbox_xyxy": det.get("bbox") or det.get("bbox_xyxy", []),
+                "embedding": None
             }
+            event_det["embedding"] = self.crop_image(self.state["imgdata"], event_det["bbox_xyxy"])
+
             event["detections"].append(event_det)
 
         return event
+
+    def timer_callback(self):
+        last_x, last_y = self.state["last_emit_pose"]
+        # process detections every 10Hz, and emit an event if we have detections
+        if self.detections is None or len(self.detections) == 0:
+            return
+        event = self.make_event(self.detections)
+        if self.verbose:
+            print(f"[DEBUG] emitting event with {len(self.detections)} detection(s)", file=sys.stderr)
+        
+        print(self.state["odometry"])
+        # get value x from odometry and set to current_pose_x
+        current_pose_x = self.state["odometry"]["x"]
+        current_pose_y = self.state["odometry"]["y"]
+
+        # current_pose_x = self.state["odometry"].x
+        # current_pose_y = self.state["odometry"].y
+        # check that the robot has moved at least .1m since the last event to avoid emitting too many redundant events
+        # note that distance is calculated as sqrt((x2-x1)^2 + (y2-y1)^2), so we check if sqrt((current_pose_x - last_x)^2 + (current_pose_y - last_y)^2) < 0.1
+        # if ((current_pose_x - last_x)**2 + (current_pose_y - last_y)**2)**0.5 < 0.2:
+        #     if self.verbose:
+        #         print(f"[DEBUG] robot has not moved significantly since last event, skipping emit", file=sys.stderr)
+        #     return
+        print(json.dumps(event))
+        insert_detection_event(event)
+        self.state["last_emit_pose"] = (current_pose_x, current_pose_y)
 
     def setup_zenoh(self):
         """Initialize Zenoh subscription for detections."""
@@ -174,26 +241,19 @@ class EventComposer(Node):
         """Handle incoming detection list; emit event if non-empty."""
         raw = bytes(sample.payload)
         try:
-            detections = json.loads(raw.decode("utf-8"))
+            self.detections = json.loads(raw.decode("utf-8"))
         except Exception as e:
             print(f"ignoring non-json detection payload: {e}", file=sys.stderr)
             return
-
-        if not isinstance(detections, list):
+        if not isinstance(self.detections, list):
             print("detection payload is not a list, skipping", file=sys.stderr)
             return
-
-        if len(detections) == 0:
+        if len(self.detections) == 0:
             if self.verbose:
                 print(f"[DEBUG] empty detection list, skipping event", file=sys.stderr)
             return
 
-        event = self.make_event(detections)
-        if self.verbose:
-            print(f"[DEBUG] emitting event with {len(detections)} detection(s)", file=sys.stderr)
-        print(json.dumps(event))
-        insert_detection_event(event)
-
+        
     def cleanup(self):
         """Clean up resources."""
         if self.zenoh_sub:

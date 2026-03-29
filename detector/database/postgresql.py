@@ -3,6 +3,7 @@ from psycopg2 import DatabaseError
 from datetime import datetime, timezone
 import math
 import json as json_module
+from .graph import build_graph
 
 def connect():
     """ Connect to the PostgreSQL database server """
@@ -129,6 +130,7 @@ def insert_detection_event(event_json):
             raw_event
         ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (run_id, robot_id, sequence) DO NOTHING
+        RETURNING event_id
         """
 
         raw_event_str = json_module.dumps(event_json)
@@ -143,6 +145,8 @@ def insert_detection_event(event_json):
                 raw_event_str
             )
         )
+        returned_value = cur.fetchone()
+        print(f"Returned value after inserting event: {returned_value}")
 
         # Insert detections
         detections = event_json.get("detections", [])
@@ -152,6 +156,7 @@ def insert_detection_event(event_json):
             x1, y1, x2, y2
         ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (event_id, det_id) DO NOTHING
+        RETURNING det_pk
         """
 
         for det in detections:
@@ -171,14 +176,47 @@ def insert_detection_event(event_json):
                 ),
             )
 
+            returned_value = cur.fetchone()
+            print(f"Returned value after inserting detection: {returned_value}")
+            # insert into detection_embeddings table
+            # this table takes a primary key reference to detections(det_pk), the model text, and the embedding vector 
+            insert_emb_query = """
+            INSERT INTO detection_embeddings (
+                det_pk, model, embedding
+            ) VALUES (%s, %s, %s)
+            ON CONFLICT (det_pk) DO NOTHING
+            RETURNING embedding
+            """
+            embedding = det.get("embedding")  # this should be a list of floats
+            embedding_object = {
+                "det_pk": returned_value[0],
+                "model": "CLIP_ViT-B/32",
+                "embedding": embedding
+            }
+            # print(f"Embedding for det_id {det.get('det_id')}: {embedding[:5]}...")  # print first 5 values for sanity check
+            if embedding is not None:
+                cur.execute(
+                    insert_emb_query,
+                    (
+                        returned_value[0],
+                        "CLIP_ViT-B/32", 
+                        embedding,  # this should be stored as an array type in PostgreSQL
+                    ),
+                )
+                returned_value = cur.fetchone()
+                # print(f"Returned value after inserting embedding: {returned_value}")
+                conn.commit()  # commit after each embedding insert to ensure data is saved before building graph
+                build_graph(embedding_object)
+
         conn.commit()
         print(f"Event {event_id}: inserted successfully ({len(detections)} detections)")
+
         return True
 
     except (DatabaseError, Exception) as e:
         if conn:
             conn.rollback()
-        print(f"Error inserting event: {e}")
+        print(f"Error inserting event in postgres: {e}")
         return False
     finally:
         if conn:
@@ -209,7 +247,11 @@ def view_items_in_table(table_name):
         # Using %s as a placeholder for the table name is not directly supported in psycopg2 
         # for identifiers (like table names), so we format the string carefully.
         # Be cautious with string formatting to avoid SQL injection in real applications.
-        sql_query = f"SELECT * FROM {table_name}"
+        # sql_query = f"SELECT * FROM {table_name}"
+        # query that selects det_pk from the table
+        sql_query = f"SELECT det_pk FROM {table_name}"
+        # query that prints column names and types from the table
+        # sql_query = f"""SELECT column_name, data_type FROM information_schema.columns WHERE table_name = '{table_name}';"""
         cursor.execute(sql_query)
 
         # 4. Fetch all the results
@@ -217,7 +259,7 @@ def view_items_in_table(table_name):
         records = cursor.fetchall()
 
         # 5. Process and display the results
-        print(f"Items in the table '{table_name}':")
+        # print(f"Items in the table '{table_name}':")
         for row in records:
             print(row)
 
@@ -235,5 +277,5 @@ def view_items_in_table(table_name):
 
 
 if __name__ == '__main__':
-    connect()# Example usage:
-    view_items_in_table("detection_events")
+    # connect()# Example usage:
+    view_items_in_table("detection_embeddings")
