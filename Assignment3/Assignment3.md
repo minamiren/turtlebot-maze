@@ -1,13 +1,17 @@
 ## Code locations:
 pgvector + AGE schema
 - This is in /detector/database/graph.py
+
 Embedding generator
-- This is in crop_image() in /detector/event_subscriber.py (this took me 20 hours)
+- This is in crop_image() in /detector/event_subscriber.py 
 - Being inserted into the postgresql database in /detector/database/postgresql.py
+
 Graph builder
-- Also located in /detector/database/graph.py (this took me 23 hours)
+- Also located in /detector/database/graph.py 
+
 Semantic relocalizer
 - Likely to be located in /detector/database/relocalize.py
+
 Demo report with success and failure analysis
 - As follows:
 
