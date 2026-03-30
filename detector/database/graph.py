@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 import json
 from sklearn.cluster import DBSCAN
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics.pairwise import cosine_similarity
 
 # AGE Graph attributes:
 # Run	run_id, started_at (run id will increment for each new run, this will be determined by the first keyframe in the run)
@@ -18,7 +19,7 @@ from sklearn.preprocessing import StandardScaler
 # Place	place_id, centroid_x, centroid_y, keyframe_count (the mapping will come from clustering the merged_landmarks with DBSCAN, and the keyframe count will be the number of keyframes that have an observation linked to an object linked to that place)
 
 # compute cosine similarity sim = dot(e, mean_embedding)
-def cosine_similarity(a, b):
+def cosine_similarity_diff(a, b):
     a_norm = np.linalg.norm(a)
     b_norm = np.linalg.norm(b)
     if a_norm == 0 or b_norm == 0:
@@ -686,6 +687,10 @@ def get_similar_detections(query_embedding, k=10):
         # get all the det_ids of the similar detections and return them as a list
         det_pks = [detection[0] for detection in similar_detections]
         print(f"Top {k} similar detection pks: {det_pks}")
+        embeddings = [detection[1] for detection in similar_detections]
+            # print("similarity score: ", cosine_similarity(query_embedding, json.loads(embed)))
+            # print("siilarity score: ", sklearn.metrics.pairwise.cosine_similarity(query_embedding, embed))
+        # print(f"Top {k} similar detection pks: {det_pks}")
         # use det_pks to get the corresponding det_ids from the detections table
         return det_pks
     except (DatabaseError, Exception) as e:
@@ -734,8 +739,8 @@ def get_places_for_detection(det_pk):
         place_info = []
         for place in places:
             # only append if it is not already in the list to avoid duplicates in case there are multiple observations of the same object connected to the same place
-            if (place[0]['properties']['centroid_x'], place[0]['properties']['centroid_y'], place[0]['properties']['place_id'], class_name) not in place_info:
-                 place_info.append((place[0]['properties']['centroid_x'], place[0]['properties']['centroid_y'], place[0]['properties']['place_id'], class_name))
+            if (place[0]['properties']['place_id']) not in place_info:
+                 place_info.append((place[0]['properties']['centroid_x'], place[0]['properties']['centroid_y'], place[0]['properties']['place_id']))
             # place_info.append((place[0]['properties']['centroid_x'], place[0]['properties']['centroid_y'], place[0]['properties']['place_id'], class_name))
         # print(f"Places for detection with det_pk {det_pk}: {place_info}")
         return place_info
@@ -775,46 +780,52 @@ def get_candidate_places_for_embedding(real_embedding, places, k=3):
             centroid_x = place[0]
             centroid_y = place[1]
             place_id = place[2]
-            class_name = place[3]
+            # class_name = place[3]
             # class_name = place[3]
             # get all object nodes located in this place with this class name
-            cur.execute("SELECT to_jsonb(obj) FROM cypher('detections_graph', $$ MATCH (obj:Object {class_name: %s})-[:LOCATED_IN]->(place:Place {place_id: %s}) RETURN obj $$) AS (obj agtype)", (class_name, place_id,))
+            # cur.execute("SELECT to_jsonb(obj) FROM cypher('detections_graph', $$ MATCH (obj:Object {class_name: %s})-[:LOCATED_IN]->(place:Place {place_id: %s}) RETURN obj $$) AS (obj agtype)", (class_name, place_id,))
+            # get all object nodes located in this place
+            cur.execute("SELECT to_jsonb(obj) FROM cypher('detections_graph', $$ MATCH (obj:Object)-[:LOCATED_IN]->(place:Place {place_id: %s}) RETURN obj $$) AS (obj agtype)", (place_id,))
             # same as previous but match on centroid_x and centroid_y instead of place_id since we don't have place_id in the current graph schema
             # cur.execute("SELECT to_jsonb(obj) FROM cypher('detections_graph', $$ MATCH (obj:Object {class_name: %s})-[:LOCATED_IN]->(place:Place {centroid_x: %s, centroid_y: %s}) RETURN obj $$) AS (obj agtype)", (class_name, centroid_x, centroid_y,))
             object_nodes = cur.fetchall()
-            print(f"Object nodes found for place with centroid ({centroid_x}, {centroid_y}) and class {class_name}: {object_nodes}")
+            print(f"Object nodes found for place with centroid ({centroid_x}, {centroid_y}) : {object_nodes}")
             if len(object_nodes) == 0:
                 continue
             # compute mean embedding for these object nodes
             embeddings = []
+            simscore = 0
             for obj_node in object_nodes:
-                cur.execute("SELECT to_jsonb(o) FROM cypher('detections_graph', $$ MATCH (o:Observation)-[:OBSERVES]->(obj:Object {class_name: %s, x: %s, y: %s}) RETURN o $$) AS (o agtype)", (class_name, obj_node[0]['properties']['x'], obj_node[0]['properties']['y']))
+                cur.execute("SELECT to_jsonb(o) FROM cypher('detections_graph', $$ MATCH (o:Observation)-[:OBSERVES]->(obj:Object {class_name: %s, x: %s, y: %s}) RETURN o $$) AS (o agtype)", (obj_node[0]['properties']['class_name'], obj_node[0]['properties']['x'], obj_node[0]['properties']['y']))
                 connected_observations = cur.fetchall()
                 print("Number of observations connected to object node: ", len(connected_observations))
                 for obs in connected_observations:
                     embedding = json.loads(fetch_embedding(obs[0]['properties']['det_pk']))
                     if embedding is not None:
                         embeddings.append(np.array(embedding, dtype=float))
+                mean_embedding = np.mean(embeddings, axis=0) if len(embeddings) > 0 else None
+                simscore += cosine_similarity([real_embedding], [mean_embedding])[0][0]
             if len(embeddings) == 0:
                 continue
-            print(f"Embeddings length for object nodes in place with centroid ({centroid_x}, {centroid_y}) and class {class_name}: {len(embeddings)}")
+            print(f"Embeddings length for object nodes in place with centroid ({centroid_x}, {centroid_y}) : {len(embeddings)}")
             mean_embedding = np.mean(embeddings, axis=0)
-            # print(f"Mean embedding for place with centroid ({centroid_x}, {centroid_y}) and class {class_name}: {mean_embedding}")
-            sim = cosine_similarity(real_embedding, mean_embedding)
-            print(f"Similarity score between query embedding and mean embedding for place with centroid ({centroid_x}, {centroid_y}) and class {class_name}: {sim}")
+            print(f"Mean embedding for place with centroid ({centroid_x}, {centroid_y}) : {mean_embedding}")
+            sim = cosine_similarity([real_embedding], [mean_embedding])[0][0]
+            sim = simscore
+            print(f"Similarity score between query embedding and mean embedding for place with centroid ({centroid_x}, {centroid_y}): {sim}")
             # place_scores.append((place_id, centroid_x, centroid_y, class_name, sim))
-            place_scores.append((place_id, centroid_x, centroid_y, class_name, sim))
+            place_scores.append((place_id, centroid_x, centroid_y, sim))
         # rank places by similarity score and return top k
         # remove duplicates from place_scores based on place_id, keeping the one with the highest similarity score for each place_id
         print("All places: ", places)
         print("Place scores before removing duplicates: ", place_scores)
-        # unique_place_scores = {}
-        # for score in place_scores:
-        #     place_id = score[0]
-        #     if place_id not in unique_place_scores or score[4] > unique_place_scores[place_id][4]:
-        #         unique_place_scores[place_id] = score
-        # place_scores = list(unique_place_scores.values())
-        place_scores.sort(key=lambda x: x[4], reverse=True)
+        unique_place_scores = {}
+        for score in place_scores:
+            place_id = score[0]
+            if place_id not in unique_place_scores or score[3] > unique_place_scores[place_id][3]:
+                unique_place_scores[place_id] = score
+        place_scores = list(unique_place_scores.values())
+        place_scores.sort(key=lambda x: x[3], reverse=True)
         top_places = place_scores[:k]
         print(f"Top {k} candidate places for embedding: {top_places}")
         return top_places
@@ -979,8 +990,16 @@ if __name__ == "__main__":
         for det_pk in ids:
             places.extend(get_places_for_detection(det_pk))
             print(f"Places for detection with det_pk {det_pk}: {places}")
+            # filter places by id to avoid duplicates
+            unique_places = {}
+            for place in places:
+                place_id = place[2]
+                if place_id not in unique_places:
+                    unique_places[place_id] = place
+            places = list(unique_places.values())
+            print(places)
         candidate_places = get_candidate_places_for_embedding(embedding, places, k=3)
-        # print(f"Candidate places for embedding: {candidate_places}")
+        print(f"Candidate places for embedding: {candidate_places}")
         candidates_per_embedding.append(candidate_places)
     print(f"Candidate places for the first embedding: {candidates_per_embedding[0]}")
     print(f"XY locations for the first embedding: {xy_locations_per_embedding[0]}")

@@ -41,6 +41,17 @@ Finally, I repopulate the graph to have keyfrmaes and observations in all of the
 - Candidate places for the second embedding: [(0, 1.8727965108704832, -0.0467024987460683, 'bed', 0.9590995517137213), (0, 1.8727965108704832, -0.0467024987460683, 'cake', 0.9573520445893545), (0, 0.2878011392072061, -0.6919949292239563, 'cake', 0.9573520445893545)]
 - XY locations for the second embedding: (-0.7889262280987567, -1.243690713722371)
 
+You'll note that all of these results are for the same place with different XY coordinates and classname; this is because I separated my places based on which object localization fed into them where the centroid was taken based on the object localization--I felt as if I could get more specific localizations in that case, although my results ultimately were not very good. 
+
+Otherwise the results are as follows:
+
+- Candidate places for the first embedding: [(0, 1.8727965108704832, -0.0467024987460683, 18.29593943885792)]
+- XY locations for the first embedding: (-0.7889262280987567, -1.243690713722371)
+- Candidate places for the second embedding: [(0, 1.8727965108704832, -0.0467024987460683, 18.069031359041745)]
+- XY locations for the second embedding: (-0.7889262280987567, -1.243690713722371)
+
+There is only one candidate place for each embedding because all of the top ten det_pks were located in the same place, so there were not a series of places to compare against; therefore, the first set of results is somewhat more interesting. 
+
 I know that my observations were a bycicle and a car, not a chair or bed, so the class name here is not remotely correct. Additionally, we can see that the location assumption is totally off is well; this is because the embedding similarity was so high for both chair and bed, that our position localization was assumed to be in the bottom-right room that my chair and bed detections happened in, as opposed to the bottom left room where the bycicle and car are. We definitely saw better results in the previous runs, rather than this one. I followed the code back and found that the result comes from attempting to choose the most similar detections; for whatever reason, finding similar embeddings is very difficult. This results in bad location predictions. I would have expected lower similarity summations, but they are interestingly high even despite knowing there is an object mismatch.  Given how promising the smaller iterations were, I was hoping that the results would be better. Unfortunately, it appears to be very difficult to compare different embeddings and find similarities. It is possible that I would need dozens more nodes in the graph before I would be able to make a better pose estimation, because I might have a better embedding match. 
 
 ### Stats for observation, objects, and places in the graph:
